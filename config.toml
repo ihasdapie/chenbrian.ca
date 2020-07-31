@@ -1,7 +1,4 @@
-
-
-
-baseurl = "https://ihasdapie.github.io"
+baseurl = "//chenbrian.ca"
 languageCode = "en-us"
 theme = "terminal"
 paginate = 5
