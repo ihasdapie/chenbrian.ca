@@ -1,0 +1,20 @@
+
+.inline-svg {
+  display: inline-block;
+  padding-right: 100px
+  height: 1em;
+  width: 1em;
+  position: relative;
+}
+
+
+<div style="display: inline-block" class="inline-svg" >
+    {{- $fname:=print "fontawesome/" . ".svg" -}}
+    {{- $path:="<path" -}}
+                {{- $fill:="<path fill=\"currentColor\"" -}}
+                                  {{ replace (readFile $fname) $path $fill | safeHTML }}
+</div>
+
+
+
+
