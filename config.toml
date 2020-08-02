@@ -1,72 +1,81 @@
 baseurl = "//chenbrian.ca"
 languageCode = "en-us"
-theme = "terminal"
-paginate = 5
+theme = "hello-friend"
+pgginate = 5
 
 [params]
-  # dir name of your main content (default is `content/posts`).
-  # the list of set content will show up on your index page (baseurl).
-  contentTypeName = "posts"
+# dir name of your blog content (default is `content/posts`).
+# the list of set content will show up on your index page (baseurl).
+contentTypeName = "posts"
 
-  # ["orange", "blue", "red", "green", "pink"]
-  themeColor = "blue"
+# "light" or "dark"
+defaultTheme = "light"
 
-  # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
+# if you set this to 0, only submenu trigger will be visible
+showMenuItems = 5
 
-  # show selector to switch language
-  showLanguageSelector = false
+# Show reading time in minutes for posts
+showReadingTime = true
 
-  # set theme to full screen width
-  fullWidthTheme = false
+# Show table of contents at the top of your posts (defaults to false)
+# Alternatively, add this param to post front matter for specific posts
+# toc = true
 
-  # center theme with default width
-  centerTheme = false
-
-  # set a custom favicon (default is a `themeColor` square)
-  # favicon = "favicon.ico"
-
-  # set post to show the last updated
-  # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
-  showLastUpdated = false
-  # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
-  # updatedDatePrefix = "Updated"
-
-  # set all headings to their default size (depending on browser settings)
-  # it's set to `true` by default
-  # oneHeadingSize = false
-
-[params.twitter]
-  # set Twitter handles for Twitter cards
-  # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
-  # do not include @
-  creator = ""
-  site = ""
+# Show full page content in RSS feed items
+#(default is Description or Summary metadata in the front matter)
+# rssFullText = true
 
 [languages]
-  [languages.en]
-    languageName = "English"
-    title = "Brian Chen"
-    subtitle = "Student & Software Engineer"
-    owner = "Brian Chen"
-    keywords = "© Brian Chen 2020"
-    copyright = ""
-    menuMore = "Show more"
-    readMore = "Read more"
-    readOtherPosts = "Read other posts"
-    missingContentMessage = "Page not found..."
-    missingBackButtonLabel = "Back to home page"
+[languages.en]
+title = "Brian Chen"
+subtitle = "Student & Developer"
+keywords = "Brian Chen"
+copyright = "© Brian Chen 2020"
+menuMore = "Show more"
+writtenBy = "Written by"
+readMore = "Read more"
+readOtherPosts = "Read other posts"
+newerPosts = "Newer posts"
+olderPosts = "Older posts"
+minuteReadingTime = "min read"
+dateFormatSingle = "2006-01-02"
+dateFormatList = "2006-01-02"
+# leave empty to disable, enter display text to enable
+# lastModDisplay = ""
 
-    [languages.en.params.logo]
-      logoText = "Terminal"
-      logoHomeLink = "/"
+[languages.en.params.logo]
+logoText = "Brian Chen"
+logoHomeLink = "/"
+# or
+#
+# path = "/img/your-example-logo.svg"
+# alt = "Your example logo alt text"
 
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about"
-      [[languages.en.menu.main]]
-        identifier = "showcase"
-        name = "Showcase"
-        url = "/showcase"
+[languages.en.menu]
+[[languages.en.menu.main]]
+identifier = "about"
+name = "About"
+url = "/about"
+[[languages.en.menu.main]]
+identifier = "projects"
+name = "Projects"
+url = "/projects"
+[[languages.en.menu.main]]
+identifier = "contact"
+name = "Contact"
+url = "/contact"
+
+# enable inline html
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+
+
+
+
+
+
+
