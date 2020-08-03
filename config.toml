@@ -1,7 +1,7 @@
 baseurl = "//chenbrian.ca"
 languageCode = "en-us"
 theme = "hello-friend"
-pgginate = 5
+paginate = 10
 
 [params]
 # dir name of your blog content (default is `content/posts`).
@@ -12,7 +12,7 @@ contentTypeName = "posts"
 defaultTheme = "light"
 
 # if you set this to 0, only submenu trigger will be visible
-showMenuItems = 5
+showMenuItems = 3
 
 # Show reading time in minutes for posts
 showReadingTime = true
@@ -41,7 +41,7 @@ minuteReadingTime = "min read"
 dateFormatSingle = "2006-01-02"
 dateFormatList = "2006-01-02"
 # leave empty to disable, enter display text to enable
-# lastModDisplay = ""
+lastModDisplay = "last modified"
 
 [languages.en.params.logo]
 logoText = "Brian Chen"
@@ -68,9 +68,9 @@ url = "/contact"
 # enable inline html
 
 [markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
 
 
 

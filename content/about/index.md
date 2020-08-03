@@ -19,15 +19,13 @@ A: They'll tell you.
 I'm currently on Manjaro!
 
 ```
-Q: How can you tell if programmer uses Vim?
+Q: How can you tell if a programmer uses Vim?
 A: You guessed it -- they'll tell you.
 ```
 Excuse me, I use nvim.
 
 
 ###  Connect with me:
-
-
 
 <a target = "_blank" style="text-decoration: none; vertical-align: middle;" href="https://instagram.com/brianschicken">{{% fontawesome carrot%}} --- Check out cooking instagram</a>
 
@@ -36,5 +34,17 @@ Excuse me, I use nvim.
 <a target = "_blank" style="text-decoration: none; vertical-align: middle;" href="https://linkedin.com/in/brianchen28914">{{% fontawesome linkedin %}} --- Connect with me on LinkedIn</a>
 
 <a target = "_blank" style="text-decoration: none; vertical-align: middle;" href="mailto:brianchen.chen@mail.utoronto.ca">{{% fontawesome envelope %}} --- Email me at brianchen.chen@mail.utoronto.ca</a>
+
+
+
+#### My resume:
+
+
+<object data="brianChenResume.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="brianChenResume.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="brianChenResume.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
 
 

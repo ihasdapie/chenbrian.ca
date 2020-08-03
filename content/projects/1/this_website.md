@@ -2,6 +2,9 @@
 title: "chenbrian.ca"
 date: 2020-07-31T15:39:28-07:00
 draft: false
+cover: "../project_1_screenshot.png" 
+useRelativeCover: true
+hideReadMore: true
 ---
 My hope is that this website can grow into a place to document my work for myself and make publicly available solutions that I come across.
 
