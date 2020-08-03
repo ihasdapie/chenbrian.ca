@@ -27,9 +27,4 @@ git push
 
 # let's update the main repo too?
 
-cd ..
-git add --a
-git commit
-git push
-
 
