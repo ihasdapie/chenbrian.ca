@@ -6,11 +6,10 @@ hideReadMore: true
 
 ---
 You made it! The first post on my blog. 
-Sorry to get your hopes up, but there's not much to see here.
+Sorry to get your hopes up, but there's not much to see here. It's a work in progress!
 
 
 [Maybe get to know me?](https://chenbrian.ca/about)
-
 
 
 
