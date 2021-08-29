@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Chenbrian</title>
+    <link>//chenbrian.ca/posts/</link>
+    <description>Recent content in Posts on Chenbrian</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 — Brian Chen — All rights reserved.</copyright>
+    <lastBuildDate>Sun, 29 Aug 2021 02:33:32 -0700</lastBuildDate><atom:link href="//chenbrian.ca/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2021 08 29 First_post</title>
+      <link>//chenbrian.ca/posts/2021/08/2021-08-29-first_post/</link>
+      <pubDate>Sun, 29 Aug 2021 02:33:32 -0700</pubDate>
+      
+      <guid>//chenbrian.ca/posts/2021/08/2021-08-29-first_post/</guid>
+      <description>Wow, here&amp;rsquo;s a post! But alas, there&amp;rsquo;s no content. What a shame</description>
+    </item>
+    
+  </channel>
+</rss>
