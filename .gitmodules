@@ -1,0 +1,6 @@
+[submodule "themes/bettermotherfuckingwebsite"]
+	path = themes/bettermotherfuckingwebsite
+	url = https://github.com/Xzya/simple-hugo-theme
+[submodule "themes/bettermotherfuckinghugowebsite"]
+	path = themes/bettermotherfuckinghugowebsite
+	url = https://github.com/ihasdapie/bettermotherfuckinghugowebsite
