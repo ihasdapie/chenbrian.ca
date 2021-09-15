@@ -33,7 +33,7 @@ Excuse me, I use nvim.
 
 [Connect with me on LinkedIn](https://linkedin.com/in/brianchen28914)
 
-Email at brian_chen.chen (at) mail.utoronto.ca
+Email at brianchen.chen (at) mail.utoronto.ca
 
 
 
