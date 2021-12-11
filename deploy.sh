@@ -1,6 +1,14 @@
 #!/bin/sh
 
 # If a command fails then the deploy stops
+
+msg="rebuilding site $(date)"
+
+git add --a
+git commit -m  "$msg"
+git push
+
+
 set -e
 
 printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
@@ -13,7 +21,6 @@ cd public
 
 git add .
 
-msg="rebuilding site $(date)"
 if [ -n "$*" ]; then
 	msg="$*"
 fi
