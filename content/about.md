@@ -4,7 +4,7 @@ date: 2020-07-31T15:39:08-07:00
 draft: false
 ---
 
-You can find my resume [here](../files/resume.pdf)
+You can find my resume [here](../files/2021/resume.pdf)
 
 
 // page under construction //

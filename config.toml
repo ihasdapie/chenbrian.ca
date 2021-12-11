@@ -10,16 +10,16 @@ paginate = 3
 paginatePath = "page"
 
 # Google analytics
-# googleAnalytics = ""
+googleAnalytics = "G-B0ZFV4LTG2"
 
 # Copyright
-copyright = "© 2020 — Brian Chen — All rights reserved."
+copyright = "© 2021 — Brian Chen — All rights reserved."
 
 # Highlighting
 pygmentsCodefences = true
 pygmentsCodeFencesGuessSyntax = true
 pygmentsoptions = "linenos=table"
-pygmentsStyle = "vs"
+pygmentsStyle = "monokai"
 
 # Taxonomies
 [taxonomies]

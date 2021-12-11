@@ -4,7 +4,7 @@ title: Hi, I'm Brian
 
 ####  And I'm a student, software developer, and pokemon go enthusiast
 
-![Let's put a face to the name](profile-picture.jpg)
+![Let's put a face to the name](files/2021/profile-picture.jpg)
 
 I'm a student at the University of Toronto Engineering Science program passionate about **identifying  problems** in the world around me and **creating solutions** for them. 
 When I'm not cramming for school, I enjoy cooking and playing badminton.
