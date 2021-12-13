@@ -223,6 +223,7 @@ $$Pr = \frac{v}{\alpha} = \frac{\mu c_p}{k}$$
 
 
 3. Nusselt's Number \\(Nu\\)
+
 The dimensionless heat transfer coefficient which is the ratio of the *convective* heat transfer rate to the *conductive* heat transfer rate.
 
 
@@ -257,7 +258,7 @@ $$Nu_x = \frac{hL}{k} = \frac{0.0296Re_x^{0.8}Pr^{1/3}}{[1-(\xi/x)^{910}]^{1/9}}
 What is important to note here is that these equations are valid for an isothermal flat plate with an unheated starting section of length \\(\xi=0\\) as well. The equations would be the same as the two above except the denominator is 1.
 The previous equations (e.g. \\(c=0.664\\)) are valid for a flat plate heated at the leading edge.
 
-#### General Notes:
+#### Other:
 
 - No-slip condition applies at walls, so right by the wall heat transfer is conductive. \\(\dot{q} = \dot{q_{cond}}\\)
 
@@ -327,7 +328,7 @@ Note that we know that for an opaque surface (\\(\tau=0\\)), \\(\varepsilon + \r
 
 
 #### Other
-- Radiation heat transfer coefficient \\(h_{rad} \\) provides radiative heat transfer as \\(\dot{q} = h_{rad} T_1-T_2 \\)
+- Radiation heat transfer coefficient \\(h_{rad} \\) provides radiative heat transfer as \\(\dot{q} = h_{rad}(T_1-T_2)\\)
 
 
 
