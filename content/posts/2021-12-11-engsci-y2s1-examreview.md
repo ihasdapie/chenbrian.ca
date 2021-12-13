@@ -1,7 +1,7 @@
 ---
 title: "Engsci Y2S1 Exam Review"
 date: 2021-12-11T22:16:12-05:00
-draft: true
+draft: false
 katex: true
 ---
 
