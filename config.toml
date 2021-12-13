@@ -6,7 +6,7 @@ title = 'Chenbrian'
 theme = "bettermotherfuckinghugowebsite"
 
 # Pagination
-paginate = 3
+paginate = 25
 paginatePath = "page"
 
 # Google analytics
@@ -52,3 +52,12 @@ pygmentsStyle = "monokai"
 [params]
   # Date format (default: Jan 2, 2006)
   # datefmt  = "Jan 2, 2006"
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 5
+    ordered = false
+
+
+
