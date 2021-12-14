@@ -8,7 +8,7 @@ back_to_top: true
 
 // Page under construction // 
 
-- [GrocerCheck](https://grocercheck.ca/): [`Github`](https://github.com/GrocerCheck/GrocerCheck) A website to help people reduce contact at grocery stores and essential services. Got some press coverage too!
+- [GrocerCheck](https://grocercheck.ca/): [`Github`](https://github.com/GrocerCheck/GrocerCheck), [Pitch Deck]({{< ref "#grocercheck-pitch-deck" >}})  A website to help people reduce contact at grocery stores and essential services.  Got some press coverage too!
      - [CBC Piece](https://www.cbc.ca/news/canada/british-columbia/bc-youth-entrepreneurs-covid19-1.5784637)
      - [CBC Piece, but in French](https://ici.radio-canada.ca/nouvelle/1746337/emploi-pandemie-entrepreneuriat-bakd-grocercheck)
      - CBC TV piece can be found [below]({{<ref "#grocercheck-cbc-interview" >}})
@@ -31,9 +31,13 @@ back_to_top: true
 
 ## Demos:
 
-# GrocerCheck CBC Interview
-  {{< video src="cbc_piece.webm" >}}
+#### GrocerCheck CBC Interview
+{{< video src="cbc_piece.webm" >}}
 The frame rate may be a bit slow because it was a screen recording of TV footage.
+
+#### GrocerCheck Pitch Deck
+{{< pdf src="grocercheck_pitch.pdf" >}}
+
 
 
 #### aUToTest (aUToronto)
