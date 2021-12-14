@@ -17,6 +17,7 @@ katex: true
 - [gws](https://chenbrian.ca/posts/2021/12/go-web-server/): A simple web server implemented in 111 lines of `go` used for serving my personal website. [`Github`](https://github.com/ihasdapie/gws)
 - [dotfiles](https://github.com/ihasdapie/dotfiles): Config files I spend too much time on.
 - [LivePopularTimes](https://github.com/GrocerCheck/LivePopularTimes) GrocerCheck backend data collection library
+- [bettermotherfuckinghugowebsite](https://github.com/ihasdapie/bettermotherfuckinghugowebsite/) A minimal [hugo](https://gohugo.io) template inspired by [http://bettermotherfuckingwebsite.com/](http://bettermotherfuckingwebsite.com/) -- now with modern conveniences.
 - BC Parks Foundation: 'discoverparks' platform currently in public alpha.
 - And more!
 
