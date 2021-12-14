@@ -1,6 +1,6 @@
 baseURL = '//chenbrian.ca'
 languageCode = 'en-us'
-title = 'Chenbrian'
+title = 'chenbrian'
 
 # Theme to use
 theme = "bettermotherfuckinghugowebsite"
@@ -47,17 +47,17 @@ pygmentsStyle = "monokai"
 
 # Links format
 [permalinks]
-  posts = "/posts/:year/:month/:title/"
+  posts = "/posts/:year/:title/"
 
 [params]
   # Date format (default: Jan 2, 2006)
   # datefmt  = "Jan 2, 2006"
 
 [markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
   [markup.tableOfContents]
     startLevel = 2
-    endLevel = 5
+    endLevel = 3
     ordered = false
-
-
-

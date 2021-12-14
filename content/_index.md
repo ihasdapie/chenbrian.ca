@@ -1,34 +1,26 @@
 ---
 title: Hi, I'm Brian
+table: true
 ---
 
 ####  And I'm a student, software developer, and pokemon go enthusiast
 
-![Let's put a face to the name](files/2021/profile-picture.jpg)
+
+![Let's put a face to the name](profile-picture.jpg)
+... and let's put a face to the name as well
 
 I'm a student at the University of Toronto Engineering Science program passionate about **identifying  problems** in the world around me and **creating solutions** for them. 
 When I'm not cramming for school, I enjoy cooking and playing badminton.
-
-
 
 While you're here, why don't you check out my [about me]({{< ref "/about">}}) page?
 Or, take a look at my [blog]({{<ref "/posts">}})?
 
 
+### Quick links
 
-
-```
-Q: How can you tell if someone uses Linux?
-A: They'll tell you.
-```
-I'm currently on Manjaro!
-
-```
-Q: How can you tell if a programmer uses Vim?
-A: You guessed it -- they'll tell you.
-```
-Excuse me, I use nvim.
-
+- [Course Notes]({{< ref "posts/notes_meta" >}})
+- [Projects]({{< ref "posts/projects" >}})
+- [Resume](resume.pdf)
 
 ###  Connect with me:
 
