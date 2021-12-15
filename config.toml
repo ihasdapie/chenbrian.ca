@@ -19,7 +19,12 @@ copyright = "© 2021 — Brian Chen — All rights reserved."
 pygmentsCodefences = true
 pygmentsCodeFencesGuessSyntax = true
 pygmentsoptions = "linenos=table"
-pygmentsStyle = "monokai"
+pygmentsStyle = "doom-one"
+
+
+
+
+
 
 # Taxonomies
 [taxonomies]

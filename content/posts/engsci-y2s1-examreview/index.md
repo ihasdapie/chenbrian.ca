@@ -339,7 +339,232 @@ Note that we know that for an opaque surface (\\(\tau=0\\)), \\(\varepsilon + \r
 
 
 
-## ECE253
+## ECE253: Digital and Computer Systems
+Note: [Hugo Chroma](https://gohugo.io/content-management/syntax-highlighting/) for armasm seems to be a little different from ARMv7 used. So the following code blocks will be highlighted with nasm syntax. Comments will be denoted with ';' but should be '//' in ARMv7.
+
+### Logic
+
+- Karnaugh Maps
+- Finite State Machines
+1. Draw state table
+
+
+
+
+
+#### Binary numbers
+1. Two's complement: Flip bits and add 1. Leading 1 denotes negative number, leading 0 denotes positive number.
+
+
+### Circuits
+
+
+#####  D Flip-Flop
+
+![](./dflipflop.png)
+![](./gateddlatch.png)
+
+Commonly used to storage a single bit of data. Can be chained together to store multiple bits of data, commonly as a shift register.
+
+
+
+
+% Difference between negedge, posedge, active high, active low
+
+
+### Verilog
+
+![Verilog Operators](./verilog_operators.png)
+
+[Source: Operators](https://class.ece.uw.edu/cadta/verilog/operators.html)
+
+1. Blocking vs Non-blocking
+
+`=` is non-blocking, `<=` is blocking
+For non-blocking `=` we treat the logic as combinatorial, and for blocking `<=` we treat the logic as sequential.
+So all the `=` steps can take one cycle (completed in parallel) while the `<=` steps can take multiple cycles (completed in sequence).
+
+With sequential logic, "step through" the behaviour of the circuit first and then it should be pretty clear how to build it.
+
+
+
+
+
+### ARM Assembly
+For [De1-SOC](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&No=836)
+
+
+#### Misc:
+- Registers are 32 bit/4 bytes
+- Each instruction is 32 bits/4bytes long
+
+
+#### Instructions
+
+Note that in the following I use `O\d` to denote an [O]perand which can be a register, a constant, or whatever else also works.
+
+- `MOV`
+- `LDR TARGET, [SOURCE]`
+- `STR DEST, [TARGET]`
+- `CMP O1, O2`: Compare `O1` and `O2` by computing `O2 - O1` and then updating NZCV flags in the CPSR
+- `ADD O1, O2, O3`: Add `O2` to `O3` and store the result in `O1`
+- `SUB O1, O2, O3`: Subtracts `O3` from `O2` and store the result in `O1`
+- `ASR` (Arithmetic Shift Right): Shift to the right, shifted in bits depend on leading sign bit 
+- `LSL` (Logical Shift Left): Shift to the left, shifted in bits are 0
+- `LSR` (Logical Shift Right): Shift to the right, shifted in bits are 0
+
+Note: `MOV` directly puts it into the destination register, `LDR` loads the value from the memory location into the destination register, `STR` stores the value from the source register into the memory location.
+When `LDR` is used with a literal it first loads the literal into memory and then loads the value from the memory location into the destination register.
+
+
+#### Interrupts
+
+
+General Interrupt procedure:
+
+- Enabling interrupts
+
+1. Provide exception vector table
+2. Init banked Stack Pointer (SP) for IRQ mode
+3. Set SP for Supervisor (SVC) and IRQ mode
+4. Configure GIC
+5. Enable IRQ generation in I/O devices
+6. Enable processor to see interrupts from GIC
+7. Provide `IRQ_HANDLER` which queries GIC to determine intterupt source
+
+For example, `SERVICE_IRQ`
+
+
+```nasm
+SERVICE_IRQ: 
+  PUSH {R0-R5, LR} ; save registers
+  LDR R4, =MPCORE_GIC CPUIF // memory offset to get to GIC
+  LDR R5, [R4, #ICCIAR] // read interrupt ID
+  // then, compare contents of R5 with number literals to determine interrupt source
+  // then call appropriate handler
+```
+
+
+
+8. Handle IRQ (subroutine e.g. `KEY_ISR`)
+9. Clear IRQ on source device
+
+
+
+
+###### Using `KEYS` 
+
+- Enabling interrupts
+
+![](./keys_loc.png)
+Apply a intmask onto the relevant memory location.
+E.g. to enables `KEY3` and `KEY0`, we would:
+
+```s
+LDR R1, =0xFF20058 // int mask addr
+MOV R2, #0b1001 // we want to enable KEY3 and KEY0
+STR R2, [R1] // write to int mask
+```
+
+Then, we can query the `edge capture` bits which stores which keys are pressed.
+
+##### Stacks
+
+- must first initialize stack pointer
+- Pushing to the stack pointer puts the value on top of the stack and decreases the stack pointer
+
+For example, taking the initial stack pointer value of `0x2000` we applying `PUSH {R0, R1, R2, R3, LR}` we get:
+|memory|value|
+|------|-----|
+|0x2000|R0|
+|0x1FFC|R1|
+|0x1FF8|R2|
+|0x1FF4|R3|
+|0x1FF0|LR|
+
+Noting that the stack grows downwards and the stack pointer is decremented by the size of the pushed value (4 bytes).
+
+
+
+##### Using `LR` 
+
+At instruction `i`, `LR` stores the address of the next instruction at `i+1`. 
+So, assuming that the first instruction of the following code chunk is stored at `0x0`,
+
+```
+LDR R0, =0x2000 ; 0x00000000, LR: 0x00000004
+MOV R2, #4    ; 0x00000004, LR: 0x00000008
+BL ROUTINE ; 0x00000008, LR: 0x0000000C
+MOV R2, #5 ; 0x0000000C, LR: 0x00000010
+
+ROUTINE:
+  PUSH {LR} ; 0x00000010, LR=0x0000000C
+  ; .. do something
+```
+
+
+
+###### Subroutines
+
+Convention:
+- Parameters are passed via `R0-R3`, which subroutines are free to modify and return with
+- Subroutine should not modify the remaining registers; if so they should `PUSH/POP` to the stack before and after use
+- Exit subroutine with `MOV PC, LR`
+- `BL` is a branch and link instruction, which sets `LR` to the next instruction and sets `PC` to the label address
+
+
+
+
+##### Using LEDR
+
+To display using LEDR we just need to write the value we want to the appropriate memory location.
+Here, assuming that what we want to display is stored in `R1`:
+```
+LDR R2, =0xFF2000000 // LEDR addr
+STR [R1], R2 // write to LEDR
+```
+
+
+
+- Setting up stack pointer
+
+
+- `CPSR`: Current Program Status Register
+
+|31|30|29|28| .. |7|6|5| 4 .. 0|
+|-|-|-|-|-|-|-|-|-|-|
+|N|Z|C|V| .. |[I]nterrupt |F|T|  mode|
+
+
+There are a few modes and each one of them have a different stack pointer
+
+```
+FIQ: 0b10001
+IRQ: 0b10010
+SVC: 0b10011
+Monitor: 0b10110
+Abort: 0b10111
+Undefined: 0b11011
+```
+
+We only care about the IRQ and Supervisor modes. These can be set by loading the appropriate value into the CPSR.
+
+```s
+MOV R0, #0b10010 // irq mode
+MSR CPSR, R0 // change to irq mode
+LDR SP ,= 0x10000 // set stack pointer
+MOV R0, #0b10011 // supervisor mode
+MSR CPSR, R0 // change to supervisor mode
+LDR SP ,= 0x20000 // set stack pointer
+```
+Note that the two stack pointers on line 3 and 6 are different.
+
+In order to enable interrupts the `I`, must be set to `0`. `1` disables it, which is the default.
+
+
+
+#### IO
+
 
 
 
