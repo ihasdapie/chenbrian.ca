@@ -460,8 +460,8 @@ ADDLT R0, R0, #1 ; adds 1 to R0 if R0 < 3
 - Must first initialize stack pointer, `LDR SP, 0x20000`
 - Pushing to the stack pointer puts the value on top of the stack and decreases the stack pointer
 
-- `PUSH {Rs}`: Pushs registers onto stack. Registers must be in ascending order and the largest one gets pushed in first
-- `POP {Rs}`: Pops data off the stack. Does not care what register the stack data comes from; i.e. `PUSH R5 POP R6` would put R6 into R5. Can be used in recursion to put `LR` into `PC`
+- `PUSH {Rs}`: Pushs registers onto stack. Registers must be in ascending order and the largest one gets pushed in first. Has effect of decreasing the stack pointer.
+- `POP {Rs}`: Pops data off the stack. Does not care what register the stack data comes from; i.e. `PUSH {R5} POP {R6}` would put R6 into R5. Can be used in recursion to put `LR` into `PC`. Has effect of increasing the stack pointer.
 
 For example, taking the initial stack pointer value of `0x2000` we applying `PUSH {R0, R3, LR}` we get:
 |memory|value|
