@@ -47,7 +47,7 @@ Conduction resistances stacked perpendicular to the direction of heat flow are r
 
 For example, for two planes of glass,
 
-$$R_T = R_{conv, 1} + R_{glass,1} + R_{air} + R_{glass, 2} + R_{conv, 2}$$
+$$R_T = R_{conv, 1} + R_{glass,1} +  \\\\ R_{air} + R_{glass, 2} + R_{conv, 2}$$
 
 Note the convection on either side. 
 
@@ -383,15 +383,10 @@ Commonly used to storage a single bit of data. Can be chained together to store 
 
 - Blocking vs Non-blocking
 
-`=` is non-blocking, `<=` is blocking
-For non-blocking `=` we treat the logic as combinatorial, and for blocking `<=` we treat the logic as sequential.
-So all the `=` steps can take one cycle (completed in parallel) while the `<=` steps can take multiple cycles (completed in sequence).
-
-With sequential logic, "step through" the behaviour of the circuit first and then it should be pretty clear how to build it.
+`=` is non-blocking, `<=` is blocking. For non-blocking `=` we treat the logic as combinatorial, and for blocking `<=` we treat the logic as sequential. So all the `=` steps can take one cycle (completed in parallel) while the `<=` steps can take multiple cycles (completed in sequence). With sequential logic, "step through" the behaviour of the circuit first and then it should be pretty clear how to build it.
 
 - Latches: checks the value as long as clock is high
 - Flip flops: check only on clock edge
-
 - Active high: reset when 1
 - Active low: reset when 0
 - Synchronous: reset on the next clock edge that the flip flop is supposed to resond to
@@ -438,17 +433,37 @@ Note that in the following I use `O\d` to denote an [O]perand which can be a reg
 - `ASR` (Arithmetic Shift Right): Shift to the right, shifted in bits depend on leading sign bit 
 - `LSL` (Logical Shift Left): Shift to the left, shifted in bits are 0
 - `LSR` (Logical Shift Right): Shift to the right, shifted in bits are 0
+- `MUL, O1, O2, O1`: Multiply `O1` by `O2` and store the result in `O1`
+- `ORR, AND`: Bitwise OR, AND
+
 
 Note: `MOV` directly puts it into the destination register, `LDR` loads the value from the memory location into the destination register, `STR` stores the value from the source register into the memory location.
 When `LDR` is used with a literal it first loads the literal into memory and then loads the value from the memory location into the destination register.
 
 - Conditional Execution
 Do CMP, then apply `INSTR{COND}` or do a branch
-Conditions: `EQ, NE, GT, LT, GE, LE`, -E denotes "or equal to"
+Conditions: `EQ, NE, GT, LT, GE, LE, S`, -E denotes "or equal to". `S` for add, subs updates N, Z, C, V flags
 ```nasm
 CMP R0, #3
 ADDLT R0, R0, #1 ; adds 1 to R0 if R0 < 3
 ```
+
+#### Using `PC`, `LR` 
+
+At instruction `i`, `PC` stores the address of the next instruction at `i+1`. The current instruction can be obtained via a negative offset `,#-4`
+`LR` by convention stores what we want to return to after a subroutine.
+
+So, assuming that the first instruction of the following code chunk is stored at `0x0`,
+
+```nasm
+LDR R0, =0x2000 ; 0x00000000, PC: 0x00000004
+MOV R2, #4    ; 0x00000004, PC: 0x00000008
+BL ROUTINE ; 0x00000008, PC: 0x0000000C, LR 0x0000000C
+MOV R2, #5 ; 0x0000000C, PC: 0x00000010
+ROUTINE:
+  PUSH {LR} ; 0x00000010, LR=0x0000000C
+```
+
 
 #### Subroutines
 - Parameters are passed via `R0-R3`, which subroutines are free to modify and return with
@@ -459,6 +474,7 @@ ADDLT R0, R0, #1 ; adds 1 to R0 if R0 < 3
 #### Stacks
 - Must first initialize stack pointer, `LDR SP, 0x20000`
 - Pushing to the stack pointer puts the value on top of the stack and decreases the stack pointer
+- For many subroutines needing more than the default registers we want to push and pop the registers before and after we're done.
 
 - `PUSH {Rs}`: Pushs registers onto stack. Registers must be in ascending order and the largest one gets pushed in first. Has effect of decreasing the stack pointer.
 - `POP {Rs}`: Pops data off the stack. Does not care what register the stack data comes from; i.e. `PUSH {R5} POP {R6}` would put R6 into R5. Can be used in recursion to put `LR` into `PC`. Has effect of increasing the stack pointer.
@@ -470,86 +486,150 @@ For example, taking the initial stack pointer value of `0x2000` we applying `PUS
 |0x1FFC|R3|
 |0x1FF8|R0|
 
-#### Interrupts
-General Interrupt procedure:
 
-- Enabling interrupts
-1. Provide exception vector table
-2. Init banked Stack Pointer (SP) for IRQ mode
-3. Set SP for Supervisor (SVC) and IRQ mode
-4. Configure GIC
-5. Enable IRQ generation in I/O devices
-6. Enable processor to see interrupts from GIC
-7. Provide `IRQ_HANDLER` which queries GIC to determine intterupt source
-
-For example, `SERVICE_IRQ`
-
+#### Recursion
+The following are assuming SP, etc has been init'd
 
 ```nasm
-SERVICE_IRQ: 
+FINDSUM: ;; calc 1+2+...N
+  PUSH {R0, LR}
+  CMP R0, #2
+  BLT RETURN
+  SUB R0, R0, #1;
+  BL FINDSUM
+  ADD R1, R1, R0
+  RETURN:
+  POP {R0, PC} ;; puts LR into PC
+```
+
+```nasm
+FIB: ;; returns in R1
+  PUSH {R0, LR}
+  MOV R2, R0
+  CMP R2, #2 
+  BLT RET
+  SUB R0, R0, #1
+  BL FIB
+  ADD R1, R2
+  SUB R0, R0, #1
+  BL FIB
+  ADD R1, R2
+  RET: POP {R0, PC}
+```
+  
+
+
+#### Interrupts
+ARM changes modes when an exception occurs.
+1. Processor reset (SVC)
+2. Unimplemented instruction (Undefined)
+3. Error (abort)
+4. Hardware interrupt (IRQ)
+
+- CPSR is svaed to SPSR of new mode
+- CPSR is changed to enter new mode
+- PC is saved into banked LR of new mode
+- Loads into PC a unique addr from the exception vector table associated with the new mode
+
+General Interrupt procedure:
+1. Provide exception vector table
+2. Init SP for IRQ and SVC mode
+3. Configure GIC (Code provided)
+4. Enable IRQ generation in I/O devices
+5. Enable CPU interrupts (I=0 in CPSR)
+6. Provide `IRQ_HANDLER` which queries GIC to determine intterupt source
+7. Provide `ISR`s 
+8. Clear interrupt in GIC
+
+Steps 1-5:
+```nasm
+	MOV R0, #0b11010010
+	MSR CPSR, R0 ;; now in irq mode
+	LDR SP, =0x20000 ;; irq sp
+	MOV R0, #0b11010011
+	MSR CPSR, R0 ;; svc mode
+	LDR SP, =0x3FFFFFFC ;; another stack ptr
+	;; Add subroutines to config devices, e.x. CONFIG_KEYS below
+  BL     CONFIG_KEYS
+	BL			CONFIG_GIC	;; configure the ARM generic interrupt controller
+	BL			CONFIG_TIMER	
+	MOV R0, #0b01010011
+	MSR CPSR, R0
+
+CONFIG_KEYS:
+  LDR R0, =KEY_BASE;
+  MOV		R1, #0b1111 // mask enable bits
+  STR		R1, [R0, #8]		// enable interrupts
+  MOV PC, LR
+```
+
+Steps 6, 8:
+
+```nasm
+IRQ_HANDLER: 
   PUSH {R0-R5, LR} ; save registers
-  LDR R4, =MPCORE_GIC CPUIF // memory offset to get to GIC
-  LDR R5, [R4, #ICCIAR] // read interrupt ID
-  // then, compare contents of R5 with number literals to determine interrupt source
-  // then call appropriate handler
+  LDR R4, =MPCORE_GIC CPUIF ;; memory offset to get to GIC
+  LDR R5, [R4, #ICCIAR] ;; read interrupt ID
+  ;; then, CMP R5 to call appropriate handler
+  e.x. 
+  CMP R5, #TIMER_IRQ
+  BNE EXIT_IRQ
+  BL KEY_ISR
+
+EXIT_IRQ: ;; clean up
+  STR R5, [R4, #0x10]
+  POP {R0-R5, LR} 
+  SUBS PC, LR, #4 ;; return to previous instruction
+```
+
+Step 7:
+```nasm
+KEY_ISR:
+  LDR R0, =KEY_ADDR ;; base key addr
+  LDR R1, [R0, #0xC] ;; edge capture register
+  STR R1, [R0, #0xC] ;; clear interrupt
+  LDR R0, =KEY_PRESSED ;; global variable to return result
+  MOV R3, #0b0001 ;; check key0
+  ANDS R3, R1 
+  BEQ CHECK_KEY1 ;; if AND produces 0, skip to next instruction
+  ;; and so forth \ldots 
+  MOV PC, LR
+```
+
+```nasm
+TIMER_ISR: ;; ISR to increment ones, tens in memory
+  PUSH {R6-R10, LR}
+  LDR R6, =COUNT_ONES
+  LDR R7, [R6]
+  LDR R8, =COUNT_TENS
+  LDR R3, [R8]
+  add r7, #1 ;; increment ones digit value to display
+  cmp r7, #10 ;; if 10, need to update tens digit and roll over to zero
+  BNE RET_ISR
+  MOV r7, #0
+  add r3, #1 ;; increment tens digit
+  cmp r3, #10 ;; if 10 (value is 100), need to roll over to zero
+  BNE RET_ISR
+  mov r3, #0
+RET_ISR:
+	STR R3, [R8]
+	STR r7, [R6]
+	mov r0, r3
+	BL hex_display
+	LSL R3, r1, #8
+	mov r0, r7
+	BL hex_display
+	ORR R3, r3, r1
+	LDR R8, =0xFF200020
+	STR R3, [r8]
+	LDR R9, =0xFFFEC600
+	MOV R10, #1
+	STR R10, [R9, #0xC]
+	POP {R6-R10, LR}
+	MOV PC, LR
 ```
 
 
-
-8. Handle IRQ (subroutine e.g. `KEY_ISR`)
-9. Clear IRQ on source device
-
-
-#### Timers
-
-###### Using `KEYS` 
-
-- Enabling interrupts
-
-![](./keys_loc.png)
-Apply a intmask onto the relevant memory location.
-E.g. to enables `KEY3` and `KEY0`, we would:
-
-```s
-LDR R1, =0xFF20058 // int mask addr
-MOV R2, #0b1001 // we want to enable KEY3 and KEY0
-STR R2, [R1] // write to int mask
-```
-
-Then, we can query the `edge capture` bits which stores which keys are pressed.
-
-
-
-##### Using `LR` 
-
-At instruction `i`, `LR` stores the address of the next instruction at `i+1`. 
-So, assuming that the first instruction of the following code chunk is stored at `0x0`,
-
-```s
-LDR R0, =0x2000 ; 0x00000000, LR: 0x00000004
-MOV R2, #4    ; 0x00000004, LR: 0x00000008
-BL ROUTINE ; 0x00000008, LR: 0x0000000C
-MOV R2, #5 ; 0x0000000C, LR: 0x00000010
-
-ROUTINE:
-  PUSH {LR} ; 0x00000010, LR=0x0000000C
-  ; .. do something
-```
-
-
-
-
-
-
-
-##### Using LEDR
-
-To display using LEDR we just need to write the value we want to the appropriate memory location.
-Here, assuming that what we want to display is stored in `R1`:
-```
-LDR R2, =0xFF2000000 // LEDR addr
-STR [R1], R2 // write to LEDR
-```
 
 
 
@@ -585,27 +665,72 @@ Undefined: 0b11011
 
 We only care about the IRQ and Supervisor modes. These can be set by loading the appropriate value into the CPSR.
 
-```s
-MOV R0, #0b10010 // irq mode
-MSR CPSR, R0 // change to irq mode
-LDR SP ,= 0x10000 // set stack pointer
-MOV R0, #0b10011 // supervisor mode
-MSR CPSR, R0 // change to supervisor mode
-LDR SP ,= 0x20000 // set stack pointer
+```nasm
+MOV R0, #0b10010 ;; irq mode
+MSR CPSR, R0 ;; change to irq mode
+LDR SP ,= 0x10000 ;; set stack pointer
+MOV R0, #0b10011 ;; supervisor mode
+MSR CPSR, R0 ;; change to supervisor mode
+LDR SP ,= 0x20000 ;; set stack pointer
 ```
 Note that the two stack pointers on line 3 and 6 are different.
 
-In order to enable interrupts the `I`, must be set to `0`. `1` disables it, which is the default.
+In order to enable interrupts the `I` must be set to `0`. `1` disables it, which is the default.
+
 
 
 
 #### IO
 
+##### Timers
+Counts down to 0 at a known clock rate (that of the board).
+Takes a load value which is the starting counter value. Current value at an offset.
+- `A`: Autoreload
+- `F`: Interrupt status (=1 when counter 0)
+- `I`: Interrupt enable
+- `E`: Starts timer
+
+```nasm
+CONFIG_TIMER:
+  LDR R8, =TIMER_BASE
+  LDR R0, =20000000 ;; (1/200MHz*20000000)=0.1s
+  STR R0, [R8] ;; set timer counter
+  MOV R1, #0b011 ;; A = E = 1
+  STR R1, [R8, #8] ;; write to control register
+  MOV PC, LR
+DELAY: ;; hangs for known time
+  LDR R0, [R8, #0xC] ;; R8 contains status reg
+  CMP R0, #0
+  BEQ DELAY
+  STR R0, [R8, #0xC] ;; write 1 to status to reset interrupt to 0
+```
+
+
+##### Using `KEYS` 
+
+- Enabling interrupts
+
+![](./keys_loc.png)
+Apply a mask onto the relevant memory location.
+E.g. to enables `KEY3` and `KEY0`, we would:
+
+```nasm
+LDR R1, =0xFF20058 ;; int mask addr
+MOV R2, #0b1001 ;; we want to enable KEY3 and KEY0
+STR R2, [R1] ;; write mask onto enable bits
+```
+When polling just grab the items at the base address.
+When using interrupts `LDR` the `edge capture` register to find the ones that have been pressed
 
 
 
-
-
+##### Using LEDR
+To display using LEDR we just need to write the value we want to the appropriate memory location.
+Here, assuming that what we want to display is stored in `R1`:
+```
+LDR R2, =0xFF2000000 ;; LEDR addr
+STR [R1], R2 ;; write to LEDR
+```
 
 
 
