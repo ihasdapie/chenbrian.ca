@@ -7,10 +7,9 @@ back_to_top: true
 ---
 
 Exam 'cheat sheets' for EngSci 2nd year semester fall semester. 
-These were made as part of my own studying for the exams.
+These were made as part of my own studying for the exams. As 3/6 of my exams were cancelled due to the omicron covid variant, AER210, MAT292, and PHY293 are missing.
 
 I do not guarantee content correctness -- but if you find a mistake, please let me know!
-
 
 {{< toc >}}
 
