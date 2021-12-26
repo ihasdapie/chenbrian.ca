@@ -2,6 +2,7 @@
 title: "(g)o (w)eb (s)erver"
 date: 2021-12-09T20:48:45-05:00
 draft: false
+tags: ['projects']
 ---
 
 Deploying your personal website onto github pages is *so* 2013. 

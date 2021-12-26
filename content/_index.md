@@ -1,6 +1,7 @@
 ---
 title: Hi, I'm Brian
 table: true
+tags: ['about_me']
 ---
 
 ####  And I'm a student, software developer, and pokemon go enthusiast
@@ -18,6 +19,7 @@ Or, take a look at my [blog]({{<ref "/posts">}})?
 
 ### Quick links
 
+- [Browse by tags]({{< ref "tags" >}})
 - [Course Notes]({{< ref "posts/notes_meta" >}})
 - [Projects]({{< ref "posts/projects" >}})
 - [Resume](resume.pdf)

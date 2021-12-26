@@ -1,7 +1,8 @@
 ---
-title: "Hi, I'm Brian"
+title: "About me"
 date: "2021-10-20"
 draft: false
+tags: ['about_me']
 ---
 
 ### What am I up to right now?

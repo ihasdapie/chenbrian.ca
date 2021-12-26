@@ -3,6 +3,7 @@ title: "Notes Aggregator Page"
 date: 2021-12-13T19:16:20-05:00
 draft: false
 katex: true
+tags: ['notes']
 ---
 
 Links to notes/review documents for courses I'm taking or am teaching.

@@ -4,6 +4,7 @@ date: 2021-12-13T21:03:35-05:00
 draft: false
 katex: true
 back_to_top: true
+tags: ['programming', 'projects']
 ---
 
 // Page under construction // 

@@ -3,6 +3,7 @@ title: "Advent of Code 2021"
 date: 2021-12-09T21:20:53-05:00
 draft: false
 katex: true
+tags: ['programming']
 ---
 
 {{< toc >}}
@@ -13,7 +14,8 @@ Solutions are hosted [here](https://github.com/ihasdapie/aoc2021).
 If a day isn't very interesting, I won't post a writeup for it.
 
 
-## [Day 6](https://adventofcode.com/2021/day/6)
+## Day 6
+[Problem](https://adventofcode.com/2021/day/6)
 [Solution](https://github.com/ihasdapie/aoc2021/tree/main/d6)
 
 
@@ -21,7 +23,8 @@ So many lanternfish! The key to this puzzle is to represent the lanternfish as a
 
 
 
-## [Day 7](https://adventofcode.com/2021/day/7)
+## Day 7
+[Problem](https://adventofcode.com/2021/day/7)
 [Solution](https://github.com/ihasdapie/aoc2021/tree/main/d7)
 This was an interesting one. Find the problem [here](https://adventofcode.com/2021/day/7).
 
@@ -49,7 +52,8 @@ which is simply the mean of of the set, \\(\pm\frac{1}{2}\\).
 Day 7 was pretty neat.
 
 
-## [Day 8](https://adventofcode.com/2021/day/8)
+## Day 8
+[Problem](https://adventofcode.com/2021/day/8)
 [Solution](https://github.com/ihasdapie/aoc2021/tree/main/d8)
 
 
@@ -70,15 +74,16 @@ We can then use this to decode which patterns correspond to which numbers.
 
 
 
-## [Day 9](https://adventofcode.com/2021/day/9)
+## Day 9
+[Problem](https://adventofcode.com/2021/day/9)
 [Solution](https://github.com/ihasdapie/aoc2021/tree/main/d9)
 
 Just a recursive [flood fill](https://en.wikipedia.org/wiki/Flood_fill) problem
 
 
-## [Day 10](https://adventofcode.com/2021/day/10)
+## Day 10
+[Problem](https://adventofcode.com/2021/day/10)
 [Solution](https://github.com/ihasdapie/aoc2021/tree/main/d10)
-
 
 Braces matching problem. This is a fairly common problem that can be solved recursively or with stacks, so I'll just link to a stackoverflow [solution](https://stackoverflow.com/questions/16874176/parenthesis-brackets-matching-using-stack-algorithm) that uses the same stack method that I used.
 
@@ -87,49 +92,169 @@ So to create the string we can just reverse the stack, substitute closing bracke
 
 
 
+## Day 12
+[Problem](https://adventofcode.com/2021/day/12)
+[Solution](https://github.com/ihasdapie/aoc2021/tree/main/d12)
+
+Can be solved by a BFS and keeping track of the nodes we've visited.
+
+This was pretty interesting as I am used to `c`-style graphs and those [don't really exist in `rust`](https://stackoverflow.com/questions/34747464/implement-graph-like-data-structure-in-rust) because of `rust`'s stringent memory safety.
+There is a way around this using [arenas](https://github.com/nrc/r4cppp/blob/master/graphs/README.md) but I'm far too lazy to actually do it -- so `HashMap` it is!
+Anyhow this lead me down a small rabbit hole regarding how things work in `rust` which brought me to these two *excellent* articles:
+- [The Secret Life of Cows](https://deterministic.space/secret-life-of-cows.html)
+- [Working with strings in rust](https://fasterthanli.me/articles/working-with-strings-in-rust)
+
+## Day 13
+[Problem](https://adventofcode.com/2021/day/13)
+[Solution](https://github.com/ihasdapie/aoc2021/tree/main/d13)
+
+Not much of note here for day 13 except for a really cute end solution:
+
+```
+###   ##  ###  #     ##  #  # #  # #    
+#  # #  # #  # #    #  # # #  #  # #    
+#  # #    #  # #    #  # ##   #### #    
+###  #    ###  #    #### # #  #  # #    
+# #  #  # #    #    #  # # #  #  # #    
+#  #  ##  #    #### #  # #  # #  # #### 
+```
+
+
+## Day 14
+[Problem](https://adventofcode.com/2021/day/14)
+[Solution](https://github.com/ihasdapie/aoc2021/tree/main/d14)
+
+
+Look for patterns (recall, lanternfish!).
+As we only care about the most and least frequent elements in the polymer we can note that each pair after a polymerization step gives rise to two new pairs -- which can use a `HashMap` to keep track of the pairs of elements and their counts.
+So:
+
+1. We can start with a `HashMap` of the counts of each element in the polymer.
+```rust
+// initial state
+for c in 0..(sequence.len() - 1) {
+    let s = String::from_iter(sequence.chars().skip(c).take(2));
+    *state.entry(s).or_insert(0) += 1;
+}
+```
+
+2. Iterate through polymerization steps
+```rust
+for _ in 0..steps {
+  for pair in state.keys() {
+      // assume all pairs are in the rules 
+
+      // build the new state
+      let insertable = rules.get(pair).unwrap();
+      let mut new_pair = pair.chars().next().unwrap().to_string() + &insertable.to_string();
+      *update.entry(new_pair.clone()).or_insert(0) += state.get(pair).unwrap();
+      new_pair = format!("{}{}", *insertable, pair.chars().nth(1).unwrap());
+      *update.entry(new_pair).or_insert(0) += state.get(pair).unwrap();
+  }
+  // and update the state
+  state = update.clone(); 
+  update.clear();
+} 
+```
+
+3. Count up the elements
+
+
+```rust
+for (k, v) in state.iter() { 
+    *counts.entry(k.chars().nth(1).unwrap()).or_insert(0) += *v;
+}
+let max = counts.values().max().unwrap();
+let min = counts.values().min().unwrap();
+max-min
+```
+
+## Day 15
+[Problem](https://adventofcode.com/2021/day/15)
+[Solution](https://github.com/ihasdapie/aoc2021/tree/main/d15)
+
+Just use Dijkstra™!
+In order to complete part 2 speedily we will have to implement dijkstra using a priority queue, a data structure which has
+the nice property of being able to extract the minimum element in \\(\mathcal{O}(1)\\) time.
+Fortunately `rust` has this built in in the form of `std::collections::BinaryHeap` alongside an example implementation.
+
+
+```rust
+/// Dijkstra's algorithm on a grid where neighbours are the top, right, bottom and left
+/// if no path is found, return -1
+pub fn dijkstra(grid: &[Vec<i32>], start: (usize, usize), end: (usize, usize)) -> i32 {
+    let mut heap = BinaryHeap::new();
+    let mut distance = HashMap::new();
+    
+    // starting position
+    heap.push(Node{cost: 0, pos: start });
+    distance.insert(start , 0);
+
+    while let Some(Node{cost, pos}) = heap.pop() {
+        if pos == end {
+            return distance[&pos];
+        }
+
+        if cost > distance[&pos] {
+            continue;
+        }
+        for neighbour in direct_neighbours(pos.0, pos.1, grid.len(), grid[0].len()) {
+            // see if there's a lower cost going thru the neighbour node
+            let next = Node{ cost: cost + grid[neighbour.1][neighbour.0], pos: neighbour };
+            
+            distance.entry(next.pos).or_insert(i32::MAX);
+            if next.cost < distance[&next.pos] {
+                distance.insert(next.pos, next.cost);
+                heap.push(next);
+            }
+        }
+    }
+    -1 // since we're on an open grid, there should never not be a path
+}
+```
 
 
 
-## [Day 12](https://adventofcode.com/2021/day/12)
+
+## Day 16
+[Problem](https://adventofcode.com/2021/day/16)
 
 
-## [Day 13](https://adventofcode.com/2021/day/13)
+## Day 17
+[Problem](https://adventofcode.com/2021/day/17)
 
 
-## [Day 14](https://adventofcode.com/2021/day/14)
+## Day 18
+[Problem](https://adventofcode.com/2021/day/18)
 
 
-## [Day 15](https://adventofcode.com/2021/day/15)
+## Day 19
+[Problem](https://adventofcode.com/2021/day/19)
 
 
-## [Day 16](https://adventofcode.com/2021/day/16)
+## Day 20
+[Problem](https://adventofcode.com/2021/day/20)
 
 
-## [Day 17](https://adventofcode.com/2021/day/17)
+## Day 21
+[Problem](https://adventofcode.com/2021/day/21)
 
 
-## [Day 18](https://adventofcode.com/2021/day/18)
+## Day 22
+[Problem](https://adventofcode.com/2021/day/22)
 
 
-## [Day 19](https://adventofcode.com/2021/day/19)
+## Day 23
+[Problem](https://adventofcode.com/2021/day/23)
 
 
-## [Day 20](https://adventofcode.com/2021/day/20)
+
+## Day 24
+[Problem](https://adventofcode.com/2021/day/24)
 
 
-## [Day 21](https://adventofcode.com/2021/day/21)
-
-
-## [Day 22](https://adventofcode.com/2021/day/22)
-
-
-## [Day 23](https://adventofcode.com/2021/day/23)
-
-
-## [Day 24](https://adventofcode.com/2021/day/24)
-
-
-## [Day 25](https://adventofcode.com/2021/day/25)
+## Day 25
+[Problem](https://adventofcode.com/2021/day/25)
 
 
 
