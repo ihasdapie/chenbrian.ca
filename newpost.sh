@@ -1,1 +1,1 @@
-hugo new "content/posts/$(date +"%Y-%m-%d")-$1.md"
+hugo new "content/posts/$1/index.md"

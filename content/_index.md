@@ -20,8 +20,9 @@ Or, take a look at my [blog]({{<ref "/posts">}})?
 ### Quick links
 
 - [Browse by tags]({{< ref "tags" >}})
-- [Course Notes]({{< ref "posts/notes_meta" >}})
-- [Projects]({{< ref "posts/projects" >}})
+- [Notes]({{< ref "tags/notes" >}})
+- [Projects overview]({{< ref "posts/projects" >}})
+- [Projects by tag]({{< ref "tags/projects" >}})
 - [Resume](resume.pdf)
 
 ###  Connect with me:
@@ -36,5 +37,8 @@ Email at `brianchen.chen (at) mail.utoronto.ca`
 
 
 
-#### Q: Why is the site so ugly?
+#### Q: What inspired this site's design?
 Answer: [bettermotherfuckingwebsite.com](http://bettermotherfuckingwebsite.com/).
+
+
+
