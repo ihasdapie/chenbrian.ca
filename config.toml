@@ -9,6 +9,19 @@ theme = "bettermotherfuckinghugowebsite"
 paginate = 25
 paginatePath = "page"
 
+
+# enable last updated
+enableGitInfo = true
+
+
+[frontmatter]
+  date = ['date', 'publishDate', 'lastmod']
+  expiryDate = ['expiryDate']
+  lastmod = [':git', 'lastmod', 'date', 'publishDate']
+  publishDate = ['publishDate', 'date']
+
+
+
 # Google analytics
 googleAnalytics = "G-B0ZFV4LTG2"
 
@@ -19,7 +32,7 @@ copyright = "© 2021 — Brian Chen — All rights reserved."
 pygmentsCodefences = true
 pygmentsCodeFencesGuessSyntax = true
 pygmentsoptions = "linenos=table"
-pygmentsStyle = "perldoc"
+pygmentsStyle = "emacs"
 
 
 # Taxonomies
@@ -80,7 +93,7 @@ pygmentsStyle = "perldoc"
 
   [markup.tableOfContents]
     startLevel = 2
-    endLevel = 4
+    endLevel = 3
     ordered = false
 
 

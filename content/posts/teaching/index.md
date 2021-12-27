@@ -3,6 +3,7 @@ title: "Teaching"
 date: 2021-12-12T16:49:34-05:00
 draft: false
 katex: true
+tags: ['notes']
 ---
 
 ## ESC180
