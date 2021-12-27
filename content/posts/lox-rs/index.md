@@ -7,7 +7,10 @@ back_to_top: false
 tags: ['programming', 'projects']
 ---
 
-Building an interpreter for `lox` in `rust`, using the [crafting interpreters](https://craftinginterpreters.com) book
+Building an interpreter for `lox` in `rust`, using the [crafting interpreters](https://craftinginterpreters.com) book.
+Accompanying code can be found [here](https://github.com/ihasdapie/lox-rs).
+
+
 
 
 
