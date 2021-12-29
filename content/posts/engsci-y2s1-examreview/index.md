@@ -4,6 +4,7 @@ date: 2021-12-11T22:16:12-05:00
 draft: false
 katex: true
 tags: ['notes', 'engsci']
+back_to_top: true
 ---
 
 Exam 'cheat sheets' for EngSci 2nd year semester fall semester. 
