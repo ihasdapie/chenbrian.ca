@@ -36,11 +36,27 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON CACHE INTERNAL "")
 ```
 
-Note that this requires there to be a buildable `ros2` package in your workspace, so if one is just getting started maybe try cloning the `ros2_tutorials` package just to get a `compile_commands.json` file.
-
-
+Note that this requires there to be a buildable `ros2` package in your workspace, so if one is just getting started maybe try cloning the `ros2_tutorials` package or copy-pasting a simple pub-sub just to get a `compile_commands.json` file.
 
 **OR**, try using [bear](https://github.com/rizsotto/Bear) which works great in my experience.
+
+
+If all else fails, try dropping in a minimal `compile_commands.json` file with the following contents, making sure to edit the filepaths accordingly:
+
+```json
+// compile_commands.json
+[
+{
+  "directory": "<YOUR_ROS2_WORKSPACE>/src/build/<YOUR_ROS2_PACKAGE",
+  "command": "/usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DSPDLOG_COMPILED_LIB -isystem /opt/ros2/foxy/include -Wall -Wextra -Wpedantic -std=gnu++14 -o CMakeFiles/<YOUR_PACKAGE_NAME>.dir/src/<YOUR_FILE_NAME>.o -c <YOUR_ROS2_WORKSPACE>/src/<YOUR_ROS2_PACKAGE>/src/<YOUR_FILE_NAME>.cpp",
+  "file": "<YOUR_ROS2_WORKSPACE>/src/<YOUR_ROS2_PACKAGE>/src/<YOUR_FILE_NAME>.cpp"
+}
+]
+```
+
+
+
+
 
 
 2. Place a `compile_flags.txt` file with `-I /opt/ros2/<ROS_DISTRO>/include` in your project root
