@@ -198,7 +198,7 @@ Note: surface integral for the 2D case, and the over length \\(L\\) for the 1D.
 
 In cases where the laminar flow region cannot be entirely disregarded, we must integrate over the parts separately
 
-$$h =  \\\\ \frac{1}{L}(\int_0^{x_a} h_{x, laminar}dx + \int_{x_a}^L h_{x, turbulent}dx)$$
+$$h = \frac{1}{L}(\int_0^{x_a} h_{x, laminar}dx + \\\\ \int_{x_a}^L h_{x, turbulent}dx)$$
 
 
 Recall from AER210 the that fluid exerts a drag force \\(\tau\\) on the walls

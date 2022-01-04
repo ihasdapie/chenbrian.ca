@@ -50,7 +50,7 @@ Main paradigms:
 - **L**iskov Substitution
 > Functions that use pointers to base classes must be able to use objects of derived classes without knowing it (See: generics)
 
-- **I**interface Segregation
+- **I**nterface Segregation
 > Many client-specific interfaces are better than one general-purpose interface
 
 - **D**ependency Inversion

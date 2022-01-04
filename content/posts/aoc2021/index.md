@@ -4,6 +4,7 @@ date: 2021-12-09T21:20:53-05:00
 draft: false
 katex: true
 tags: ['programming']
+back_to_top: true
 ---
 
 {{< toc >}}
@@ -34,7 +35,7 @@ For part a) we can note that given a set of numbers \\(x_1, x_2, x_3 \dots x_n \
 For part b), however, the distance cost, \\(C_b\\) is the sum of the sequence of numbers up to the point \\(p\\), i.e. for a distance of \\(5\\) we have \\(C_{a,i}=1+2+3+4+5\\).
 We can then note that we can apply Carl Gauss's [trick](https://en.wikipedia.org/wiki/Arithmetic_progression) for finding the sum of of an arithmetic progression.
 
-$$C_b = \sum^n_{i=1} \frac{(d_i)(d_i+1)}{2} = \sum^n_{i=1}\frac{(p-x_i)^2-|p-x_i|}{2} $$
+$$C_b = \sum^n_{i=1} \frac{(d_i)(d_i+1)}{2} = \\\\ \sum^n_{i=1}\frac{(p-x_i)^2-|p-x_i|}{2} $$
 Then, we may take the derivitive of the above equation, doing a classic Calculus 1/2 optimization problem, and find that we may minimize cost when \\(C_b' = 0\\).
 
 $$ C_b' = \sum^n_{i=1} \frac{2(p-x_i) + sgn(x_i-p)}{2} = 0 $$
