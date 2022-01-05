@@ -37,8 +37,10 @@ Email at `brianchen.chen (at) mail.utoronto.ca`
 
 
 
-#### Q: What inspired this site's design?
-Answer: [bettermotherfuckingwebsite.com](http://bettermotherfuckingwebsite.com/).
+
+#### About this page
+This site's design was inspired by the great web development sages behind [bettermotherfuckingwebsite.com](http://bettermotherfuckingwebsite.com/). 
+If you would like to also like to have a site that *isn't a fucking eyesore* and *doesn't load a 40-pound jQuery file*, check out the [hugo theme](https://github.com/ihasdapie/bettermotherfuckinghugowebsite/) behind this website.
 
 
 

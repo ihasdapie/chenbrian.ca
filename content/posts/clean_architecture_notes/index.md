@@ -162,6 +162,112 @@ serializers.factory.register_format('YAML', YamlSerializer)
 ```
 
 
+## Components
+
+
+> Components are the smallest *deployable* units of a software system.
+
+- Originally developed to address issue of compile/linking/loading times.
+Modern day systems are often linked at runtime, but this is not always the case.
+
+
+We can design software components following a few guidelines
+
+
+- **R**EP: Reuse/Release Equivalence Principle
+
+> The granule of reuse is the granule of release
+
+Things that are used together should be grouped and released (with appropriate release tracking, see [semver](https://semver.org/)) together.
+This means that software that are formed into a component must belong to a cohesive group that is *releasable*.
+
+
+- **C**CP: Common Closure Principle
+> Gather into components those classes that change for the same reason and at the same times.
+> Separate into different components those classes that change at different times and for different reasons.
+
+This is similar to the SRP (Single Responsibility Principle) & helps with maintainability.
+
+
+- **C**RP: Common Reuse Principle
+> Don't force users of a component to depend on things that they don't need
+
+This is similar to the ISP (Interface Segregation Principle) but is more general.
+
+If things are used together, then they should be grouped together. 
+For example a container class and its iterators should be grouped together as they are used together.
+
+
+
+### Component Coupling
+
+> Allow no cycles in the component dependency graph
+
+If it is not immediately obvious, realize that making a change in a cyclic dependency graph `A->B->C->A` looks an *awful* lot like the [dining philosophers problem](https://en.wikipedia.org/wiki/Dining_philosophers_problem).
+
+But if you do encounter one, try breaking the cycle by...
+
+- Applying the Dependency Inversion Principle (DIP)
+- Creating a new component. I.E. for `A->B->C->A` create `D` such that `B->A->C->D, B->D`
+
+This has the implication that:
+- Component structure is volatile as requirements develop
+- Top down design is not possible
+
+
+#### Stable Dependencies Principle (SDP)
+
+> Depend in the direction of stability
+
+TLDR; depend on stable things first, then volatile things.
+
+A heuristic for the instability, \\( I \\) of a component is \\(I = \frac{\texttt{outgoing dependencies}}{\texttt{ingoing dependencies + outgoing dependencies}} \\).
+
+
+A *stable* component has low \\( I \\) and does not depend much on external components though others depend on it.
+A *volatile* component has high \\( I \\) and depends on external components.
+
+
+Not all components should be stable. However we should keep the unstable components in check; it is an useful convention to draw component diagrams such that unstable ones on top; this way dependency arrows going upwards indicate violation of the SDP.
+
+
+#### Stable Abstractions Principle (SAP)
+
+
+> A component should be as abstract as it is stable
+
+A stable component should be abstract so that it's stability doesn't prevent it from being extended.
+An unstable component should be concrete since it's instability allows for the concrete code to be easily changed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
