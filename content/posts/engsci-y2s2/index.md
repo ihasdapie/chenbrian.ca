@@ -1,7 +1,7 @@
 ---
 title: "Engsci Year 2 Winter"
 date: 2022-01-10T19:53:48-05:00
-draft: true
+draft: false
 katex: true
 back_to_top: true
 tags: ["notes", "engsci"]
@@ -10,7 +10,7 @@ tags: ["notes", "engsci"]
 {{< toc >}}
 
 
-## TEP 327
+## TEP 327: Engineering and Law
 
 Why do engineers need to know about law?  
 - Engineering ends up stepping across a lot of jurisdictions, so we kinda need to know about it.
@@ -34,7 +34,7 @@ Law is ...
 - [Canadian Distribution of Legislative Powers](https://laws-lois.justice.gc.ca/eng/const/page-3.html)
 
 
-## ECE286
+## ECE286: Probability and Statistics
 
 
 ### Lecture 1
@@ -47,7 +47,7 @@ Suppose \\( P(H) = 0.3 \\) , \\( P(T) = 0.7 \\).
 
 Then, $$P(HT) = P(H)P(T) = 0.3 \times 0.7 = 0.21 $$ 
 $$ P(HT) = P(H)P(T) = 0.3 \times 0.7 = 0.21 $$
-$$ P(HT or TH) = P(H)P(T) + P(T)P(H) = 0.3 \times 0.7 + 0.7 \times 0.3 = 0.42 $$
+$$ P(HT \text{ or  } TH) = P(H)P(T) + P(T)P(H) = \\\\ 0.3 \times 0.7 + 0.7 \times 0.3 = 0.42 $$
 
 #### Sets and events
 
@@ -69,6 +69,90 @@ Example: for a die, \\( {1, 2} \\) is the complement of \\( {3,4,5,6} \\)
 **Intersection of two events**: everything in \\( A \\) *and* \\( B \\), denoted \\( A \cap B \\)
 
 **Union of two events**: everything in \\( A \\) *or* \\( B \\), denoted \\( A \cup B \\)
+
+
+**** Counting
+
+**Multiplication Rule**: 
+The total amount of outcomes is the product of the amount of outcomes in each event.
+I.e. if for a sequence if \\( k \\) events \\( E_1, E_2, ..., E_k \\) with outcomes \\( S_1, S_2, ..., S_k \\)
+then the total amount of outcomes is \\( \prod_{i=1}^k S_i \\)
+
+
+**Permutations**: \\( n \\) distinct objects can be arranged in \\( n! \\) ways. When considering permuting a subset of size \\( r \\) taken from a set of size \\( n \\), the total number of arrangements is given by 
+
+$$ nPr = \frac{n!}{(n-r)!} $$
+
+If we can have repeated kinds, i.e. if there are \\( m \\) kinds of items and \\( n_k, k = 1, \dots m \\) of each kind, then there are 
+
+$$ \frac{n!}{n_1!n_2!\dots n_m!}$$ permutations.
+
+For example, we can order "ATLANTIC" \\( \frac{8!}{2!2!1!1!1!1!}  = 10080\\) times.
+
+
+The same formula applies for finding the number of ways to arrange \\( n \\) items into \\( k \\) subsets of size \\( n_1, n_2, \dots , n_k \\)
+
+
+**Combinations**: Permutations, but order doesn't matter.
+
+$$ nCr = \binom{n}{r} = \frac{n!}{r!(n-r)!} $$
+
+Note similarity to the partition formula; combinations can be thought as the set of partitions of size \\( 1 \\).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## ECE259: Electromagnetism
+
+Electromagnetic field is a vector quantity given by a magnitude \\( E \\) and unit vector \\( \hat{a} \\), and is commonly found as the force exerted on a positive test charge \\( q \\).
+
+$$ \vec{E}= E\hat{a}_E = \frac{\hat{F}}{q} = q\vec{E}$$
+
+
+We can expand on this to find the force exerted by a point charge at varying distances \\( r \\) from the charge, noting that \\( k = \frac{1}{4\pi E_o}\\), where \\( E_o \\) is the permittivity of free space.
+
+$$ \vec{E} = \frac{1}{k} \frac{q_{source}}{r^2} \hat{a}_e $$
+
+
+and further generalize for a system of charges that are not necessarily at the origin
+
+
+$$ E_{sys} = \frac{1}{k}\sum_k \frac{q_k}{|\vec{R}-\vec{R'_k}|^3}(\vec{R} - \vec{R'_k}) $$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
