@@ -64,6 +64,7 @@ pygmentsStyle = "emacs"
    weight = 1
 
 
+
 # Links format
 [permalinks]
   posts = "/posts/:year/:title/"

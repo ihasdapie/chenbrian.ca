@@ -71,7 +71,7 @@ Example: for a die, \\( {1, 2} \\) is the complement of \\( {3,4,5,6} \\)
 **Union of two events**: everything in \\( A \\) *or* \\( B \\), denoted \\( A \cup B \\)
 
 
-**** Counting
+#### Counting
 
 **Multiplication Rule**: 
 The total amount of outcomes is the product of the amount of outcomes in each event.
@@ -105,23 +105,6 @@ Note similarity to the partition formula; combinations can be thought as the set
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## ECE259: Electromagnetism
 
 Electromagnetic field is a vector quantity given by a magnitude \\( E \\) and unit vector \\( \hat{a} \\), and is commonly found as the force exerted on a positive test charge \\( q \\).
@@ -134,17 +117,79 @@ We can expand on this to find the force exerted by a point charge at varying dis
 $$ \vec{E} = \frac{1}{k} \frac{q_{source}}{r^2} \hat{a}_e $$
 
 
-and further generalize for a system of charges that are not necessarily at the origin
+and this can be further generalized for a system of charges that are not necessarily at the origin
 
 
-$$ E_{sys} = \frac{1}{k}\sum_k \frac{q_k}{|\vec{R}-\vec{R'_k}|^3}(\vec{R} - \vec{R'_k}) $$
-
-
-
+$$ \vec{}{E_{sys}} = \frac{1}{k}\sum_k \frac{q_k}{|\vec{R}-\vec{R'_k}|^3}(\vec{R} - \vec{R'_k}) $$
 
 
 
 
+
+
+## BME205: Introduction to Biomedical Engineering
+
+### Cells
+
+
+#### Componennts
+
+- **Lysosome**: 
+- **Mitochondria**: 
+- **Smooth Endoplasmic Reticulum**:
+- **Nucleus**:
+  - **Chromatin**:
+  - **Nucleolus**:
+  - **Nuclear pores**:
+  - **Cisternae**: 
+
+- **Ribosome**:
+- **Endoplasmic Reticulum**:
+- **Golgi Apparatus**:
+- **Vesicle**:
+- **Rough Endoplasmic Reticulum**:
+- **Plasma Membrane**:
+- **Vacuole**:
+
+
+#### DNA & Chromosomes
+
+DNA is built up of nucleotides, each of which has three components: a nitrogenous base, a five-carbon sugar *deoxyribose*, and a phosphate group. 
+These are linked together by hydrogen bonds between bases, which is highly specific: *adenine (A)*: *thymine (T)*: *guanine (G)*: *cytosine (C)*.
+
+![base_pairing](img/base_pairing.jpg)
+> The above is direct imaging of DNA fibers; see how they can fit together!
+
+
+
+
+Chromosomes are made of DNA that has been "super coiled" (think: telephone cord).
+
+![dna_chromosome](img/dna_chromosome.jpg).
+
+There are multiple ways that this can be packed, e.g. zigzag or solenoid patterns:
+
+![nucleosome_packing](img/nucleosome_packing.jpg)
+![coiling_patterns](img/coiling_patterns.jpg)
+
+One can imagine that in a complicated system like this there can be knots and kinks and errors -- which is what can happen and lead to various complications e.g. cancer.
+
+
+
+
+
+
+
+
+
+## PHY294: Quantum and Thermal Physics
+
+
+
+
+
+
+## ESC204: Praxis III
 
 
 

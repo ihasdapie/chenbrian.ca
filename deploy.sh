@@ -1,6 +1,14 @@
 #!/bin/sh
 
-# If a command fails then the deploy stops
+
+
+
+# to turn all png into .jpg: 
+#  magick mogrify -format jpg *.png; rm *.png
+
+
+
+
 
 msg="rebuilding site $(date)"
 
