@@ -26,9 +26,9 @@ Email at `brianchen.chen (at) mail.utoronto.ca`
 
 
 ### Resume
-{{< pdf src="../resume.pdf" >}}
+{{< pdf src= "resume.pdf" >}}
 
-Or, download my resume [here](../resume.pdf)
+Or, download my resume [here](resume.pdf)
 
 
 ### Misc

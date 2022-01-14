@@ -188,19 +188,15 @@ One can imagine that in a complicated system like this there can be knots and ki
 Useful tools:
 
 
-
-$$ E = hv = \frac{hc}{\lambda}$$
-
-De broglie wavelength: relating momentum with wavelength. \\( \lambda = \frac{h}{m v}\\)
-
-
-Schrodinger's equation:
+**Planck's Equation**: photon energies \\( E = hv = \frac{hc}{\lambda} \\)   
+**de Broglie wavelength**: relating momentum with wavelength \\( \lambda = \frac{h}{m v}\\)  
+**Schrodinger's equation**:
 
 $$ H\psi = E\psi $$
 
-where \\( H \\) is the Hamiltonian, \\( \psi \\) is the wave function, and \\( E \\) is the energy.
-
-\\( |\psi|^2 \\) gives the probability density function.
+- \\( H \\) is the Hamiltonian, \\( \psi \\) is the wave function, and \\( E \\) is the energy.
+- \\( |\psi|^2 \\) gives the probability density function.
+- 
 
 
 

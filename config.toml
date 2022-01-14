@@ -67,7 +67,7 @@ pygmentsStyle = "emacs"
 
 # Links format
 [permalinks]
-  posts = "/posts/:year/:title/"
+  posts = "/posts/:year/:slug/"
 
 [params]
   # Date format (default: Jan 2, 2006)

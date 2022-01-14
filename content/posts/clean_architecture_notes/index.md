@@ -1,5 +1,6 @@
 ---
 title: "Notes on 'Clean Architecture: A Craftsman's Guide to Software Structure and Design'"
+slug: "clean-architecture-notes"
 date: 2021-12-26T16:39:21-05:00
 draft: false
 katex: true
