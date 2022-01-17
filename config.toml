@@ -55,13 +55,14 @@ pygmentsStyle = "emacs"
 # Footer
  [[menu.footer]]
   url = "https://github.com/ihasdapie/bettermotherfuckinghugowebsite/"
-  name = "hugo theme"
+  name = "Theme"
   weight = 1
 
  [[menu.footer]]
    url = "https://github.com/ihasdapie"
    name = "GitHub"
    weight = 1
+
 
 
 

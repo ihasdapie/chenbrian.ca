@@ -36,8 +36,7 @@ Law is ...
 
 ## ECE286: Probability and Statistics
 
-
-### Lecture 1
+### Probability
 
 #### Coin flip example & combining probabilities
 
@@ -63,8 +62,6 @@ For example, each element, \\(e \in S = {1,2,3,4,5,6} \\) are the elements of S 
 
 **Complement of an event A w.r.t. S**: everything in \\( S \\) and not \\( A \\), denoted \\( A' \\).  
 Example: for a die, \\( {1, 2} \\) is the complement of \\( {3,4,5,6} \\)
-
-
 
 **Intersection of two events**: everything in \\( A \\) *and* \\( B \\), denoted \\( A \cap B \\)
 
@@ -103,6 +100,38 @@ Note similarity to the partition formula; combinations can be thought as the set
 
 
 
+#### Additive Rules
+
+For events A, B:
+$$ P(A\cup B) = P(A) + P(B) - P(A\cap B)$$
+
+For \\(  n \\) mutually exclusive events \\( A_1, A_2 ... A_n \\)
+$$ P(A_1 \cup A_2 \cup ... A_n) = P(A_1) + P(A_2) + ... + P(A_n)$$
+
+And if \\( A_1, A_2 ... A_n \\) is a partition of sample space S, 
+
+$$ P(A_1 \cup A_2 \cup ... A_n) = P(A_1) + P(A_2) + ... + P(A_n)$$
+
+
+And:
+$$ P(A \cup B) + P(A) + P(B) $$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## ECE259: Electromagnetism
@@ -120,7 +149,28 @@ $$ \vec{E} = \frac{1}{k} \frac{q_{source}}{r^2} \hat{a}_e $$
 and this can be further generalized for a system of charges that are not necessarily at the origin
 
 
-$$ \vec{}{E_{sys}} = \frac{1}{k}\sum_k \frac{q_k}{|\vec{R}-\vec{R'_k}|^3}(\vec{R} - \vec{R'_k}) $$
+$$ \vec{E_{sys}} = \frac{1}{k}\sum_k \frac{q_k}{|\vec{R}-\vec{R'_k}|^3}(\vec{R} - \vec{R'_k}) $$
+
+
+### Vector Calculus Review
+
+Converting between coordinate systems:
+
+**Cylindrical \\(( r_p, \phi_p, z_p)\\)**: 
+
+**Note**: When adding vectors in non-Cartesian coordinate systems we cannot just add the components because the *direction* of the unit vectors can change.
+> When adding vectors in non-Cartesian coordinate systems we must first convert the vectors to Cartesian coordinates
+
+**Cylindrical -> Cartesian**:
+$$ r_p = \sqrt{x_p^2 + y_p^2}  $$
+$$ \phi_p = \arctan(y_p/x_p) $$
+$$ z_p = z_p $$
+
+**Cartesian -> Cylindrical**:
+$$ x_p = r_p \cos(\phi_p) $$
+$$ y_p = r_p \sin(\phi_p) $$
+$$ z_p = z_p $$
+
 
 
 
@@ -196,7 +246,58 @@ $$ H\psi = E\psi $$
 
 - \\( H \\) is the Hamiltonian, \\( \psi \\) is the wave function, and \\( E \\) is the energy.
 - \\( |\psi|^2 \\) gives the probability density function.
-- 
+
+Recall: for a 1D particle in a box we use \\( \psi = Asin(kx) + Bcos(kx)\\) and then we can apply the boundary conditions at the bounds of the box.
+We may then find \\( \psi \\)) to be \\( \sqrt{\frac{2}{L}}sin()\frac{n\pi}{L})x\\) and \\( E_n = \frac{n^2h^2}{8mL^2} \\)) where \\( n \\)) is a integer > 0.
+
+In 2D and 3D this is more complicated but the same idea follows.
+
+When applying to a hydrogen atom it is useful to use spherical coordinates. 
+The solution is a bit of work to write out, so [see this](https://chem.libretexts.org/Courses/University_of_California_Davis/UCD_Chem_107B%3A_Physical_Chemistry_for_Life_Scientists/Chapters/4%3A_Quantum_Theory/4.10%3A_The_Schr%C3%B6dinger_Wave_Equation_for_the_Hydrogen_Atom).
+
+![hydrogen_wavefns](img/hydrogen_wavefns.png)
+> Solutions from textbook. I think these would be provided if applicable.
+
+
+
+Hydrogen orbitals can be written as \\( \psi(r, \theta, \phi) = R(r)\Theta(\theta)\Phi(\phi) \\).
+
+
+
+1. We apply \\(  n = 1,2,3... \\) (quanta) to the hydrogen atom.
+2. \\(  E = -\frac{E_r}{n^2} \\) **NOTE**: 1) Only applies to hydrogen 2) This is exactly the Rydberg/Bohr relation.
+3. \\(  l = 0,1,2...(n-1)\\)
+
+
+
+
+
+
+
+
+We can apply separation of variables to simplify the problem.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
