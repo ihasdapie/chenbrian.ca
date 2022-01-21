@@ -8,6 +8,7 @@ tags: ['about_me']
 
 
 ![Let's put a face to the name](profile-picture.jpg)
+
 ... and let's put a face to the name as well
 
 I'm a student at the University of Toronto Engineering Science program passionate about **identifying  problems** in the world around me and **creating solutions** for them. 
