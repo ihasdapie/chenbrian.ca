@@ -17,6 +17,7 @@ Making it a commitment for 2022 to [read some poems](https://www.poetryfoundatio
 [source](https://allpoetry.com/The-Jackdaw)
 
 
+
 There is a bird who, by his coat  
 And by the hoarseness of his note,  
 Might be supposed a crow;  
@@ -60,6 +61,7 @@ For such a pair of wings as thine
 And such a head between 'em.  
 
 
+> There's something about the cadence and imagery here that makes this one so enthralling.
 
 
 
@@ -121,5 +123,36 @@ after yes comes no.
 One wants what one wants  
 not what one wanted.  
   
+
+
+## Ozymandias
+
+
+**Percy Shelley**  
+[source](https://www.poetryfoundation.org/poems/46565/ozymandias)  
+
+
+I met a traveller from an antique land,  
+Who said—“Two vast and trunkless legs of stone  
+Stand in the desert. . . . Near them, on the sand,  
+Half sunk a shattered visage lies, whose frown,  
+And wrinkled lip, and sneer of cold command,  
+Tell that its sculptor well those passions read  
+Which yet survive, stamped on these lifeless things,  
+The hand that mocked them, and the heart that fed;  
+And on the pedestal, these words appear:  
+My name is Ozymandias, King of Kings;  
+Look on my Works, ye Mighty, and despair!  
+Nothing beside remains. Round the decay  
+Of that colossal Wreck, boundless and bare  
+The lone and level sands stretch far away.”  
+
+
+> Yes, this was also the title of the [legendary breaking bad episode](https://www.imdb.com/title/tt2301451/?ref_=tt_eps_top).  
+> But where are his works? Ozymandias -- is now but two broken legs in the desert which "stretch far away". 
+
+
+
+
 
 

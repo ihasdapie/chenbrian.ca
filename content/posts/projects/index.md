@@ -1,5 +1,6 @@
 ---
 title: "Projects"
+slug: "projects"
 date: 2021-12-13T21:03:35-05:00
 draft: false
 katex: true
@@ -7,8 +8,10 @@ back_to_top: true
 tags: ['programming', 'projects']
 ---
 
-// Page under construction // 
+// Page under construction //   
+**[Browse projects by tag]({{< relref "../../tags/projects" >}})**  
 
+## Overview
 - [GrocerCheck](https://grocercheck.ca/): [`Github`](https://github.com/GrocerCheck/GrocerCheck), [Pitch Deck]({{< ref "#grocercheck-pitch-deck" >}})  A website to help people reduce contact at grocery stores and essential services.  Got some press coverage too!
      - [CBC Piece](https://www.cbc.ca/news/canada/british-columbia/bc-youth-entrepreneurs-covid19-1.5784637)
      - [CBC Piece, but in French](https://ici.radio-canada.ca/nouvelle/1746337/emploi-pandemie-entrepreneuriat-bakd-grocercheck)
