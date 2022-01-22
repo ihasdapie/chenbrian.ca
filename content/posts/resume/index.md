@@ -24,7 +24,8 @@ I present: my [fork of altacv](https://github.com/ihasdapie/resume/) with a few 
 2. Change to a single-column layout
 3. `\itag{asdf}` command to draw an inline "tag"
 4. `\chref` command for hyperlinks
-5. Various changes to `\makecvevent`, etc. to improve pdf-to-text conversion
+5. Disabling word wrapping and hyphenation
+6. Various changes to `\makecvevent`, etc. to improve pdf-to-text conversion
 
 For an example of the output, see my [about me]({{< ref "/about">}}) page, or the picture below.
 

@@ -20,9 +20,9 @@ Or, take a look at my [blog]({{<ref "/posts">}})?
 
 ### Quick links
 
-- [Browse by tags]({{< ref "tags" >}})
-- [Notes]({{< ref "tags/notes" >}})
-- [Projects overview]({{< ref "posts/projects" >}})
+- [Browse by tags]({{< ref "/tags" >}})
+- [Notes]({{< ref "/tags/notes" >}})
+- [Projects overview]({{< ref "/posts/projects" >}})
 - [Resume](resume.pdf)
 
 
