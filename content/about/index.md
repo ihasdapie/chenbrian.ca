@@ -2,19 +2,28 @@
 title: "About me"
 date: "2021-10-20"
 draft: false
+katex: false
 tags: ['about_me']
+back_to_top: false
 ---
 
-### What am I up to right now?
 
-- [aUToronto](https://www.autodrive.utoronto.ca/) Systems & Simulations team: Automated testing & evaluation of autonomous vehicles
+## What am I up to right now?
+
+- Systems & Simulations team co-lead @ [aUToronto](https://www.autodrive.utoronto.ca/): Automated testing & evaluation of autonomous vehicles, deep learning acceleration with TensorRT, CI/CD, and more!
 - Research @ [ISML](https://www.eecg.utoronto.ca/~roman/): I work with accelerating machine learning tasks on memristor crossbars -- first author paper pending submission
-- Web dev & data collection for [BC Parks Foundation](https://bcparksfoundation.ca/): currently in public alpha
+- Web dev & data collection for [BC Parks Foundation](https://bcparksfoundation.ca/): currently in private beta
 - [Side Projects]({{< ref "posts/projects" >}})
-- [TA]({{< ref "posts/teaching" >}})-ing programming
+- [TA]({{< ref "posts/teaching" >}})-ing intro programming (ESC180) and data structures & algorithms (ESC190)
 - Trying to make it through university!
 
-###  Connect with me:
+## Resume
+{{< pdf src= "../resume.pdf" >}}
+
+Or, download my resume [here](../resume.pdf)
+
+
+##  Connect with me:
 
 [Check out my cooking instagram](https://instagram.com/brianschicken)
 
@@ -25,13 +34,7 @@ tags: ['about_me']
 Email at `brianchen.chen (at) mail.utoronto.ca`
 
 
-### Resume
-{{< pdf src= "../resume.pdf" >}}
-
-Or, download my resume [here](../resume.pdf)
-
-
-### Misc
+## Misc
 
 ```
 Q: How can you tell if someone uses Linux?
