@@ -17,7 +17,10 @@ enableGitInfo = true
 googleAnalytics = "G-B0ZFV4LTG2"
 
 # Copyright
-copyright = "© 2021 — Brian Chen — All rights reserved."
+copyright = "© 2022 — Brian Chen — All rights reserved."
+
+
+
 
 # Highlighting
 
@@ -25,6 +28,9 @@ pygmentsCodefences = true
 pygmentsCodeFencesGuessSyntax = true
 pygmentsoptions = "linenos=table"
 pygmentsStyle = "emacs"
+
+
+
 
 
 # Taxonomies

@@ -9,6 +9,10 @@ tags: ['programming', 'projects']
 ---
 
 // Page under construction //   
+
+> "If you built a project and did not write about it, did you really build a project?"
+
+
 **[Browse projects by tag]({{< relref "../../tags/projects" >}})**  
 
 ## Overview

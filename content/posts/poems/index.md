@@ -13,10 +13,10 @@ Making it a commitment for 2022 to [read some poems](https://www.poetryfoundatio
 
 
 ## The Jackdaw
-**William Cowper**   
 [source](https://allpoetry.com/The-Jackdaw)
 
 
+**William Cowper**   
 
 There is a bird who, by his coat  
 And by the hoarseness of his note,  
@@ -68,9 +68,9 @@ And such a head between 'em.
 
 
 ## Echolalia
+[source](https://www.poetryinvoice.com/poems/echolalia)
 
 **Ian Williams**  
-[source](https://www.poetryinvoice.com/poems/echolalia)
 
 
 Once one gets what one wants  
@@ -126,10 +126,9 @@ not what one wanted.
 
 
 ## Ozymandias
-
+[source](https://www.poetryfoundation.org/poems/46565/ozymandias)  
 
 **Percy Shelley**  
-[source](https://www.poetryfoundation.org/poems/46565/ozymandias)  
 
 
 I met a traveller from an antique land,  
@@ -151,8 +150,35 @@ The lone and level sands stretch far away.”
 > Yes, this was also the title of the [legendary breaking bad episode](https://www.imdb.com/title/tt2301451/?ref_=tt_eps_top).  
 > But where are his works? Ozymandias -- is now but two broken legs in the desert which "stretch far away". 
 
+## Love
+**Tina Chang**  
+[source](https://www.poetryfoundation.org/poems/57416/love-56d23aec87f79)
+
+I am haunted by how much our mothers do not know.    
+How a republic falls because of its backhanded deals,  
+stairwell secrets. My mother does not know I am lying  
+with a man who is darker than me, that we do not  
+have names for how we truly treat our bodies.  
+What we do with them. The other possesses me.  
+Without him the perception of me fails to exist.  
+My mother now is taking her sheers and cutting  
+through live shrimp. When I was a child she peeled  
+each flushed grape until only the pale fleshy bead  
+remained. She placed them onto a plate in one shining  
+mound, deseeded, in front of me. How I sucked and bled  
+the fruit of all their juice, hypnotized in front of the buzz  
+of television in each version of my childhood. I am  
+her daughter. This is certain. I am lying down with a man  
+who is darker than me and maybe this poem is my  
+real republic, my face is my face, or is it stolen from  
+my mother and hung over mine? If I were a dream  
+you could say my countenance was a string of flickering lights  
+made of teeth or an expression unraveling like a carpet  
+into a narrow river of another life. Does truth matter  
+when it's floating face up or face down?  
+The answer to this makes all the difference.  
+
+> I always get excited when I see Asian-{North American} representation/themes...
 
 
-
-
-
+$$ _{\text{I don't own the rights to anything here (but I've made sure to backlink to the source!) Let me know if I should take anything down.}} $$
