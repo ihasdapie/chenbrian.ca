@@ -16,30 +16,6 @@ tags: ["notes", "engsci"]
 
 
 
-## TEP 327: Engineering and Law
-
-Why do engineers need to know about law?  
-- Engineering ends up stepping across a lot of jurisdictions, so we kinda need to know about it.
-
-
-Law is ...
-- very territorial: must note jurisdiction
-  - Must develop intuition for jurisdiction (See [section 91]({{<ref "#resources">}}))
-  - Generally:
-    - Things outside of Canada & maintained *across* Canada -- Federal
-    - Things that are managed within Canada and aren't necessarily consistent (local effect) -- Provincial
-    - Things that Provincial gov. doesn't want to deal with -- Municipal (via mandate)
-    - And for everything -- consider case law, etc.
-- always dependent on context and subject to interpretation; the law's wording can stay constant but the interpretation can change over time
-  - There are standard methods of interpretation (Living tree vs originalist, strict literal vs commercial reality/intentions)
-  - Canada is bijural (both civil and common law)
-    - Note difference between public (refers to society as a whole) and private law (individual interactions)
-
-
-### Resources
-- [Canadian Distribution of Legislative Powers](https://laws-lois.justice.gc.ca/eng/const/page-3.html)
-
-
 ## ECE286: Probability and Statistics
 
 ### Probability
@@ -848,11 +824,35 @@ We can apply separation of variables to simplify the problem.
 
 ## ESC204: Praxis III
 
+`// coming ... maybe? //`
 
 
 
 
 
+
+## TEP 327: Engineering and Law
+
+Why do engineers need to know about law?  
+- Engineering ends up stepping across a lot of jurisdictions, so we kinda need to know about it.
+
+
+Law is ...
+- very territorial: must note jurisdiction
+  - Must develop intuition for jurisdiction (See [section 91]({{<ref "#resources">}}))
+  - Generally:
+    - Things outside of Canada & maintained *across* Canada -- Federal
+    - Things that are managed within Canada and aren't necessarily consistent (local effect) -- Provincial
+    - Things that Provincial gov. doesn't want to deal with -- Municipal (via mandate)
+    - And for everything -- consider case law, etc.
+- always dependent on context and subject to interpretation; the law's wording can stay constant but the interpretation can change over time
+  - There are standard methods of interpretation (Living tree vs originalist, strict literal vs commercial reality/intentions)
+  - Canada is bijural (both civil and common law)
+    - Note difference between public (refers to society as a whole) and private law (individual interactions)
+
+
+### Resources
+- [Canadian Distribution of Legislative Powers](https://laws-lois.justice.gc.ca/eng/const/page-3.html)
 
 
 
