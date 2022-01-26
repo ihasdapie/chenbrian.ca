@@ -103,9 +103,6 @@ $$ nCr = \binom{n}{r} = \frac{n!}{r!(n-r)!} $$
 Note similarity to the partition formula; combinations can be thought as the set of partitions of size \\( 1 \\).
 
 
-
-
-
 #### Additive Rules
 
 For events A, B:
@@ -122,8 +119,253 @@ $$ P(A_1 \cup A_2 \cup ... A_n) = P(A_1) + P(A_2) + ... + P(A_n)$$
 And:
 $$ P(A \cup B) + P(A) + P(B) $$
 
+##### Conditional Probability
+
+$$ P(B|A) = \frac{P(A\cap B}{P(A)}$$
+> The probability of B occurring, given that A occurs
 
 
+
+
+#### Total probability
+
+Suppose A is an event and \\(B_1, ... B_k\\) is a partition.
+
+> Recall: \\( B_1 ... B_k \\)) is a partition if \\( B_i \cap B_j \neq 0\\) and \\( B_1 \cup ... B_k = S\\) 
+
+$$ P(A) = \sum_{i=1}^k P(A \cap B_i) $$
+
+
+For example, if we have machines \\( B_1, B_2, B_3 \\) that make products  30%, 45%, 25% of the time (note that this forms a partition)
+
+
+And that they produce 2%, 3%, 2% defective products, we can find the probability of there being a defect as 
+
+
+$$ P(D) = P(B_1)P(D|B_1) + P(B_2)P(D|B_2) +P(B_3)P(D|B_3) \\\\
+= (0.3 * 0.02) + (0.45 * 0.03) + (0.25 * 0.02) = 0.0245 $$
+
+
+And we can get the chance it came from machine 2 by applying bayes' rule.
+
+
+
+#### Bayes' Rule
+
+
+
+---
+*Define*: Bayes' Rule
+$$ P(C_n|A) = \frac{P(C_n)P(A|C_n)}{\sum^k_{i=1}  P(C_i)P(A|C_i)} $$
+
+---
+
+
+
+
+
+E.x. Probability that a defective product comes from machine 3 \\( B_3 \\)
+
+
+
+$$P(B_3|D) = \frac{P(B_3)P(D|B_3)}{P(D)} = \frac{0.25*0.02}{0.0245} = 10/49$$
+> *Given* that the product is defective, what is the chance it came from machine 3?
+
+Bayes' rule is useful when we have limited information.
+For example if we're trying to check if we have a disease:
+Given:
+1. Chance of having disease \\( P(D) \\) = \\( 1/1000 \\)
+2. A test kit that has a true positive rate \\( P(T = 1|D) = 0.7 \\), false pos \\(P(T=1| not D) = 0.05\\)
+
+
+> What is \\(  P(D|T = 1) \\)? (Chance of having disease given test kit is true positive?)
+
+$$ P(D|T=1) = \frac{P(T=1|D)P(D)}{P(T=1|D)P(D)+P(T=1|not D)P(not D) } \\\\
+= (0.7 \times 0.001 ) / (0.7 \times 0.001 + 0.05 \times 0.999) \approx 0.014 $$
+
+> This may look like a number that's really off. Why would a positive test result only 
+> indicate a 1.4% change of having the disease? 
+> Must recall: this as the "inverse" of the true positive rate (chance of testing positive if you have the disease).
+
+
+This can be applied in sequential state estimation.
+Given
+  - State \\( X_t \\)
+  - Observation \\( Y_t = g(X_t) \\)
+  - Dynamics \\( P(X_{t+1} | X_t) \\) (typically Markov chain[^markov_chain]/LTI (Linear Time-Invariant)[^lti_sys] system)
+  > Markov chains are a stochastic model where the probability of each state depends only on the previous state
+
+We can build an estimator...
+
+$$ P(Y_{t+1}|X_{t+1}) = \frac{P(Y_{t+1}|X_{t+1},X_t)P(X_{t+1}|X_t)}{P(Y_{t+1})}$$
+
+[^markov_chain]: https://en.wikipedia.org/wiki/Markov_chain
+[^lti_sys]: https://en.wikipedia.org/wiki/Linear_time-invariant_system
+
+- Optimal solution to LTI system problem is the [Kalman filter](https://en.wikipedia.org/wiki/Kalman_filter). Often used for vehicle dynamics, circuits, or anything that requires a long look into the "future"
+- Example application of Markov chains could be a machine with a few states {active, inactive, broken}.
+  - Markov chains can sometimes be directly computable & are often central to DP/RL problems
+
+
+
+#### Random Variables
+
+
+> A **Random** variable is a function that associates a real number with each element in the sample space
+
+E.x if we're testing some components and \\( N \\) denotes non-defective and \\( D \\) denotes defective,
+
+$$ S = \\{NNN, NND, NDN, DNN, NDD, DND, DDN, DDD\\} $$
+
+and we are concerned about the number of defective items,
+the outcome (total no. of defective items) can be assumed by a *random variable*, let's call it \\( X \\), which can take on the values \\( \\{0, 1, 2, 3 \\} \\).
+So each value of \\(x \in X  \\)  represents an event that is a subset of the sample space.
+For example \\(  x = 2 \\) corresponds to a subset \\( \\{DDN, DND, NDD\\} \\).
+
+
+- Discrete random variables take on finite/countable values; denote w/ capital letters
+- Continuous random variables take on values in an interval of \\( \mathbb{R} \\)
+  - Has a probability of 0 of assuming *exactly* any of its values
+  - Denote individual values with the lowercase letter equivalent
+
+#### Discrete Probability Distributions
+> Probability that a discrete RV takes on each value
+
+I.e. if \\( X \\) is the # of heads for 3 coin flips
+
+- \\( P(X=0) = 1/8 \\)
+- \\( P(X=1) = 3/8 \\)
+- \\( P(X=2) = 3/8 \\)
+- \\( P(X=3) = 1/8 \\)
+
+
+#### Probability function/mass function/distribution (PMF)
+
+--- 
+*Define*: \\( f(x) \\) is a PMF of the discrete RX \\( X \\) if \\(  \forall x \in X \\)
+1. \\( f(x) \geq 0 \\)
+2. \\( \sum_x f(x) = 1 \\)
+3. \\( P(X=x) = f(x) \\)
+
+---
+
+
+
+#### Cumulative Distribution Function
+
+> When we want to find if the observed value of a random variable will be less than or equal to some real number \\( x \\). 
+
+---
+*Define*: Cumulative Distribution Function (\\( CDF \\))
+
+$$ F(x) = P(X \leq x) = \sum_{t\leq x} f(t), \hspace{1cm} - \infty < x < \infty $$
+
+---
+
+
+
+
+> Note that this function is not only defined for the values assumed by the random variable, but for all real numbers as well.
+
+
+#### Continuous Probability Distributions
+
+> Recall: Continuous RV have a probability of 0 of assuming *exactly* any of its values.
+
+Consider a RV whose values are the lengths of hair on one's head. There are an infinite number of hair lengths between any two values, and as such we assign a probability of 0 to each event. 
+Instead we concern ourselves with probabilities across intervals.
+
+
+
+---
+*Define*: Probability Density Function (\\( PDF \\))
+
+\\( f(x) \\) is a \\( pdf \\) for the continuous random variable \\( X \\) if 
+1. \\( f(x) \geq 0 \\)
+2. \\( \int_{-\infty}^\infty f(x) = 1 \\)
+3. \\( P(a < X < b)= \int_a^bf(x) \\)
+
+---
+
+> We can apply the CDF concept to a continuous RV with a density function as well
+
+---
+*Define*: Cumulative Distribution Function (\\( CDF \\))
+
+$$ F(x) = P(X \leq x) = \int_{-\infty}^x f(t) dt, \hspace{1cm} - \infty < x < \infty $$
+
+---
+
+A nice result can then be obtained by applying the fundamental theorem of calculus,
+
+$$ P(a < X < b) = F(b) - F(a) $$
+
+and 
+
+$$ f(x) = \frac{dF(x)}{dx} $$
+
+
+> NOTE: Probability *mass* functions describe the probability of *discrete* distributions, whereas probability *density* functions describe *continuous* distributions.
+
+
+#### Joint Probability Distributions
+> What if we want to deal with more than one random variable at a time?
+
+
+
+---
+*Define*: \\( f(x, y) \\) is a joint probability distribution / probability mass function  of discrete RV \\( X, Y \\) if:
+
+1. \\( f(x, y) \geq 0 \\)
+2. \\( \sum_x \sum_y f(x, y) = 1 \\)
+3. \\( P(X = x, Y = y)= f(x, y) \\)
+
+\\( \forall \\) region \\( A \\) in the \\( xy \\) plane, \\( P[(X,Y) \in A] = \sum \sum_A f(x, y) \\)
+
+---
+
+For example, if we select 2 ballpoint pens from a box containing 3 blue/2 red/3 green pens, and if \\( X \\) is the no. of blue pens selected and \\( Y \\) the no. of red pens selected,
+
+The joint probability function is the set is
+
+$$f(x,y) = (0,0), (0,1), (1,0), (1,1), (0,2), (2,0)$$
+
+And for \\( A = \\{ (x, y) | x + y \leq 1 \\}\\)
+
+
+$$ P[(X, Y) \in A] = P( X + Y \leq 1 ) = f(0,0) + f(0,1) + f(1, 0)  \\\\ 
+= \frac{3}{28} + \frac{3}{14} + \frac{9}{28} = \frac{9}{14} $$
+
+The same can be applied to continuous probability distributions as well
+
+---
+*Define*: \\( f(x, y) \\) is a joint density function of continuous RV \\( X, Y \\) if:
+
+1. \\( f(x, y) \geq 0 \\)
+2. \\( \sum_{-\infty}^{\infty} \sum_{-\infty}^{\infty} f(x, y) = 1 \\)
+3. \\( P[(X, Y) \in A] = \int \int_A f(x, y) dx dy\\) for any region A in the \\( xy \\) plane
+
+> TLDR; integrating over whole region gives probability of 1, integrating over a subregion gives the probability of an event within that range.
+
+---
+
+But what if we want to inspect the probabilities dist. of a specific RV within the joint distribution?
+
+
+
+---
+*Define*: the marginal distributions of \\( X \\), \\( g(x) \\), given joint distribution \\( f(x, y) \\), is:
+
+for discrete case:
+
+$$ g(x) = \sum_y f(x,y) $$
+
+for continuous case:
+
+$$ g(x) = \int_{-\infty}^{\infty} f(x, y) dy$$
+
+
+---
 
 
 
@@ -255,11 +497,89 @@ This can be done with the following theorems:
 ### Electric Fields
 
 #### Continuous charge distribution
-
-
 > Recall: \\( \vec{E_{sys}} = \frac{1}{4\pi\varepsilon_o}\sum_k \frac{q_k}{|\vec{R}-\vec{R'_k}|^3}(\vec{R} - \vec{R'_k}) \\)
 
 In continuous form, \\( \int{d\vec{E}} \\)
+
+Steps for solving charge distribution problem:
+1. Choose coordinate system
+2. Write out  \\( dQ \\)
+3. Write out \\( \vec{R} - \vec{R'} \\)
+4. Write \\( d\vec{E} \\)
+5. Integrate!
+
+##### Volume Charge
+
+$$ dQ = P_v dv' $$ 
+> Contribution to \\( \vec{E} \\). \\( P \\)) denotes volume charge density [C/m^3]
+
+$$ \vec{E} = \frac{1}{4\pi\varepsilon_o}  \int_{V'} \frac{P_v}{|\vec{R}-\vec{R'}|^2} \hat{a}_{\vec{R} - \vec{R'}} dV' $$
+
+
+Noting that
+
+$$ \hat{a}_{\vec{R} - \vec{R}} = \frac{\vec{R} - \vec{R'}}{|\vec{R} - \vec{R'}|}$$
+
+we obtain that 
+$$ \vec{E} = \frac{1}{4\pi\varepsilon_o}  \int_{V'} \frac{P_v}{|\vec{R}-\vec{R'}|^3} (\vec{R} - \vec{R'}) dV' $$
+
+
+Much the same approach can be taken for surface and line charges; they all end up having the same form but with \\( ds' \\) or \\( dl' \\)), respectively.
+
+
+# Flux & Gauss's Law
+
+- Electric fields extend (with decreasing density) from point charges (away from charge for +'ve, towards charge for -'ve). 
+     - A good way to "visualize" this is to draw field lines. 
+
+![https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Camposcargas.svg/440px-Camposcargas.svg.png](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Camposcargas.svg/440px-Camposcargas.svg.png)
+
+Note that greater field line density corresponds to greater field strength. We usually aren't concerned with field strength at a point, however, but rather it's effect on surfaces.
+
+
+---
+*Define*: Flux: the electric field through a surface
+
+$$ \Phi = \int_s \vec{E} \cdot d\vec{s} $$
+
+where \\( d\vec{s} \\) denotes a normal vector to the surface.
+
+> Note the dot product! This also means that a surface parallel to the field lines will have a flux of 0.
+
+---
+
+
+
+---
+*Define*: Gauss's law (Integral form)
+
+$$ \oint_s \vec{E}\cdot d\vec{s} = \frac{Q}{\varepsilon_o} $$
+
+- Take integral over a closed surface (gaussian surface)
+- \\( Q \\) denotes charge *inside* surface
+
+> Total flux *out* of a surface is equal to the (total charge enclosed by surface)/(permittivity of free space)  
+> if \\( \oint \vec{E} \cdot d\vec{s} \\) > 0; net flux out (+'ve charge enclosed), < 0; net flux in (-'ve charge enclosed)
+
+
+---
+
+
+![](img/flux_ex.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -324,6 +644,52 @@ In continuous form, \\( \int{d\vec{E}} \\)
 - **Microfilaments**: Intertwined chains of actin molecules (in muscles, myosin molecules) -- for cellular contractile systems
 - **Intermediate Filaments**: Irregular threadlike proteins to resist mechanical stress
 - **Cytoplasm**: Jelly-like "fluid" inside of cells
+
+
+
+#### Cell membrane 
+
+- Cell membranes (plasma membranes) are formed of a phospholipid bilayer (hydrophilic phosphate+glycerol"head", hydrophobic fatty acid "tail"). 
+
+![plasma_membrane](img/plasma_membrane.png)
+- Phospholipid molecules can move around the PM via
+  - Uncatalyzed transverse diffusion (slow, days) (think of pairs in bilayers flipping)
+  - Flippase-catalyzed diffusion (fast, seconds)
+  - Lateral diffusion (very fast, micrometer/second) (think of of a molecule moving around the bilayer)
+
+
+##### Biological Glue
+
+- **Desmosome**: a tight "spot weld" between cells
+- **Tight Junction**: multiple "seams" between cells; forms strong semi-impermeable (selective) bond between cells. Often found in intestinal tissue
+- **Gap Junction**: Cells coupled by "connexon"s a structure that allows for passage of ions and small molecules. Can be opened/closed to vary passage. Leaves a 2-4nm gap between cells.
+
+![junctions1](img/junctions1.png)
+![junctions2](img/junctions2.png)
+
+
+###### Osmosis
+- **Osmosis**: movement of solvent from areas of high solvent concentration -> areas of low solvent concentration
+    - Typically only lets in small molecules and ions
+    - Larger ones must be transported across the bilayer using carrier proteins
+  
+- Cell uses active transport when it must transport molecules/ions *against* the concentration gradient
+
+![active_transport](img/active_transport.png)
+> Illustration of \\( Na^+/K^+ \\) pump
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #### ATP

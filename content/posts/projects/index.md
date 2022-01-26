@@ -12,10 +12,11 @@ tags: ['programming', 'projects']
 
 > "If you built a project and did not write about it, did you really build a project?"
 
+ 
 
-**[Browse projects by tag]({{< relref "../../tags/projects" >}})**  
 
 ## Overview
+**[Browse projects by tag]({{< ref "/tags/projects" >}})**
 - [GrocerCheck](https://grocercheck.ca/): [`Github`](https://github.com/GrocerCheck/GrocerCheck), [Pitch Deck]({{< ref "#grocercheck-pitch-deck" >}})  A website to help people reduce contact at grocery stores and essential services.  Got some press coverage too!
      - [CBC Piece](https://www.cbc.ca/news/canada/british-columbia/bc-youth-entrepreneurs-covid19-1.5784637)
      - [CBC Piece, but in French](https://ici.radio-canada.ca/nouvelle/1746337/emploi-pandemie-entrepreneuriat-bakd-grocercheck)
