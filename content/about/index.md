@@ -22,7 +22,7 @@ back_to_top: false
 
 <details>
   <summary>View as image</summary>
-  <img src="{{<baseurl>}}resume.png" alt="Resume" style="width:100%">
+  <img src="{{<baseurl>}}/resume.png" alt="Resume" style="width:100%">
 </details>
 
 Or, download my resume [here]({{<baseurl>}}resume.pdf)
