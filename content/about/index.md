@@ -25,7 +25,7 @@ back_to_top: false
   <img src="{{<baseurl>}}/resume.png" alt="Resume" style="width:100%">
 </details>
 
-Or, download my resume [here]({{<baseurl>}}resume.pdf)
+Or, download my resume [here]({{<baseurl>}}/resume.pdf)
 
 
 ##  Connect with me:
