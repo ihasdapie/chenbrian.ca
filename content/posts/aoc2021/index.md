@@ -5,9 +5,9 @@ draft: false
 katex: true
 tags: ['programming']
 back_to_top: true
+toc: true
 ---
 
-{{< toc >}}
 
 This page will track some notes and TILs for [AoC2021](https://adventofcode.com/2021), which I will be completing in `rust` -- a language I am still learning.
 

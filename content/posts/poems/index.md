@@ -4,10 +4,10 @@ date: 2022-01-08T00:26:05-05:00
 draft: false
 katex: true
 back_to_top: true
+toc: true
 tags: ["other"]
 ---
 
-{{< toc >}}
 
 Making it a commitment for 2022 to [read some poems](https://www.poetryfoundation.org/poems/poem-of-the-day).
 

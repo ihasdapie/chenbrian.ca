@@ -4,10 +4,10 @@ date: 2022-01-10T19:53:48-05:00
 draft: false
 katex: true
 back_to_top: true
+toc: true
 tags: ["notes", "engsci"]
 ---
 
-{{< toc >}}
 
 // Work in progress //
 

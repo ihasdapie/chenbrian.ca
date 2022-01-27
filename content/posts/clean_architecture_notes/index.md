@@ -5,10 +5,10 @@ date: 2021-12-26T16:39:21-05:00
 draft: false
 katex: true
 back_to_top: true
+toc: true
 tags: ['notes', 'programming']
 ---
 
-{{< toc >}}
 
 > **"Fight for the architecture"**
 

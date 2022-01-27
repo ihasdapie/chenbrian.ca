@@ -18,9 +18,14 @@ back_to_top: false
 - Trying to make it through university!
 
 ## Resume
-{{< pdf src= "../resume.pdf" >}}
+{{< pdf src= "resume.pdf" >}}
 
-Or, download my resume [here](../resume.pdf)
+<details>
+  <summary>View as image</summary>
+  <img src="{{<baseurl>}}resume.png" alt="Resume" style="width:100%">
+</details>
+
+Or, download my resume [here]({{<baseurl>}}resume.pdf)
 
 
 ##  Connect with me:

@@ -5,6 +5,7 @@ draft: false
 katex: true
 tags: ['notes', 'engsci']
 back_to_top: true
+toc: true
 ---
 
 Exam 'cheat sheets' for EngSci 2nd year semester fall semester. 
@@ -12,7 +13,6 @@ These were made as part of my own studying for the exams. As 3/6 of my exams wer
 
 I do not guarantee content correctness -- but if you find a mistake, please let me know!
 
-{{< toc >}}
 
 ## CHE260
 Note: the following only contains materials for the final exam, so it will *only* cover the heat-transfer portion of CHE260.

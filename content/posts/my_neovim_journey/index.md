@@ -5,10 +5,10 @@ date: 2022-01-13T13:35:35-05:00
 draft: true
 katex: true
 back_to_top: true
+toc: true
 tags: ["vim", "projects"]
 ---
 
-{{< toc >}}
 
 
 ![nvim_dashboard](img/nvim_dashboard.png)
