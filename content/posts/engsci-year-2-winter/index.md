@@ -130,11 +130,11 @@ And we can get the chance it came from machine 2 by applying bayes' rule.
 
 
 
----
+___
 *Define*: Bayes' Rule
 $$ P(C_n|A) = \frac{P(C_n)P(A|C_n)}{\sum^k_{i=1}  P(C_i)P(A|C_i)} $$
 
----
+___
 
 
 
@@ -217,13 +217,13 @@ I.e. if \\( X \\) is the # of heads for 3 coin flips
 
 #### Probability function/mass function/distribution (PMF)
 
---- 
+___ 
 *Define*: \\( f(x) \\) is a PMF of the discrete RX \\( X \\) if \\(  \forall x \in X \\)
 1. \\( f(x) \geq 0 \\)
 2. \\( \sum_x f(x) = 1 \\)
 3. \\( P(X=x) = f(x) \\)
 
----
+___
 
 
 
@@ -231,12 +231,12 @@ I.e. if \\( X \\) is the # of heads for 3 coin flips
 
 > When we want to find if the observed value of a random variable will be less than or equal to some real number \\( x \\). 
 
----
+___
 *Define*: Cumulative Distribution Function (\\( CDF \\))
 
 $$ F(x) = P(X \leq x) = \sum_{t\leq x} f(t), \hspace{1cm} - \infty < x < \infty $$
 
----
+___
 
 
 
@@ -253,7 +253,7 @@ Instead we concern ourselves with probabilities across intervals.
 
 
 
----
+___
 *Define*: Probability Density Function (\\( PDF \\))
 
 \\( f(x) \\) is a \\( pdf \\) for the continuous random variable \\( X \\) if 
@@ -261,16 +261,16 @@ Instead we concern ourselves with probabilities across intervals.
 2. \\( \int_{-\infty}^\infty f(x) = 1 \\)
 3. \\( P(a < X < b)= \int_a^bf(x) \\)
 
----
+___
 
 > We can apply the CDF concept to a continuous RV with a density function as well
 
----
+___
 *Define*: Cumulative Distribution Function (\\( CDF \\))
 
 $$ F(x) = P(X \leq x) = \int_{-\infty}^x f(t) dt, \hspace{1cm} - \infty < x < \infty $$
 
----
+___
 
 A nice result can then be obtained by applying the fundamental theorem of calculus,
 
@@ -289,7 +289,7 @@ $$ f(x) = \frac{dF(x)}{dx} $$
 
 
 
----
+___
 *Define*: \\( f(x, y) \\) is a joint probability distribution / probability mass function  of discrete RV \\( X, Y \\) if:
 
 1. \\( f(x, y) \geq 0 \\)
@@ -298,7 +298,7 @@ $$ f(x) = \frac{dF(x)}{dx} $$
 
 \\( \forall \\) region \\( A \\) in the \\( xy \\) plane, \\( P[(X,Y) \in A] = \sum \sum_A f(x, y) \\)
 
----
+___
 
 For example, if we select 2 ballpoint pens from a box containing 3 blue/2 red/3 green pens, and if \\( X \\) is the no. of blue pens selected and \\( Y \\) the no. of red pens selected,
 
@@ -314,7 +314,7 @@ $$ P[(X, Y) \in A] = P( X + Y \leq 1 ) = f(0,0) + f(0,1) + f(1, 0)  \\\\
 
 The same can be applied to continuous probability distributions as well
 
----
+___
 *Define*: \\( f(x, y) \\) is a joint density function of continuous RV \\( X, Y \\) if:
 
 1. \\( f(x, y) \geq 0 \\)
@@ -323,13 +323,13 @@ The same can be applied to continuous probability distributions as well
 
 > TLDR; integrating over whole region gives probability of 1, integrating over a subregion gives the probability of an event within that range.
 
----
+___
 
 But what if we want to inspect the probabilities dist. of a specific RV within the joint distribution?
 
 
 
----
+___
 *Define*: the marginal distributions of \\( X \\), \\( g(x) \\), given joint distribution \\( f(x, y) \\), is:
 
 for discrete case:
@@ -341,7 +341,7 @@ for continuous case:
 $$ g(x) = \int_{-\infty}^{\infty} f(x, y) dy$$
 
 
----
+___
 
 
 
@@ -470,6 +470,7 @@ This can be done with the following theorems:
 > [source](http://furqaanyusaf.com/notes/vectors/stokes-apply)
 
 
+
 ### Electric Fields
 
 #### Continuous charge distribution
@@ -487,7 +488,7 @@ Steps for solving charge distribution problem:
 ##### Volume Charge
 
 $$ dQ = P_v dv' $$ 
-> Contribution to \\( \vec{E} \\). \\( P \\)) denotes volume charge density [C/m^3]
+> Contribution to \\( \vec{E} \\). \\( P \\) denotes volume charge density [C/m^3]
 
 $$ \vec{E} = \frac{1}{4\pi\varepsilon_o}  \int_{V'} \frac{P_v}{|\vec{R}-\vec{R'}|^2} \hat{a}_{\vec{R} - \vec{R'}} dV' $$
 
@@ -503,7 +504,7 @@ $$ \vec{E} = \frac{1}{4\pi\varepsilon_o}  \int_{V'} \frac{P_v}{|\vec{R}-\vec{R'}
 Much the same approach can be taken for surface and line charges; they all end up having the same form but with \\( ds' \\) or \\( dl' \\)), respectively.
 
 
-# Flux & Gauss's Law
+####  Flux & Gauss's Law
 
 - Electric fields extend (with decreasing density) from point charges (away from charge for +'ve, towards charge for -'ve). 
      - A good way to "visualize" this is to draw field lines. 
@@ -513,7 +514,7 @@ Much the same approach can be taken for surface and line charges; they all end u
 Note that greater field line density corresponds to greater field strength. We usually aren't concerned with field strength at a point, however, but rather it's effect on surfaces.
 
 
----
+___
 *Define*: Flux: the electric field through a surface
 
 $$ \Phi = \int_s \vec{E} \cdot d\vec{s} $$
@@ -522,11 +523,11 @@ where \\( d\vec{s} \\) denotes a normal vector to the surface.
 
 > Note the dot product! This also means that a surface parallel to the field lines will have a flux of 0.
 
----
+___
 
 
 
----
+___
 *Define*: Gauss's law (Integral form)
 
 $$ \oint_s \vec{E}\cdot d\vec{s} = \frac{Q}{\varepsilon_o} $$
@@ -537,12 +538,28 @@ $$ \oint_s \vec{E}\cdot d\vec{s} = \frac{Q}{\varepsilon_o} $$
 > Total flux *out* of a surface is equal to the (total charge enclosed by surface)/(permittivity of free space)  
 > if \\( \oint \vec{E} \cdot d\vec{s} \\) > 0; net flux out (+'ve charge enclosed), < 0; net flux in (-'ve charge enclosed)
 
+It can also be written in differential form using the divergence theorem:
 
----
+> Recall: \\( \int_v \vec{\nabla} \cdot \vec{A} dv = \oint_s \vec{A} \cdot d\vec{s} \\))
+
+$$ \vec{\nabla} \cdot A = \lim_{\Delta V \to 0} \frac{\oint_S \vec{A} \cdot d \vec{s}}{\Delta V} $$
+
+where the value in the limit denotes the net outward flux of A per unit volume
+
+
+> Recall: \\( \vec{\nabla} = \frac{d}{dx}\vec{a_x} +  \frac{d}{dy}\vec{a_y} + \frac{d}{dz}\vec{a_z} + \\)
+
+we may then apply the divergence theorem to gauss's law to obtain
+
+$$ \oint_s \vec{E}\cdot d\vec{s} = \frac{\int_v Pv dv}{\varepsilon_o} 
+, \therefore \vec{\nabla \cdot E} = \frac{P_v}{\varepsilon_o} $$ $$
+
+
+
+___
 
 
 ![](img/flux_ex.png)
-
 
 
 
@@ -659,12 +676,44 @@ $$ \oint_s \vec{E}\cdot d\vec{s} = \frac{Q}{\varepsilon_o} $$
 
 
 
+###### Ion Leak Channels
+
+"Ion leak channels" are passive highly selective channels that allow for passage of ions in and out of the cell. 
+Some can be gated and some are not.
 
 
 
 
+![image_2022-01-27-16-20-27](img/image_2022-01-27-16-20-27.png)
+> Key concentrations and relative permeability of ion leak channels
 
 
+
+___
+
+*Define*: Nernst Equation
+
+$$ E_x = \frac{61}{Z_x}\log_10\frac{[C]_o}{[C]_i}$$
+
+- E = equliibrium potential (mV)
+- z = valence of permeant ion (e.g. Na+ = +1, Ca+ = +2, Cl- = -1)
+- [C]o = concentration of ion outside cell (mol/L)
+- [C]i = concentration of ion inside cell (mol/L)
+
+There is also a full form of the equation:
+
+
+
+> Idea: there is an osmosis concentration gradient across the membrane as well as a charge gradient
+
+*Example*: Sodium ions across a cell membrane, outside concentration of 150, inside concentration of 15
+
+$$ E_{Na^+} = \frac{61}{+1}\log \frac{150}{15} = +61mV$$
+
+- Note: \\( E_{ion} \neq  V_m \\)
+
+
+___
 
 
 
@@ -831,7 +880,7 @@ We can apply separation of variables to simplify the problem.
 
 
 
-## TEP 327: Engineering and Law
+## TEP327: Engineering and Law
 
 Why do engineers need to know about law?  
 - Engineering ends up stepping across a lot of jurisdictions, so we kinda need to know about it.
