@@ -285,7 +285,7 @@ $$ f(x) = \frac{dF(x)}{dx} $$
 
 
 #### Joint Probability Distributions
-> What if we want to deal with more than one random variable at a time?
+> What if we want to deal with more than one random variable at a time? 
 
 
 
@@ -297,6 +297,8 @@ ___
 3. \\( P(X = x, Y = y)= f(x, y) \\)
 
 \\( \forall \\) region \\( A \\) in the \\( xy \\) plane, \\( P[(X,Y) \in A] = \sum \sum_A f(x, y) \\)
+
+> e.x if, for a car that needs service, \\( X \\) denotes distance driven on a set of tires and \\( Y \\) denotes no. of tires to be replaced, then \\( f(10000, 2) \\) is the probability that it has driven for over 10000 distance units and the car needs 2 new tires.
 
 ___
 
@@ -340,12 +342,127 @@ for continuous case:
 
 $$ g(x) = \int_{-\infty}^{\infty} f(x, y) dy$$
 
-
+> The same follows for finding the marginal distribution of \\( Y \\), \\( h(y) \\)
 ___
 
 
 
 
+___
+
+*Define*: Conditional probability distribution \\( P(y|x) \\) 
+
+$$ f(y|x) = \frac{f(x,y)}{g(x)}, g(x) > 0$$
+
+___
+For example if we want to find if a discrete random variable \\( X \\) falls in between \\( a  \\) and \\( b \\) when \\( Y \\) is known, we can evaluate
+
+$$ P(a < X < b | Y = y) = \int_a^bf(x|y)dx = \int_a^b \frac{f(x,y)}{h(y)}dx $$
+
+
+
+___
+
+*Define*: Statistical Independence
+
+Given RV \\( X \\) and \\( Y \\) with joint probability distribution \\( f(x, y) \\) and marginal distributions \\( g(x) \\) and \\( h(y) \\) respectively, \\( X \\) and \\( Y \\) are statistically independent *if and only if*
+
+$$ f(x,y) = g(x)h(y) $$
+
+for all values of \\( x, y \\) in their range.
+
+We can generalize this to a set of random variables \\( X, Y, Z, ... \\) with joint probability distribution \\( f(x, y, z, ...) \\) and marginal distributions \\( g(x), h(y), i(z), ... \\) respectively.
+
+
+\\( X, Y, Z, ... \\) are statistically independent *if and only if*
+
+$$ f(x, y, z, ...) = f_x(x) f_y (y)f_z(z)...$$
+
+> Recall: doesn't this look a lot like when we did all the linear independence stuff back in MAT185?
+
+___
+
+
+
+___
+
+*Define*: Expectation/Mean of RV
+
+> Or: What would the average value be in the long run if we keep on sampling from the distribution
+
+Let \\( X \\) be a random variable with probability distribution \\( f(x) \\)
+
+$$ \mu = E[X] = \int_{-\infty}^\infty x f(x) dx $$
+
+if \\( g(X) \\) is a function of \\( X \\),
+
+$$ \mu = E[g(X)] = \int_{-\infty}^\infty g(x)f(x) dx $$
+
+and this can be generalized to joint distributions as well
+
+$$ \mu = E[g(X, Y)] = \int_{-\infty}^\infty \int_{-\infty}^\infty g(x, y)f(x, y) dx dy $$
+
+This value is of special importance as it describes where the probability distribution is centered.
+
+
+___
+
+
+
+___
+
+*Define*: Variance
+
+> Or: how much the distribution spreads out
+
+For finding the variance of a random variable \\( g(X) \\):
+
+Discrete:
+$$ \sigma^2 = E[(g(X)-\mu)^2] = \sum_x (x-\mu)^2 f(x)$$
+
+Continuous:
+$$ \sigma^2 = E[(g(X)-\mu)^2] = \int_{-\infty}^{\infty} (x-\mu)^2 f(x)dx   $$
+
+> to find the variance of just \\( X \\), use \\( g(X) = X \\)
+
+
+A simplified form of the above to find variance of RV \\( X \\):
+
+$$ \sigma^2 = E(X^2) - \mu^2 $$
+
+___
+
+
+___
+
+*Define*: Covariance
+
+Given RV \\( X, Y \\) and  joint probability distribution \\( f(x, y) \\), how closely are they associated? 
+
+Discrete:
+$$ \sigma_{XY} = E[(X-\mu_X)(Y-\mu_Y)] = \sum_x \sum_y f(x,y) (x-\mu_X)(y-\mu_Y) $$
+
+Continuous:
+
+$$ \sigma_{XY} = E[(X-\mu_X)(Y-\mu_Y)] = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} f(x,y) (x-\mu_X)(y-\mu_Y) dx dy $$
+
+A simplified form of the above:
+
+$$ \sigma_{XY} = E(XY) - \mu_x\mu_y $$
+
+- If large values of \\( X \\) often result in large values of \\( Y \\), the covariance is positive. 
+- If large values of \\( X \\) often result in small values of \\( Y \\), the covariance is negative.
+  - Sign of covariance denotes positive/negative relationship between \\( X \\), \\( Y \\).
+  - If \\( X, Y \\) are statistically independent, the covariance is 0.
+  > Note: the reverse is not always true since covariance only describes a linear relationship between two RV
+
+
+Correlation coefficient of \\( X, Y \\):
+
+$$ \rho_{XY} = \frac{\sigma_{XY}}{\sigma_X\sigma_Y} $$
+
+
+___
 
 
 
@@ -411,8 +528,6 @@ $$ z_p = r_p \cos{\theta_p}$$
 
 ![](img/coordinate_transformations.png)
 > From reference sheet
-
-
 
 
 #### Integration
@@ -530,10 +645,10 @@ ___
 ___
 *Define*: Gauss's law (Integral form)
 
-$$ \oint_s \vec{E}\cdot d\vec{s} = \frac{Q}{\varepsilon_o} $$
+$$ \Phi_E = \oint_s \vec{E}\cdot d\vec{s} = \frac{Q}{\varepsilon_o} $$
 
 - Take integral over a closed surface (gaussian surface)
-- \\( Q \\) denotes charge *inside* surface
+- \\( Q \\) denotes charge *inside* surface and is equal to \\( \int P_v dv' \\) or \\( P_v \\) multiplied by the volume in question
 
 > Total flux *out* of a surface is equal to the (total charge enclosed by surface)/(permittivity of free space)  
 > if \\( \oint \vec{E} \cdot d\vec{s} \\) > 0; net flux out (+'ve charge enclosed), < 0; net flux in (-'ve charge enclosed)
@@ -561,12 +676,10 @@ ___
 
 ![](img/flux_ex.png)
 
+![image_2022-01-28-20-05-05](img/image_2022-01-28-20-05-05.png)
 
 
-
-
-
-
+> The electric field reaches a maximum at \\( R = b \\), then is the maximum value multiplied by a factor of \\( \frac{1}{R^2} \\) after \\( R > b \\). Like how a point charge behaves,  which is what we expect.
 
 
 
@@ -801,25 +914,70 @@ Another property of RNA is that it is is single-use; each piece of mRNA ceases f
 ## PHY294: Quantum and Thermal Physics
 
 
-Useful tools:
+
+### Schrodinger & the Hydrogen Atom
 
 
-**Planck's Equation**: photon energies \\( E = hv = \frac{hc}{\lambda} \\)   
-**de Broglie wavelength**: relating momentum with wavelength \\( \lambda = \frac{h}{m v}\\)  
-**Schrodinger's equation**:
+
+___
+
+*Define*: Schrodinger's Equation
 
 $$ H\psi = E\psi $$
 
 - \\( H \\) is the Hamiltonian, \\( \psi \\) is the wave function, and \\( E \\) is the energy.
 - \\( |\psi|^2 \\) gives the probability density function.
 
-Recall: for a 1D particle in a box we use \\( \psi = Asin(kx) + Bcos(kx)\\) and then we can apply the boundary conditions at the bounds of the box.
-We may then find \\( \psi \\)) to be \\( \sqrt{\frac{2}{L}}sin()\frac{n\pi}{L})x\\) and \\( E_n = \frac{n^2h^2}{8mL^2} \\)) where \\( n \\)) is a integer > 0.
 
-In 2D and 3D this is more complicated but the same idea follows.
+Generalizing to three dimensions:
 
-When applying to a hydrogen atom it is useful to use spherical coordinates. 
+$$ \frac{\delta^2\psi}{\delta x^2} + \frac{\delta^2\psi}{\delta y^2} + \frac{\delta^2\psi}{\delta z^2} = \frac{2M}{\hbar^2}[U-E]\psi$$
+
+- \\( U \\) denotes potential (in H atom these are columbic forces)
+- \\( E \\) is energy non-dependent on distance to the nucleus
+- \\( M \\) is mass
+___
+
+> Recall: for a 1D particle in a box we use \\( \psi = Asin(kx) + Bcos(kx)\\) and then we can apply the boundary conditions at the bounds of the box.
+> We may then find \\( \psi \\) to be \\( \sqrt{\frac{2}{L}}sin()\frac{n\pi}{L})x\\) and \\( E_n = \frac{n^2h^2}{8mL^2} \\)) where \\( n \\)) is a integer > 0.
+
+
+In 2D and 3D potential wells this is more complicated but the same idea follows; we apply separation of variables and the boundary conditions.
+When applying to a hydrogen a few changes have to be made since it is not linear/square/cubic/etc and is spherical instead.
+This problem is called the "[central force problem](https://en.wikipedia.org/wiki/Hydrogen-like_atom)" and is solved in much the same way as the square/rectangular potential wells, except using spherical coordinates.
+
+
+
+
+
+
+it is useful to use spherical coordinates. 
 The solution is a bit of work to write out, so [see this](https://chem.libretexts.org/Courses/University_of_California_Davis/UCD_Chem_107B%3A_Physical_Chemistry_for_Life_Scientists/Chapters/4%3A_Quantum_Theory/4.10%3A_The_Schr%C3%B6dinger_Wave_Equation_for_the_Hydrogen_Atom).
+
+
+The key takeaway is that by solving the Schrodinger equation we see quantization come out of the cracks naturally.
+
+
+
+
+1. Quantization of energy
+
+
+
+
+
+$$ E = E_{n_x, n_y} = \frac{\hbar^2\pi^2}{2Ma^2}(n_x^2 + y_y^2) $$
+
+
+
+
+
+
+
+
+
+
+
 
 ![hydrogen_wavefns](img/hydrogen_wavefns.png)
 > Solutions from textbook. I think these would be provided if applicable.
@@ -828,13 +986,11 @@ The solution is a bit of work to write out, so [see this](https://chem.libretext
 
 Hydrogen orbitals can be written as \\( \psi(r, \theta, \phi) = R(r)\Theta(\theta)\Phi(\phi) \\).
 
-
-
 1. We apply \\(  n = 1,2,3... \\) (quanta) to the hydrogen atom.
 2. \\(  E = -\frac{E_r}{n^2} \\) **NOTE**: 1) Only applies to hydrogen 2) This is exactly the Rydberg/Bohr relation.
 3. \\(  l = 0,1,2...(n-1)\\)
 
-
+### Electron Spin
 
 
 
