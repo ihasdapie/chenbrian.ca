@@ -931,7 +931,13 @@ $$ H\psi = E\psi $$
 
 Generalizing to three dimensions:
 
-$$ \frac{\delta^2\psi}{\delta x^2} + \frac{\delta^2\psi}{\delta y^2} + \frac{\delta^2\psi}{\delta z^2} = \frac{2M}{\hbar^2}[U-E]\psi$$
+$$ \frac{\delta^2\psi}{\delta x^2} + \frac{\delta^2\psi}{\delta y^2} + \frac{\delta^2\psi}{\delta z^2} \\\\
+\frac{1}{r}\frac{\delta^2}{\delta r^2}(r\phi) + \frac{1}{r^2sin\theta} \frac{\delta}{\delta \theta}
+
+
+
+
+ = \frac{2M}{\hbar^2}[U-E]\psi$$
 
 - \\( U \\) denotes potential (in H atom these are columbic forces)
 - \\( E \\) is energy non-dependent on distance to the nucleus
