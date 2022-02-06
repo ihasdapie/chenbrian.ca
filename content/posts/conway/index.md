@@ -1,0 +1,45 @@
+---
+title: "conway's game of life in 3D w/ three.js"
+slug: "conway.3js"
+date: 2022-02-05T22:14:08-05:00
+draft: false
+katex: false
+toc: false
+tags: []
+---
+
+
+A few weeks back one of my roommates mentioned in passing that they were thinking of writing conway's game of life as a little widget for their website.
+I thought that was pretty fun and suggested that it would be really neat if it were in 3D as well.  
+<br>
+...Anyways fast-forward about two hours and I was stuck in a 3-hour lecture.
+So I wrote it (as is pretty evident below)
+
+<script type="module" src="conway.js" type="text/javascript"> </script>
+
+
+> Disclaimer: I don't think I can claim to be a *good* JS programmer so I highly doubt this can be considered "exemplary" javascript code
+
+Additional features that are half-baked currently include changing the initial state of the game, game size, etc. 
+It's the kind of thing that I *had* the intention of doing while writing it but kind of got bored after I got the minimum viable product working.
+The main intent was to have a little pretty widget I can stick on this blog, so it's easily embeddable by copying the appropriate files over and adding a `script` tag to where you want this to show up:
+
+```js
+<script type="module" src="conway.js" type="text/javascript"> </script>
+```
+
+
+
+### TODO:
+- Add a way to change the initial state of the game
+- game grid resizing
+- interactive camera control
+- better developer api
+- optimizing it ([abrash's black book, ch 17, 18](http://www.jagregory.com/abrash-black-book/#chapter-17-the-game-of-life))
+
+> The above link to the abrash's black book on optimization is a *fascinating* read.
+
+<br>
+
+> Source code: [github.com/ihasdapie/conway3d](https://github.com/ihasdapie/conway3d)
+

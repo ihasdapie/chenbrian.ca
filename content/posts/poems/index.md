@@ -181,4 +181,30 @@ The answer to this makes all the difference.
 > I always get excited when I see Asian-{North American} representation/themes...
 
 
+
+
+
+## The End of Landscape
+**Randall Mann**
+[source](https://www.poetryfoundation.org/poems/55027/the-end-of-landscape)
+
+> This is just an excerpt from it I enjoyed
+
+There's a certain sadness to this body of water  
+adjacent to the runway, its reeds and weeds,  
+handful of ducks, the water color  
+ 
+manmade. A still life. And still  
+life's a cold exercise in looking back,  
+back to Florida, craning my neck  
+ 
+like a sandhill crane in Alachua Basin.  
+As for the scrub oaks,  
+the hot wind in the leaves was language,  
+ 
+
+
+
+
+
 $$ _{\text{I don't own the rights to anything here (but I've made sure to backlink to the source!) Let me know if I should take anything down.}} $$

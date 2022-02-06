@@ -126,7 +126,7 @@ And we can get the chance it came from machine 2 by applying bayes' rule.
 
 
 
-#### Bayes' Rule
+### Bayes' Rule & Random Variables
 
 
 
@@ -203,6 +203,8 @@ For example \\(  x = 2 \\) corresponds to a subset \\( \\{DDN, DND, NDD\\} \\).
 - Continuous random variables take on values in an interval of \\( \mathbb{R} \\)
   - Has a probability of 0 of assuming *exactly* any of its values
   - Denote individual values with the lowercase letter equivalent
+
+### Distributions
 
 #### Discrete Probability Distributions
 > Probability that a discrete RV takes on each value
@@ -461,10 +463,183 @@ Correlation coefficient of \\( X, Y \\):
 
 $$ \rho_{XY} = \frac{\sigma_{XY}}{\sigma_X\sigma_Y} $$
 
+___
+
+#### Linear Combinations of Random Variables
+
+
+\\( p(x) \\) is linear if it satisfies the linearity test:
+- \\( p(ax+b) = ap(x) + bp(x) \\) for constant \\( a \\), constant \\( b \\).
+
+With the help of some integrals we can show that expectation is linear as well:
+
+$$ E[aX + b] = aE[X] + b $$
+
+or more generally,
+
+$$ E[g(X) \pm h(X)] = E[g(X)] \pm E[h(X)] $$
+
+The same also applies to functions of >1 random variables.
+This leads to a number of properties, the one of note that isn't immediately obvious is that
+
+$$ E(XY) = E(X)E(Y)$$
+
+> the above theorem may be applied to show that if X, Y are two independent random variables, then \\( \sigma_{XY} = 0 \\)
+
+
+
+___
+
+*Theorem*: if \\( X \\) and \\( Y \\) are random variables with joint probability distribution \\( f(x, y) \\) and \\( b, c \\) are constants, then
+
+$$ \sigma_{aX + bY + c} = a^2\sigma_X^2 + b^2\sigma_Y^2 + 2ab\sigma_{XY} $$
+
+> If \\( X \\) and \\( Y \\) are random variables, what would the covariance of a linear combination of them be? 
+> Note that the covariance doesn't depend on \\( c \\)
 
 ___
 
 
+
+
+
+
+#### Discrete Distributions
+
+---
+
+*Define*: Binomial Distribution
+
+A discrete distribution that models the number of successes in a Bernoulli process, which is a process that satisfies the following:
+
+1. An experiment that may be repeated many times
+2. Each trial has a boolean outcome
+3. The outcome probability is trial-constant
+4. Repeated trials are independent
+
+
+Some properties:
+
+
+Probability of \\(  x \\) 1s and \\( 1-x \\) 0s in some order is \\( p^x(1-p)^{n-x} \\)
+
+No. of ways to have \\(  x \\) 1s and \\( 1-x \\) 0s is
+$$ \binom{n}{x} $$
+
+Therefore the binomial distribution may be presented as:
+
+$$ b(x; n, p) =  \binom{n}{x} p^x(1-p)^{n-x} $$
+
+Expectation:
+$$ E[X] = \sum_{x=0}^n x \binom{n}{x} p^x(1-p)^{n-x} = np $$
+
+Variance:
+> Note: each trial is independent \\( \sigma_{Y_j Y_k} = 0 \qquad, k \neq j \\)
+$$ \sigma_X^2 = np(1-p) $$
+
+___
+
+
+
+___
+
+*Define*: Multinomial Distribution
+
+> A discrete distribution that can have \\( m \\) outcomes instead of the  \\( 2 \\) of the binomial distribution.
+
+$$ f(x_1, x_2 ..., x_k; p_1, p_2, ... p_k, n) \\\\ 
+= \binom{n}{ x_1 ... x_k } p_1^{x_1}, p_2^{x_2} ... p_k^{x_k}  $$
+___
+
+
+
+
+___
+
+*Define*: Hypergeometric Distribution
+
+> Hypergeometric distributions model sampling without replacement, whereas multinomial distributions model sampling with replacement
+
+A hypergeometric distribution \\( h(x; N, n, k) \\) is the probability distribution of the hypergeometric random variable which represents the no. of successes of a hypergeometric experiment (that's a lot of hypergeometric), which is an experiment where:
+1. A random sample of size \\( n \\) is drawn \\( N \\) items without replacement
+2. Of the \\( N \\) items, \\( k \\) are successes and \\( N-k \\) are failures.
+
+Mean:
+$$ \mu = \frac{nk}{N} $$
+Variance:
+$$ \sigma^2 = \frac{N-n}{N-1} \cdot n \cdot \frac{k}{N} ( 1 - \frac{k}{N} ) $$
+
+PMF:
+
+$$ h(x; N, n, K) = \frac{\binom{K}{x}\binom{N-K}{n-x}}{\binom{N}{n}} $$
+
+
+___
+
+
+#### Negative Binomial & Geometric Distributions
+> Instead of finding the probability of \\( x \\) successes in a fixed \\( n \\) trials, negative experiments are interested in the probability that the \\( k \\)th success occurs on the \\( x \\)th trial
+
+___
+
+*Define*: Negative Binomial
+
+$$ b*(x; k, p) = \binom{x-1}{k-1} p^k(1-p)^{x-k} $$
+
+Intuition:
+- on the \\( x \\)th trial the chance of \\( k-1 \\) successes in the last \\( x-1 \\) trials is \\( b(k-1; x-1, p) = \binom{x-1}{k-1}p^{k-1}(1-p)^{x-k} \\)
+- Extend that to \\( x, k \\), observe that \\( b*(x;k,p) = pb(k-1;x-1, p) \\) and so forth
+
+___
+
+
+___
+
+*Define*: Geometric Distribution
+
+> Repeated trials with probability of success \\( p \\); can be thought of as a negative binomial distribution with \\( k = 1 \\)
+
+$$ g(x;p) = b*(x; 1, p) = p(1-p)^{x-1} $$
+
+Properties
+- \\(  \mu = \frac{1}{p} \\)
+- \\(  \sigma^2 = \frac{(1-p)}{p^2} \\)
+
+
+> Example application: playing a game where the opponent wins 90% of the time. How many games until the first win? \\( g(x; 0.1) = 0.1(0.9)^{x-1} = 1/0.1 = 10 \\)
+
+___
+
+#### Poisson Distribution
+A Poisson distribution models the probability distribution of the Poisson random variable which represents the numerical output of Poisson experiments in a Poisson process
+> That's a lot of Poisson!
+
+A Poisson process has the following properties:
+1. The number of outcomes occurring during one interval is independent of others, i.e. the process is stateless
+2. The probability that a single outcome will occur in an interval is proportional to the size of the interval and does not depend on the no. of outcomes outside of that interval
+3. The probability that > 1 outcome will occur in such a short time interval or fall in a small one is negligible
+
+
+___
+
+*Define*: Poisson probability distribution
+
+$$ p(x, \lambda t) = \frac{e^{-\lambda t} ( \lambda t )^x}{x!} \qquad, x \ge  0 \in \mathbb{Z}$$
+
+- \\( \lambda \\) is the rate of occurrence of the event per unit in interval
+- Mean: \\( \mu = \lambda \\)
+- Variance: \\( \sigma^2 = \lambda \\)
+
+___
+
+
+Note that we can also write the Poisson distribution as a limit of the binomial distribution
+
+$$ \lim_{n \to \infty, p \to 0} b(x; n, p) \\\\
+= \lim_{n \to \infty, p \to 0} \frac{n(n-1) ... (n-x+1)}{x!} \lambda/n)^x(\frac{\lambda}{\lambda/n})^{n-x} \\\\ 
+= \lim_{n \to \infty, p \to 0} \frac{n^x}{x!} (\lambda/n)^x (1-\lambda/x)^{n-x} \\\\
+= \frac{\lambda^x}{x!} \lim_{n \to \infty, p \to 0} e^{-\lambda}  = \frac{\lambda^x}{x!}e ^ {-\lambda}  \\\\
+= p(x; \lambda)  \\\\ $$
 
 
 
@@ -630,6 +805,7 @@ Note that greater field line density corresponds to greater field strength. We u
 
 
 ___
+
 *Define*: Flux: the electric field through a surface
 
 $$ \Phi = \int_s \vec{E} \cdot d\vec{s} $$
@@ -667,9 +843,7 @@ where the value in the limit denotes the net outward flux of A per unit volume
 we may then apply the divergence theorem to gauss's law to obtain
 
 $$ \oint_s \vec{E}\cdot d\vec{s} = \frac{\int_v Pv dv}{\varepsilon_o} 
-, \therefore \vec{\nabla \cdot E} = \frac{P_v}{\varepsilon_o} $$ $$
-
-
+, \therefore \vec{\nabla \cdot E} = \frac{P_v}{\varepsilon_o} $$ 
 
 ___
 
@@ -684,22 +858,76 @@ ___
 
 
 
+#### Gauss's law: differential form
+
+Recall:
+
+- \\( \vec{\nabla} V = grad V \\) <- gradient
+- \\( \vec{\nabla} \cdot \vec{A} = div A \\)  <- divergence
+- \\( \vec{\nabla} \times \vec{A} = curl A \\)  <- curl
+
+
+> Previously we used the integral form to solve Gauss's law -- but the differential form is equally valid:
+
+![](img/e_field_ex_diff_form.png)
 
 
 
+#### Work & Energy
+
+
+We know that the electrostatic force experienced by a charge is \\( \vec{F} = q\vec{E}\\). 
+Combining this with the definition of work, we can write the work done by an external force moving a point charge \\( q \\) from point \\( A \to B \\) as:
+
+$$ W_{A\to B} = \int_A^B \vec{F_{ext}} \cdot d\vec{l} = -q\int_A^B \vec{E} \cdot d\vec{l}$$
+
+Also, electric fields are [conservative](https://en.wikipedia.org/wiki/Electric_field), therefore
+
+$$ W_{B\to A} = -W_{A \to B} $$
+
+and it follows that
+
+> Apply Stoke's theorem
+
+$$ \oint_l \vec{E} \cdot d\vec{l} = \vec{\nabla} \times \vec{E} 0$$
+
+which leads to two fundamental electrostatic properties...
+
+
+#### Postulates of Electrostatics
+
+1. \\( \vec{\nabla} \cdot \vec{E} = \frac{P_v}{\varepsilon_o} \\)
+2. \\( \vec{\nabla} \times \vec{E} = 0 \\)
+
+This also enables us to define electric potential
+
+
+$$ \vec{\nabla} \times (\vec{\nabla } V) = 0 \\\\
+since \qquad \vec{\nabla } \times \vec{E} = 0, \\\\
+define \qquad \vec{E} = -\vec{\nabla } V  $$
+
+where \\( V \\) denotes potential.
 
 
 
+#### Electric Potential
 
 
+$$ \Delta V_{A \to B} = V_B - V_A = \frac{\Delta U_{A \to B}}{q} = - \int_A^B \vec{E}\cdot d \vec{l}$$
+- \\(  q \\) is a test charge
+
+> Potential is relative and is associated with the field (it is independent of the test charge)
+
+We may define potential a little more rigorously to inspect its differential form:
 
 
+> Recall: the gradient points in the direction of maximum slope
 
-
-
-
-
-
+$$ \Delta V_{A \to B} = -\int_A^B \vec{E} \cdot d\vec{l} \\\\
+= \int_A^B \frac{dV}{dn} \frac{dn}{dl} dl \\\\
+= \int_A^B \int_A^B \frac{dV}{dn} \vec{a_n} \vec{a_l} dl  \\\\
+= \int_A^B \vec{\nabla}V \cdot d\vec{l} \\\\
+\therefore \vec{E} = -\vec{\nabla}V$$
 
 
 
@@ -945,7 +1173,7 @@ $$ \frac{\delta^2\psi}{\delta x^2} + \frac{\delta^2\psi}{\delta y^2} + \frac{\de
 ___
 
 > Recall: for a 1D particle in a box we use \\( \psi = Asin(kx) + Bcos(kx)\\) and then we can apply the boundary conditions at the bounds of the box.
-> We may then find \\( \psi \\) to be \\( \sqrt{\frac{2}{L}}sin()\frac{n\pi}{L})x\\) and \\( E_n = \frac{n^2h^2}{8mL^2} \\)) where \\( n \\)) is a integer > 0.
+> We may then find \\( \psi \\) to be \\( \sqrt{\frac{2}{L}}sin()\frac{n\pi}{L})x\\) and \\( E_n = \frac{n^2h^2}{8mL^2} \\)) where \\( n \\)) is a integer > 0. 
 
 
 In 2D and 3D potential wells this is more complicated but the same idea follows; we apply separation of variables and the boundary conditions.
