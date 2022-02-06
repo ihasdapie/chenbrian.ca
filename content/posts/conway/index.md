@@ -18,11 +18,18 @@ So I wrote it (as is pretty evident below)
 <script type="module" src="conway.js" type="text/javascript"> </script>
 
 
-> Disclaimer: I don't think I can claim to be a *good* JS programmer so I highly doubt this can be considered "exemplary" javascript code
+> Disclaimer: I don't think I can claim to be a *good* JS programmer so I highly doubt this can be considered "exemplary" javascript code.
+> For example I added parallax to it in a way that definitely wasn't accidental...let's call it a "feature", not a "bug".
 
 Additional features that are half-baked currently include changing the initial state of the game, game size, etc. 
 It's the kind of thing that I *had* the intention of doing while writing it but kind of got bored after I got the minimum viable product working.
-The main intent was to have a little pretty widget I can stick on this blog, so it's easily embeddable by copying the appropriate files over and adding a `script` tag to where you want this to show up:
+I'd also like to note that [Three.js](https://threejs.org/) was surprisingly performant and ergonomic to use (though maybe my use-case was just really simple).
+The main intent was to have a little pretty widget I can stick on this site so that I can prove that i cAn fRoNt-EnD tOo [^horse] even though I've worked fullstack more than anything else. 
+
+[^horse]: Fullstack developers: ![horsememe](img/horsememe.png)
+
+Anyways, it's easily embeddable by copying the appropriate files over ([repo](https://github.com/ihasdapie/conway3d)) and adding a `script` tag to where you want this to show up:
+
 
 ```js
 <script type="module" src="conway.js" type="text/javascript"> </script>
