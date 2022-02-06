@@ -233,7 +233,7 @@ function make_conway (canvas_width, canvas_height, board_x, board_y, board_z) {
 
 var scripts = document.getElementsByTagName('script')
 var current_pos = scripts[scripts.length-1]
-current_pos.parentNode.insertBefore(make_conway(800, 800, 10, 10, 10), current_pos);
+current_pos.parentNode.insertBefore(make_conway(800, 800, 12, 12, 12), current_pos);
 
 
 
