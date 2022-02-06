@@ -5,7 +5,7 @@ date: 2022-02-05T22:14:08-05:00
 draft: false
 katex: false
 toc: false
-tags: []
+tags: ["fun", "programming", "projects"]
 ---
 
 

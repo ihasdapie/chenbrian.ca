@@ -5,7 +5,7 @@ draft: false
 katex: true
 back_to_top: true
 toc: true
-tags: ["other"]
+tags: ["other", "fun"]
 ---
 
 
