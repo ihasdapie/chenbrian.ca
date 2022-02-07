@@ -49,12 +49,12 @@ Email at `brianchen.chen (at) mail.utoronto.ca`
 
 ## Misc
 
-> Q: How can you tell if someone uses Linux?
+> Q: How can you tell if someone uses Linux?  
 > A: They'll tell you.
 
 I'm currently on Manjaro!
 
-> Q: How can you tell if a programmer uses Vim?
+> Q: How can you tell if a programmer uses Vim?  
 > A: You guessed it -- they'll tell you.
 
 Excuse me, I use [nvim](https://github.com/ihasdapie/dotfiles).

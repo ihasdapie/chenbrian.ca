@@ -1257,12 +1257,7 @@ $$ H\psi = E\psi $$
 Generalizing to three dimensions:
 
 $$ \frac{\delta^2\psi}{\delta x^2} + \frac{\delta^2\psi}{\delta y^2} + \frac{\delta^2\psi}{\delta z^2} \\\\
-\frac{1}{r}\frac{\delta^2}{\delta r^2}(r\phi) + \frac{1}{r^2sin\theta} \frac{\delta}{\delta \theta}
-
-
-
-
- = \frac{2M}{\hbar^2}[U-E]\psi$$
+\frac{1}{r}\frac{\delta^2}{\delta r^2}(r\phi) + \frac{1}{r^2sin\theta} \frac{\delta}{\delta \theta} = \frac{2M}{\hbar^2}[U-E]\psi$$
 
 - \\( U \\) denotes potential (in H atom these are columbic forces)
 - \\( E \\) is energy non-dependent on distance to the nucleus
@@ -1386,9 +1381,28 @@ Law is ...
   - Canada is bijural (both civil and common law)
     - Note difference between public (refers to society as a whole) and private law (individual interactions)
 
+- professional engineers are bound by their administrative body
+  - operates under assumption that *only* engineers can truly understand how engineers should best act
+    - part of it regulates that professional engineers should "be of good character"
+    - code of ethics is enforceable
+      - can be enforced by law because engineers are bound by professional engineers act (Ontario) or whatever it is in their governing body
+      - it is intentionally and often vague
+
+#### Case Briefing
+1. Facts:
+> Note that with with law we first enter the facts and evidence, *then* apply the relevant law to it.
+
+2. Issues
+3. Rule/Ratio
+4. Reasoning
+5. Holding
+
+
 
 ### Resources
 - [Canadian Distribution of Legislative Powers](https://laws-lois.justice.gc.ca/eng/const/page-3.html)
+- [Canlii](https://www.canlii.org/en/)
+- [Professional Engineers Act, R.S.O](https://www.ontario.ca/laws/statute/90p28)
 
 
 
