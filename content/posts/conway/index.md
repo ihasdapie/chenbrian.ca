@@ -24,10 +24,10 @@ So I wrote it (as is pretty evident below)
 Additional features that are half-baked currently include changing the initial state of the game, game size, etc. 
 It's the kind of thing that I *had* the intention of doing while writing it but kind of got bored after I got the minimum viable product working.
 I'd also like to note that [Three.js](https://threejs.org/) was surprisingly performant and ergonomic to use (though maybe my use-case was just really simple).
-The main intent was to have a swanky little widget I can stick on this site so that I can prove that i cAn fRoNt-EnD tOo [^horse] even though the bulk of my worked experience is probably fullstack.
+The main intent was to have a swanky little widget I can stick on this site so that I can prove that i cAn fRoNt-EnD tOo[^sortof] because recruiters seem to think otherwise -- even though the bulk of my worked experience is probably fullstack [^horse].
 Maybe I'm not macintosh™ enough to write `css`.
 
-
+[^sortof]: sort of. 
 [^horse]: Fullstack developers: ![horsememe](img/horsememe.png)
 
 Anyways, it's easily embeddable by copying the appropriate files over ([repo](https://github.com/ihasdapie/conway3d)) and adding a `script` tag to where you want this to show up:

@@ -17,6 +17,9 @@ back_to_top: false
 - [TA]({{< ref "posts/teaching" >}})-ing intro programming (ESC180) and data structures & algorithms (ESC190)
 - Trying to make it through university!
 
+
+
+
 ## Resume
 {{< pdf src= "resume.pdf" >}}
 
@@ -26,6 +29,11 @@ back_to_top: false
 </details>
 
 Or, download my resume [here]({{<baseurl>}}/resume.pdf)
+
+
+![](https://ghchart.rshah.org/ihasdapie)
+> My GitHub contributions graph
+
 
 
 ##  Connect with me:
@@ -41,16 +49,14 @@ Email at `brianchen.chen (at) mail.utoronto.ca`
 
 ## Misc
 
-```
-Q: How can you tell if someone uses Linux?
-A: They'll tell you.
-```
+> Q: How can you tell if someone uses Linux?
+> A: They'll tell you.
+
 I'm currently on Manjaro!
 
-```
-Q: How can you tell if a programmer uses Vim?
-A: You guessed it -- they'll tell you.
-```
+> Q: How can you tell if a programmer uses Vim?
+> A: You guessed it -- they'll tell you.
+
 Excuse me, I use [nvim](https://github.com/ihasdapie/dotfiles).
 
 

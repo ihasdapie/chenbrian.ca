@@ -858,7 +858,8 @@ ___
 
 
 
-#### Gauss's law: differential form
+#### Gauss's law: differential form 
+
 
 Recall:
 
@@ -923,11 +924,107 @@ We may define potential a little more rigorously to inspect its differential for
 
 > Recall: the gradient points in the direction of maximum slope
 
-$$ \Delta V_{A \to B} = -\int_A^B \vec{E} \cdot d\vec{l} \\\\
-= \int_A^B \frac{dV}{dn} \frac{dn}{dl} dl \\\\
-= \int_A^B \int_A^B \frac{dV}{dn} \vec{a_n} \vec{a_l} dl  \\\\
-= \int_A^B \vec{\nabla}V \cdot d\vec{l} \\\\
-\therefore \vec{E} = -\vec{\nabla}V$$
+$$ 
+\begin{aligned}
+\Delta V_{A \to B} &= -\int_A^B \vec{E} \cdot d\vec{l} \cr
+&= \int_A^B \frac{dV}{dn} \frac{dn}{dl} dl \cr
+&= \int_A^B \int_A^B \frac{dV}{dn} \vec{a_n} \vec{a_l} dl  \cr
+&= \int_A^B \vec{\nabla}V \cdot d\vec{l} \cr
+\therefore \quad \vec{E} &= -\vec{\nabla}V
+\end{aligned}$$
+
+Applying this to a number of different charges we may derive the following:
+
+1. Potential due to point charge 
+
+$$ \begin{aligned}
+  V &= -\int_\infty^R \vec{E} \cdot d\vec{l}\cr
+  &= -\int_\infty^R \frac{q_1}{4\pi \varepsilon_0 R^2} \vec{a_r} \cdot \vec{a_r} d\vec{R}\cr
+  &= -\int_\infty^R \frac{q_1}{4\pi \varepsilon_0 R^2} dR \cr
+  \vdots \cr
+  V(R) &= \frac{q_1}{4\pi \varepsilon_0 R}
+\end{aligned} $$
+> V(R) denotes the potential at a point of interest \\( P \\) that is distance \\( R \\) from the charge
+
+
+2. Potential due to discrete charge distribution (i.e. many point charges)
+
+> Electric field is conservative, so we can just sum up a modified version of the single point charge form found in 1.
+
+$$ V(R) = \sum_k \frac{q_k}{4\pi\varepsilon_o |\vec{R} - \vec{R'_k}| } $$
+
+> Specify \\( R \\) as the distance from the point of interest and the charge source, \\( | \vec{R} - \vec{R'_k} | \\)
+
+
+3. Electric dipole: a pair of equal and opposite charges separated by a small distance \\( d \\  \\)
+
+- Dipole moment: \\( \vec{P} = q\vec{d} \\)
+  - In spherical coordinates: \\( \vec{p} = p\cos\theta \vec{a_r} - p\sin\theta\vec{a_\theta} \\)
+
+Potential of a dipole can be written as the sum of two closely spaced charges:
+
+$$ V = \frac{1}{4\pi\varepsilon_o} (\frac{-q}{| \vec{R} + \frac{\vec{d}}{2} |} + \frac{q}{| \vec{R} - \frac{\vec{d}}{2} |} ) $$
+
+
+> Note directions of the charges and \\( d \\). Also we're only going to consider \\( R \gg d \\)
+
+Begin by simplifying the expressions for the distances
+
+$$ \begin{aligned}
+  \frac{1}{|\vec{R} - \frac{\vec{d}}{2}|}&= \frac{1}{\sqrt{(\vec{R} - \vec{d}/{2})\cdot(\vec{R} - \vec{d}/{2})}}   \cr
+  &= \frac{1}{\sqrt{\vec{R}\cdot \vec{R} - \vec{R} \cdot \vec{d} + \frac{\vec{d} \cdot \vec{d}}{4}} } \cr
+  \vdots \cr
+  &=  \frac{1}{R}(1+\frac{\vec{R} \cdot \vec{d}}{2R^2}) \cr
+\end{aligned} $$
+
+And much the same can be done for the other term. 
+Plugging into the expression for the potential we get:
+
+$$ V = \frac{1}{4\pi\varepsilon_o R^2} p \cos \theta $$
+
+> V is a function of \\( R \\) and \\( \theta \\)
+
+Next we find the field associated with this dipole. 
+This is made easy via \\( \vec{E} = -\vec{\nabla} V \\)
+
+
+
+
+
+$$ \begin{aligned}
+  \vec{E} &= -(  \frac{\delta V}{\delta R} \vec{a_R}  + \frac{1}{R} \frac{\delta V}{\delta \theta} \vec{a_\theta}   \frac{1}{R\sin\theta}\frac{\delta V}{\delta \phi} \vec{a_\phi}   ) \cr
+  &= \frac{2P\cos\theta}{4\pi\varepsilon R^3} \vec{a_R} + \frac{P\sin\theta}{4\pi\varepsilon R^3} \vec{a_\theta} \cr
+\end{aligned} $$
+
+> Notice now \\( \vec{e} \propto 1/R^3 \\)
+
+
+
+#### Electric Potential for continuous charges
+
+
+$$ V = \frac{1}{4\pi \varepsilon_o} \int_x \frac{\rho_x}{R} dx  $$
+
+where \\( x \\) can be either a line, surface, or a volume (and the integral would be dimensioned accordingly) depending on the charge distribution.
+
+
+For example, finding \\( V, \vec{E}\\) for a point perpendicular to a flat disk charge of radius \\( b \\) with a uniform charge density of \\( \rho_s \\):
+
+
+![uniform_charge_dist_pot_ex](img/uniform_charge_dist_pot_ex.png)
+
+
+
+#### Conductors
+
+- \\( \sigma \\) denotes conductivity, \\( \frac{1}{\sigma} \\) denotes resistivity
+- Good conductors have loosely coupled electrons and partially filled CB, \\( \sigma \approx 6 \times 10^7 \\) (copper)
+- Semiconductors have somewhat tightly bound electrons, \\( \sigma \approx 1.5 \times 10^{-3 }\\) (silicon)
+- Insulators have very confined electrons, conductivity near zero e.g. \\( \sigma \approx 10^{-14}\\) (rubber)
+- A perfect conductor has \\( \sigma \longrightarrow \infty \\), a perfect insulator has \\( \sigma \longrightarrow 0 \\)
+- Electric fields are zero in an perfect conductor [proof](https://physics.stackexchange.com/questions/147739/rigorously-prove-that-electric-field-is-zero-in-a-perfect-conductor).
+
+
 
 
 
