@@ -57,6 +57,22 @@ B: PROP=2
 - **Disabling the device**:  `sudo sh -c "echo '0018:06CB:19AC.0001' > /sys/bus/hid/drivers/hid-multitouch/unbind"`
 - **Enabling the device**: `sudo sh -c "echo '0018:06CB:19AC.0001' > /sys/bus/hid/drivers/hid-multitouch/bind"`
 
+
+Alternatively, make a script to toggle it
+
+
+```bash
+#!/usr/bin/bash
+if [ -d "/sys/bus/hid/drivers/hid-multitouch/0018:06CB:19AC.0001" ]; then
+  sudo sh -c "echo '0018:06CB:19AC.0001' > /sys/bus/hid/drivers/hid-multitouch/unbind"
+  echo "Turning touchscreen off!"
+else
+  sudo sh -c "echo '0018:06CB:19AC.0001' > /sys/bus/hid/drivers/hid-multitouch/bind"
+  echo "Turning Touchscreen on!"
+fi
+```
+
+
 > This script should work for toggling other input devices as well! I have these commands `alias`'ed in `~/.zshrc`  
 > [source](https://askubuntu.com/questions/927022/how-can-i-disable-touchscreen-while-using-wayland) for how to unbind devices
 
