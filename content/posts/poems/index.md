@@ -151,8 +151,8 @@ The lone and level sands stretch far away.”
 > But where are his works? Ozymandias -- is now but two broken legs in the desert which "stretch far away". 
 
 ## Love
+[source](https://www.poetryfoundation.org/poems/57416/love-56d23aec87f79)  
 **Tina Chang**  
-[source](https://www.poetryfoundation.org/poems/57416/love-56d23aec87f79)
 
 I am haunted by how much our mothers do not know.    
 How a republic falls because of its backhanded deals,  
@@ -185,8 +185,8 @@ The answer to this makes all the difference.
 
 
 ## The End of Landscape
-**Randall Mann**
-[source](https://www.poetryfoundation.org/poems/55027/the-end-of-landscape)
+[source](https://www.poetryfoundation.org/poems/55027/the-end-of-landscape)  
+**Randall Mann**  
 
 > This is just an excerpt from it I enjoyed
 
@@ -202,6 +202,138 @@ like a sandhill crane in Alachua Basin.
 As for the scrub oaks,  
 the hot wind in the leaves was language,  
  
+
+
+
+
+
+
+
+
+## Vivas To Those Who Have Failed: The Paterson Silk Strike, 1913 
+[source](https://www.poetryfoundation.org/poems/58738/vivas-to-those-who-have-failed-the-paterson-silk-strike-1913)  
+**Martín Espada**  
+
+
+Vivas to those who have fail'd!  
+And to those whose war-vessels sank in the sea!  
+And to those themselves who sank in the sea!  
+And to all generals that lost engagements, and all overcome heroes!  
+And the numberless unknown heroes equal to the greatest heroes known!  
+—Walt Whitman  
+
+*I. The Red Flag*  
+
+The newspapers said the strikers would hoist  
+the red flag of anarchy over the silk mills  
+of Paterson. At the strike meeting, a dyers' helper  
+from Naples rose as if from the steam of his labor,  
+lifted up  his hand and said here is the red flag:  
+brightly stained with dye for the silk of bow ties  
+and scarves, the skin and fingernails boiled away  
+for six dollars a week in the dye house.  
+
+He sat down without another word, sank back  
+into the fumes, name and face rubbed off  
+by oblivion's thumb like a Roman coin  
+from the earth of his birthplace dug up  
+after a thousand years, as the strikers  
+shouted the only praise he would ever hear.   
+
+*II. The River Floods the Avenue*  
+
+He was the other Valentino, not the romantic sheik  
+and bullfighter of silent movie palaces who died too young,  
+but the Valentino standing on his stoop to watch detectives  
+hired by the company bully strikebreakers onto a trolley  
+and a chorus of strikers bellowing the banned word scab.  
+He was not a striker or a scab, but the bullet fired to scatter  
+the crowd pulled the cork in the wine barrel of Valentino's back.  
+His body, pale as the wings of a moth, lay beside his big-bellied wife.  
+
+Two white-veiled horses pulled the carriage to the cemetery.  
+Twenty thousand strikers walked behind the hearse, flooding  
+the avenue like the river that lit up the mills, surging around  
+the tombstones. Blood for blood, cried Tresca: at this signal,  
+thousands of hands dropped red carnations and ribbons  
+into the grave, till the coffin evaporated in a red sea.  
+
+*III. The Insects in the Soup*  
+
+Reed was a Harvard man. He wrote for the New York magazines.  
+Big Bill, the organizer, fixed his good eye on Reed and told him  
+of the strike. He stood on a tenement porch across from the mill  
+to escape the rain and listen to the weavers. The bluecoats  
+told him to move on. The Harvard man asked for a name to go  
+with the number on the badge, and the cops tried to unscrew  
+his arms from their sockets. When the judge asked his business,  
+Reed said: Poet. The judge said: Twenty days in the county jail.  
+
+Reed was a Harvard man. He taught the strikers Harvard songs,  
+the tunes to sing with rebel words at the gates of the mill. The strikers  
+taught him how to spot the insects in the soup, speaking in tongues  
+the gospel of One Big Union and the eight-hour day, cramming the jail  
+till the weary jailers had to unlock the doors. Reed would write:  
+There's war in Paterson. After it was over, he rode with Pancho Villa.  
+
+*IV. The Little Agitator*  
+
+The cops on horseback charged into the picket line.  
+The weavers raised their hands across their faces,  
+hands that knew the loom as their fathers' hands  
+knew the loom, and the billy clubs broke their fingers.  
+Hannah was seventeen, the captain of the picket line,  
+the Joan of Arc of the Silk Strike. The prosecutor called her  
+a little agitator. Shame, said the judge; if she picketed again,  
+he would ship her to the State Home for Girls in Trenton.  
+
+Hannah left the courthouse to picket the mill. She chased  
+a strikebreaker down the street, yelling in Yidish the word  
+for shame. Back in court, she hissed at the judge's sentence  
+of another striker. Hannah got twenty days in jail for hissing.  
+She sang all the way to jail. After the strike came the blacklist,  
+the counter at her husband's candy store, the words for shame.  
+
+*V. Vivas to Those Who Have Failed*  
+
+Strikers without shoes lose strikes. Twenty years after the weavers  
+and dyers' helpers returned hollow-eyed to the loom and the steam,  
+Mazziotti led the other silk mill workers marching down the avenue  
+in Paterson, singing the old union songs for five cents more an hour.  
+Once again the nightsticks cracked cheekbones like teacups.  
+Mazziotti pressed both hands to his head, squeezing red ribbons  
+from his scalp. There would be no buffalo nickel for an hour's work  
+at the mill, for the silk of bow ties and scarves. Skull remembered wood.  
+
+The brain thrown against the wall of the skull remembered too:  
+the Sons of Italy, the Workmen's Circle, Local 152, Industrial  
+Workers of the World, one-eyed Big Bill and Flynn the Rebel Girl  
+speaking in tongues to thousands the prophecy of an eight-hour day.  
+Mazziotti's son would become a doctor, his daughter a poet.  
+Vivas to those who have failed: for they become the river.  
+
+
+
+
+> __*"Vivas to those who have failed: for they become the river."*__  
+> I like how this piece re-contextualizes the [1913 paterson silk strike](https://en.wikipedia.org/wiki/1913_Paterson_silk_strike) as, well, not a failure because they stood up and lay the foundation for what's to come; they *became the river*. 
+> In order to succeed one must go through a lot of failure.
+> We take the 8-hour work day for granted now, but it definitely wasn't the case when this strike happened.
+> The rights we enjoy today can be directly correlated with their actions and as such it is important for us to remember.
+> Also the red imagery combined with all the stories [almost like a snapshot/diorama from the protest] is just so powerful.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
