@@ -805,6 +805,145 @@ $$ Z = \frac{x-np}{\sqrt{np(1-p)} }$$
 
 
 
+#### Gamma Distribution
+
+
+___
+
+*Define*: Gamma function
+
+$$ \Gamma(\alpha) = \int_{0}^{\infty} x^{\alpha - 1} e^{-x} dx   $$
+
+
+___
+
+
+The gamma distribution is a distribution that makes use of the gamma function. 
+it is not very intuitive.
+
+
+$$ f(x; \alpha, \beta) = \begin{cases}
+  \frac{1}{\beta^\alpha \Gamma(\alpha)} x^{\alpha - 1} e^{-\frac{x}{\beta}} & \text{for } x \geq 0 \\\\
+  0 & \text{otherwise} 
+  \end{cases} $$
+
+$$ \alpha > 0, \beta > 0 $$
+
+
+
+- \\( E[ X  ] = \mu = \alpha\beta \\)
+- \\( \sigma^2 = \alpha\beta^2 \\)
+
+
+
+
+However a lot of *much nicer* distributions can be derived from the gamma distribution.
+
+
+
+___
+
+*Define*: Chi-Squared (\\( \chi^2 \\)) distribution
+
+$$ f(x; v) = \frac{1}{2^{\frac{v}{2}}\Gamma(\frac{v}{2})} x^{\frac{v}{2} -1} e^{-\frac{x}{2}} \qquad x > 0 $$
+
+> This is the gamma distribution with \\( \alpha = 2 \\).
+
+Good for describing confidence intervals, and for describing the distribution of a sample of a population. 
+See: [chi-squared test](https://en.wikipedia.org/wiki/Chi-squared_test)
+
+___
+
+
+
+___
+
+*Define*: Exponential distribution
+
+$$ f(x; \beta) = \begin{cases}
+  \frac{1}{\beta} e^{-\frac{x}{\beta}} & \text{for } x > 0 \\\\
+  0 & \text{otherwise} 
+  \end{cases} $$
+
+> this is the gamma distribution with \\( \alpha = 1 \\).
+
+
+Properties:
+- \\( E[X] = \beta \\)
+- \\( \sigma^2 = \beta^2 \\)
+- Relates to the Poisson distribution
+- Is memory-less
+
+
+___
+
+##### Exponential Distribution & Poisson Distribution 
+
+
+
+> Recall: for a Poisson distribution, \\( p(x; \lambda) = \frac{e^{-\lambda} x^\lambda}{x!} \\), \\( \mu = \lambda \\)
+> We can interpret this as \\( \lambda = rt \\). 
+
+If buses arriving at a bus stop was a Poisson process, then the time interval between the bus arrivals would be an exponential distribution.  
+
+For example, if we're trying to find the probability of *no arrivals* within \\( x \\),
+
+$$ p(0, rx) = e^{-rx} $$
+
+Let \\( X \\) be a RV for the time of the first arrival.
+
+> The probability of no arrivals in that time frame is the same as the probability of the first arrival to be after time \\( x \\).
+
+Then, given
+
+$$ P(X \geq x) = p(0; rx) = e^{-rx}  $$
+
+We have
+
+
+$$ P(X < x) = p(0; rx) = 1 - e^{-rx}  $$
+> This is the CDF of the RV \\( X \\)
+
+Apply fundamental theorem of calculus
+
+$$  F(X) = 1-e^{-rx} $$
+
+then we get the PDF
+
+$$ f(x) = \frac{d}{dx} F(x) = re^{-rx} $$
+
+Which is an exponential distribution with \\( r = 1/\beta \\).
+
+
+##### Exponential Distribution & Memory-less-ness
+
+
+Given RV \\( X \\) with \\( f(x, \beta) = \frac{1}{\beta} e^{-x/\beta} \\), consider
+
+$$ P(X \geq s + t) \qquad X \geq s $$
+
+
+Can split this up into two parts and then evaluate...
+
+$$ \begin{aligned}
+   &=  \frac{P(X \geq x+t \cap X \geq s)}{P(X \geq s)} \cr
+  &=  \frac{P(X \geq x+t)}{P(X \geq s)} \cr
+  &= \frac{
+  \int_{s+t}^{\infty} \frac{1}{\beta} e^{\frac{-x}{\beta}} dx 
+  }{
+  \int_{s}^{\infty} \frac{1}{\beta} e^{\frac{-x}{\beta}} dx 
+  } \cr
+  &= \frac{
+  e^{-\frac{s+t}{\beta}}
+  }{
+  e^{-\frac{s}{\beta}}
+  } \cr
+  &= e^{-\frac{-t}{\beta}}  \cr
+  &= P(X \geq t) \cr
+\end{aligned} $$
+
+> i.e. what's the probability of \\( s+t \\) if we've already waited up to \\( s \\)? I.e. if we've already waited \\( s \\) seconds, then the following probability  (\\( s + t \\)) is entirely unaffected by those initial \\( s \\) seconds.
+
 
 
 
@@ -1055,7 +1194,7 @@ $$ \oint_l \vec{E} \cdot d\vec{l} = \vec{\nabla} \times \vec{E} 0$$
 which leads to two fundamental electrostatic properties...
 
 
-#### Postulates of Electrostatics
+#### Postulates of Electrostatics (in free space)
 
 1. \\( \vec{\nabla} \cdot \vec{E} = \frac{P_v}{\varepsilon_o} \\)
 2. \\( \vec{\nabla} \times \vec{E} = 0 \\)
@@ -1239,6 +1378,48 @@ So the potential in a conductor is constant and equal to the potential in its ou
 
 
 
+##### Perfect Dielectric conductors in \\( \vec{E} \\) 
+
+- Dielectrics have no moving charges ( no free electrons ), however there can be bond charges; dielectrics can be polarized (and hence contribute to electric potential)
+- Also, some materials are made of molecules with non-zero dipole moments, e.g. \\( H_2O \\); external \\( \vec{E} \\) fields can make them align with the field
+- Some materials, [electrets](https://en.wikipedia.org/wiki/Electret) can can exhibit permanent electric dipole moment even without an external field and can be induced by [thermal poling](https://en.wikipedia.org/wiki/Glass_poling)
+
+
+
+Polarization vector \\( \vec{P} \\)
+
+$$ \vec{P} = \lim_{\Delta_v \to 0} \frac{\sum_{k=1}^{n\delta v \vec{P_k}}}{\delta v} \qquad [\frac{C}{m^2}] $$
+- \\( n \\) = number of particles per unit volume
+- \\( \vec{P_k} \\) = dipole moment of microscopic particles \\( C-m \\)
+- \\( \vec{P} \\) = volume density of electric dipole moment; is a point function
+
+![polarization_calc_diagram](img/polarization_calc_diagram.png)
+
+
+How does potential relate to polarization?
+
+$$ d\vec{p} = \vec{P} d\vec{v} \xrightarrow[\text{electric potential}]{\text{produces}} dV = \frac{\vec{p} \cdot\vec{a_r}}{4\pi \varepsilon_o R^2} dv' $$
+- \\( dV \\) is the contribution to potential from dipole moment in \\( dv' \\)
+
+$$ V(\vec{R}) = \int_{v'} dV = \int_{v'} \frac{\vec{P} \cdot \vec{a}_{\vec{R} - \vec{R'}}}{4 \pi \varepsilon_o |\vec{R} - \vec{R}' |^2} dv' $$
+
+
+And then a bunch of messy math...
+
+
+$$ \begin{aligned}
+  V(\vec{R}) &=  \cr
+  & \frac{1}{4\pi\varepsilon_o} \oint_{S\prime} \frac{\vec{P} \cdot \vec{a\prime}_{n}}{|\vec{R} - \vec{R}\prime |} ds\prime \cr
+  & +  \frac{1}{4\pi\varepsilon_o} \int_v \frac{-\vec{\nabla \prime} \cdot \vec{P}}{|\vec{R} - \vec{R}\prime | dv\prime}  \cr
+\end{aligned} $$
+
+- The first term is the potential produced by a surface charge distribution on \\( S\prime \\) with a density of\\( \rho_{ps} = \vec{p} \cdot \vec{a^\prime_n} \\)
+- The second term is the potential produced by a volume charge distribution in \\( v\prime \\) with a density of \\( \rho_{pv} = -\vec{\nabla} \cdot \vec{p} \\)
+
+
+> Katex isn't allowing me to do a \\( \int_{v'} \\) in the above so just pretend that the \\( \int_v \\) is \\( \int_{v'} \\)
+
+The physical interpretation is that a dielectric material may have its dipoles aligned after being in a \\( \vec{E} \\) field and thus be able to produce an \\( \vec{E} \\) field itself.
 
 
 
@@ -1247,6 +1428,88 @@ So the potential in a conductor is constant and equal to the potential in its ou
 
 
 
+$$  $$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### Generalized Gauss's Law
+
+In free space:
+
+$$ \vec{\nabla }\cdot \vec{E} = \frac{\rho_p}{\varepsilon_o}  $$
+$$ \oint_s \vec{E} \cdot d\vec{s} = \frac{Q_end}{\varepsilon_o} $$
+
+In a medium:
+
+- Must take the polarization charge \\( \rho_{pv} \\) as well as the free 
+
+$$ \vec{\nabla }\cdot \vec{E} = \frac{\rho_p + \rho_{pv} }{\varepsilon_o} \\\\
+\Rightarrow \vec{\nabla } \cdot(\varepsilon\vec{E}) = P_v + ( \vec{\nabla } \cdot \vec{p}  ) \\\\
+\Rightarrow \vec{\nabla } \cdot (\varepsilon \vec{E} + \vec{P}) = \rho_v $$
+Define displacement vector \\( \vec{D} \\) as:
+
+$$ \vec{D} = \varepsilon \vec{E} + \vec{p} $$
+
+> Units of static flux density \\( [C/m^2] \\)
+
+
+This brings us to the generalized Gauss's law:
+
+
+___
+
+*Define*: Generalized Gauss's Law
+
+
+$$ \vec{\nabla} \cdot \vec{D} = \rho $$
+
+where \\( \rho \\) is the __free__ charge density. In integral form,
+
+$$ \oint_S \vec{D} \cdot d\vec{s} = Q_{end} $$
+
+
+___
+
+
+Now we may write out the postulates of electrostatics in more general form, i.e. accounting for non-free space as well
+
+- \\( \vec{\nabla} \cdot \vec{D} = \rho \Leftrightarrow \oint_s \vec{D} \cdot d \vec{s} = Q \\)
+- \\( \vec{\nabla} \times \vec{E} = 0 \Leftrightarrow \oint_l \vec{E} \cdot d\vec{l} = 0\\)
+
+
+**For a linear and isotropic material**...
+
+> isotropic means that \\( \vec{p} and \vec{E} \\) is in the same direction, i.e. if we apply a field to the material it will polarize \\( p \\) in the same direction as the electric field.
+
+
+$$ \vec{p} = \varepsilon_o \chi_e \vec{E} $$
+
+- \\( \chi \\) denotes electrical susceptibility which is unitless. \\( \chi = 0 \\) in a vacuum.
+
+
+
+$$ \vec{D} = \varepsilon_o \vec{E} + \vec{p} \xrightarrow{\text{linear, isotropic}} \varepsilon_o \vec{E}(1 + \chi_e) = \varepsilon_o \varepsilon_r \vec{E} = \varepsilon \vec{E}  $$
+
+- \\( \varepsilon \\)  denotes the absolute permittivity
+- \\( \varepsilon_r \\)  denotes the relative permittivity, aka dielectric constant
+
+For example, a positive point charge \\( Q \\) at the centre of a dielectric shell
+
+
+
+
+![polaization_charge_ex](img/polaization_charge_ex.png)
 
 
 
@@ -1514,8 +1777,11 @@ $$ H\psi = E\psi $$
 
 Generalizing to three dimensions:
 
-$$ \frac{\delta^2\psi}{\delta x^2} + \frac{\delta^2\psi}{\delta y^2} + \frac{\delta^2\psi}{\delta z^2} \\\\
-\frac{1}{r}\frac{\delta^2}{\delta r^2}(r\phi) + \frac{1}{r^2sin\theta} \frac{\delta}{\delta \theta} = \frac{2M}{\hbar^2}[U-E]\psi$$
+$$ \frac{\delta^2}{\delta x^2} + \frac{\delta^2\psi}{\delta y^2} + \frac{\delta^2\psi}{\delta z^2} = \frac{2M}{\hbar^2}[U-E] \psi  \\\\
+\frac{1}{r}\frac{\delta^2 \psi}{\delta r^2}(r\psi) + \frac{1}{r^2sin\theta} \frac{\delta}{\delta \theta} (\sin \theta \frac{\delta \psi}{\delta\theta}) + \frac{1}{r^2 \sin^2 \theta} \frac{\delta^2 \psi}{\delta \phi^2} = \frac{2M}{\hbar^2}[U-E]\psi$$
+
+
+
 
 - \\( U \\) denotes potential (in H atom these are columbic forces)
 - \\( E \\) is energy non-dependent on distance to the nucleus
@@ -1611,68 +1877,159 @@ Y(y) = C \sin{\frac{n_y \pi y}{a}} $$
 And since \\( \psi(x,y) = X(x) Y(y) \\)
 
 
-$$ \psi(x,y) = BC\sin(k_x x) \sin{(k_y y)} = A \sin{\frac{n_x \pi x}{a}} \sin{\frac{n_y \pi y}{a}} $$
+$$ \psi(x,y) = BC\sin(k_x x) \sin{(k_y y)} = A \sin{\frac{n_x \pi x}{a}} \sin{\frac{n_y \pi y}{a}} =$$
+
+
+5. Identify allowed energies
+
+Recall:
+$$ Y(y) X''(x) + X(x) Y''(y) = -\frac{2ME}{\hbar^2} X(x) Y(y) $$
+
+Substitute what we have derived since (i.e. \\( X''/X = -k_x^2 \\)) and we get 
+$$ E = \frac{\hbar^2 \pi^2}{2Ma^2}n^2 \qquad [n = 1,2,3\dots] $$
+> Note quantized energy
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+#### Central Force Problem
 
 
 When applying to a hydrogen a few changes have to be made since it is not linear/square/cubic/etc and is spherical instead.
 This problem is called the "[central force problem](https://en.wikipedia.org/wiki/Hydrogen-like_atom)" and is solved in much the same way as the square/rectangular potential wells, except using spherical coordinates.
+In two dimensions we use much the same method as prior with the 2D infinite potential well, but in polar coordinates.
 
 
+$$ \frac{\delta^2\psi}{\delta x^2} + \frac{\delta^2\psi}{\delta y^2} = \frac{1}{r}\frac{\delta^2 \psi}{\delta r^2} + \frac{1}{r}\frac{\delta \psi}{\delta r} + \frac{1}{r^2}\frac{\delta \psi^2}{\delta \phi} $$
+
+And then apply separation of variables \\( \psi(r, \phi) = R(r) \Phi(\phi) \\).
+This has much the same procedure as before so will skip over it to find that we get all solutions as \\( \Phi(\phi) = e^{im\phi} \\).
+Applying Euler's identity we note that \\( \psi(r, \phi) = \psi(r, \phi + 2\pi) \\) which implies that the wave function (and the separated \\( \Phi(\phi) \\)) takes on discrete solutions, i.e. \\( m = 0, \pm 1, \pm 2, \dots \\)
+
+Extending on this we may also derive that angular momentum is quantized. 
+> I'm behind on class so the derivations for angular momentum and energy levels will not be typed out.
+
+$$ L_z = m\hbar \qquad[ m = 0, \pm 1, \pm2, \dots] $$
 
 
-
-
+Much the same approach applies to the three dimensional case. 
 The solution is a bit of work to write out, so [see this](https://chem.libretexts.org/Courses/University_of_California_Davis/UCD_Chem_107B%3A_Physical_Chemistry_for_Life_Scientists/Chapters/4%3A_Quantum_Theory/4.10%3A_The_Schr%C3%B6dinger_Wave_Equation_for_the_Hydrogen_Atom).
 
-
-The key takeaway is that by solving the Schrodinger equation we see quantization come out of the cracks naturally.
-
+The key takeaway is that by solving the Schrodinger equation we see quantization come out of the cracks naturally after we apply separation of variables i.e. \\( \psi(r, \theta, \phi) = R(r) \Theta(\theta) \Phi(\phi) \\) 
 
 
+1. The \\( \Phi \\) equation
 
-1. Quantization of energy
+$$ \Phi''(\phi) = 0m^2 \Phi(\phi) $$
+Solving the \\( \Phi \\) equation gives us the solution \\( \Phi(\phi) = e^{im\phi} \\). 
+Since \\( \Phi(\phi) \\) must me periodic with period \\( 2\pi \\) we can use the Euler identity to find that \\( m = 0, \pm 1, \pm2, \dots \\) and that angular momentum is quantized i.e. \\( L_z = m \hbar \\)
 
 
-$$ E = E_{n_x, n_y} = \frac{\hbar^2\pi^2}{2Ma^2}(n_x^2 + y_y^2) $$
+2. The \\( \Theta \\) equation
+
+$$ \frac{1}{\sin(	\theta)} \frac{d}{d	\theta} (\sin	\theta \frac{d\Theta}{d\theta}) + (k - \frac{m^2}{\sin^2 \theta}) \Theta = 0 $$
 
 
+This is a lot more difficult to solve and is called Legendre's equation.
+It turns out that it has unique solutions for each \\( k \\) of form \\( k = l(l+1) \qquad l \geq |m| \\)
+
+
+From this we get the result that particles with a wave function as given above has angular momentum
+
+$$ L = \sqrt{l(l+1)} \hbar  $$
+
+where \\( l \\) can be any integer greater than equal to 1, and for any given \\( l \\), \\( m \\) can take on integer values \\( |m| \leq l \\)
+
+
+
+
+> It is sometimes useful to express this in vector form
+> ![ang_momentum_vector](img/ang_momentum_vector.png)
+> The \\( z \\) component can take on \\( 2l+1 \\) values 
+
+3. The \\( R \\) equation
+$$ \frac{d^2}{dr^2} (rR) = \frac{2M}{\hbar} [U(r) + \frac{l(l+1)\hbar^2}{2Mr^2} - E] (rR) $$
+> * \\( k = l(l+1) \\)
+
+This equation determines the form of the potential \\( U(r) \\). 
+Notice that it does not depend on \\( m \\), therefore for a given \\( L \\) we will find the same allowed energies for all \\( 2l + 1 \\) orientations; it is spherically symmetric. Therefore a level will always be *at least* \\( 2l + 1 \\) fold degenerate.
+It turns out that the energies of the hydrogen atom are described by
+
+$$ E = -\frac{m_e (ke^2)^2}{2\hbar^2} \frac{1}{n^2} $$
+
+which can be simplified by recognizing the Rydberg energy term
+
+$$ E = -\frac{E_R}{n^2} \qquad E_R = 13.6 eV $$
+
+
+##### Wave Function
+
+
+$$ \phi_{nlm} = R_{nl}(r) \Theta_{lm}(\theta) e^{im\phi} $$
+> Expressions for \\( R \\) and \\( \Theta \\) are given in tables
 
 ![hydrogen_wavefns](img/hydrogen_wavefns.png)
 > Solutions from textbook. I think these would be provided if applicable.
 
 
 
-Hydrogen orbitals can be written as \\( \psi(r, \theta, \phi) = R(r)\Theta(\theta)\Phi(\phi) \\).
+#### Probability Density Functions
 
-1. We apply \\(  n = 1,2,3... \\) (quanta) to the hydrogen atom.
-2. \\(  E = -\frac{E_r}{n^2} \\) **NOTE**: 1) Only applies to hydrogen 2) This is exactly the Rydberg/Bohr relation.
-3. \\(  l = 0,1,2...(n-1)\\)
+- We can derive probability density functions for different shells of the hydrogen atom. For example for the ground state \\( P_{1s}(r) = 4\pi A^2 r^2 e^{-2r/a_B} \\). 
+  - Since this is a probability density function, \\( \int_{-\infty}^{\infty} P(r) = 1 \\). This allows us to solve for the constants in that expression.
+>![1s_prob_density](img/1s_prob_density.png) 
+> Notice maximum probability  at \\( r = a_B \\), which is the Bohr radius
+
+- More probability density functions can found with a google search. 
+
+
+#### Hydrogen-like atoms
+
+Hydrogen-like atoms can be approached in much the same way; whereas the potential of an electron in hydrogen is \\( U = -ke^2/r \\), it is \\( U = -Zke^2/r \\) in a hydrogen-like ion. 
+> \\( Z \\) is the atomic number
+
+Allowed energies of a hydrogen-like ion:
+
+$$ E = -Z^2 \frac{E_R}{n^2} $$
+
+
+And for finding the wave function apply much the same procedure as before but incorporate \\( Z \\), i.e. the parameter becomes
+
+
+$$ \frac{\hbar^2}{m_e Z ke^2} = \frac{a_B}{Z} $$
+
+For example the ground state of a hydrogen-like ion is given by
+
+$$ \psi_{1s} = Ae^{-\frac{Zr}{a_B}} $$
+
+
+
+
+#### Quantum Numbers, and wrapping up
+
+
+- \\( n \in \\{1, 2, 3, \dots \\}\\): principal quantum number, describes energy level of atom
+- \\( l \in \\{ 0, 1, 2, \dots, (n-1) \\}\\): azimuthal quantum number, describes angular momentum and sub-shell
+- \\( m_l \in \\{ -l, \dots, -1, 0, 1, \dots, l \\} \\): magnetic quantum number, describes energy levels available within a sub-shell
+- \\( m_s \in \\{ +1/2, -1/2 \\}\\): electron spin of the orbital
+- The \\( n \\)th level has degeneracy \\( 2n^2 \\). The 2 is caused by electron spin
+
+
+
 
 ### Electron Spin
 
+> Electrons have a spin. But they don't really spin. Don't question it.
+
+
+$$ J = L + S $$
+- \\( J \\) is the total angular momentum of the electron
+- \\( L \\) is the angular momentum of the electron
+- \\( S \\) is the spin of the electron
+
+> Think of the earth orbiting the sun; earth's spin is \\( S \\) and it's orbit is \\( L \\)
 
 - Spin is denoted via the spin quantum number, \\( \pm \frac{1}{2} \\)
-- Magnitude \\( S = \sqrt{s(s+1) \hbar } \\)
-
-
-
-
+- Magnitude \\( S = \sqrt{s(s+1) \hbar } = \frac{\sqrt{3}}{2} \hbar \\): "intrinsic angular momentum"
 
 
 
@@ -1710,6 +2067,7 @@ Hydrogen orbitals can be written as \\( \psi(r, \theta, \phi) = R(r)\Theta(\thet
 
 
 ## TEP327: Engineering and Law
+> ** It depends **
 
 Why do engineers need to know about law?  
 - Engineering ends up stepping across a lot of jurisdictions, so we kinda need to know about it.
