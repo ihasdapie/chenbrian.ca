@@ -1074,6 +1074,13 @@ Steps for solving charge distribution problem:
 4. Write \\( d\vec{E} \\)
 5. Integrate!
 
+
+##### Drawing
+
+![e_field_draw](img/e_field_draw.png)
+- \\( \vec{E} \\) must be perpendicular to conductors 
+- Equipotential lines are perpendicular to \\( \vec{E} \\) lines
+
 ##### Volume Charge
 
 $$ dQ = P_v dv' $$ 
@@ -2067,7 +2074,7 @@ $$ J = L + S $$
 
 
 ## TEP327: Engineering and Law
-> ** It depends **
+> ** "It depends" **
 
 Why do engineers need to know about law?  
 - Engineering ends up stepping across a lot of jurisdictions, so we kinda need to know about it.
