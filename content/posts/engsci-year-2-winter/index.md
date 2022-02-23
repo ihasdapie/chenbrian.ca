@@ -2023,10 +2023,11 @@ $$ \psi_{1s} = Ae^{-\frac{Zr}{a_B}} $$
 
 
 
+`// following notes will be rather rough ... //`
+
 ### Electron Spin
 
 > Electrons have a spin. But they don't really spin. Don't question it.
-
 
 $$ J = L + S $$
 - \\( J \\) is the total angular momentum of the electron
@@ -2034,32 +2035,118 @@ $$ J = L + S $$
 - \\( S \\) is the spin of the electron
 
 > Think of the earth orbiting the sun; earth's spin is \\( S \\) and it's orbit is \\( L \\)
-
 - Spin is denoted via the spin quantum number, \\( \pm \frac{1}{2} \\)
+- We saw prior that \\( L \\) is quantized by \\( L = \sqrt{l(l+1)} \hbar \\)
 - Magnitude \\( S = \sqrt{s(s+1) \hbar } = \frac{\sqrt{3}}{2} \hbar \\): "intrinsic angular momentum"
-
-
-
-
-
-
-
 - degeneracy of *n* th level in hydrogen: \\( 2n^2 \\)
 
 
+The electron acts like a rotating electric charge. 
+A current \\( i \\) in a loop of area \\( A \\) in a magnetic field \\( B \\) experiences torque \\( \Gamma \\)
+
+$$ \Gamma = iA \times B $$
+
+or 
+
+$$ \Gamma = \mu \times B \qquad \mu = iA $$
+
+The potential is is the negative of the work
+
+$$ U = -\mu B cost cos \theta = -\vec{\mu} \cdot \vec{B}$$
+
+We can define a ratio of \\( \mu \\) to \\( L \\) for the electron to to be
+
+$$ \frac{\mu}{L} = \frac{e}{2m_e} \Rightarrow \vec{\mu} = -\frac{e}{2m_e}\vec{L} $$
+
+Spin was demonstrated experimentally through the Zeeman experiment/Zeeman effect.
+The basic intuition is that applying a magnetic field to an atom will induce a change in energy by \\( -\vec{\mu} \cdot \vec{B} \\) which depends on the orientation of \\( \mu \\). 
+This means that the energy will change for each of the \\( 2l + 1 \\) possible orientations; by applying a magnetic field we the degeneracy of the original energy level.
+
+
+$$ \Delta E = (\frac{e}{2m_2}) L_z B $$
+
+And if we extract out the *bohr magneton* constant \\(  \mu_B = \frac{e\hbar}{2m_e} = 9.27 \times 10^-{24} A \cdot m^2 = 5.79 \times 10^{-5} eV/T \\) this reduces to \\( \Delta E = m\mu_B B \\). 
+Since \\( m \\) can have \\( 2l+1 \\) values \\( \longrightarrow \\) separation of the energy levels is \\( \mu_B B \\).  
+
+
+Now, considering the spin up/down case, we expect the *total* spin to be proportional to the spin angular momentum, i.e.
+
+$$ \vec{\mu}_{\text{spin}}= -\gamma \vec{S} = -\frac{e}{m_e}\vec{S} $$
+
+> \\( \gamma \\) is the spin gyromagnetic ratio
+
+and the total moment of an electron is 
+
+$$ \vec{\mu_{\text{tot}}} = \vec{\mu_{\text{orb}}} + \vec{\mu_{\text{spin}}} = -\frac{e}{2m_e}(\vec{L} + 2\vec{S}) $$
+
+
+armed with the above we can calculate the *anomalous* Zeeman effect (where the spin does contribute) to find that the separation of levels is 
+
+$$\Delta E 2\mu_B B $$
+
+which is twice the value predicted for the normal effect (which makes sense since the \\( \gamma \\)) is twice the orbital ratio.
+
+
+
+### Multi-Electron Atoms, Pauli Principle, and Periodic Table
+- can usually use IPA (independent particle assumption) when working with more than one electron
+- need to find the IPA potential energy for electrons
+
+$$ U(r) = -Z_{eff}(r) \frac{ke^2}{r} $$
+
+$$ \begin{cases}
+  Z_{eff}(r) \approx Z & r \text{inside all other electrons} \\\\
+  Z_eff \approx 1 & r \text{outside all other electrons} \\\\
+  \end{cases} $$
+> Can model it as a superposition of two cases depending on distance from other electrons/nucleus
+
+\\( U(r) \\) is pretty similar to the hydrogen potential function we know and love so we can use that as a starting off point.
+
+- Each level has degeneracy of at least \\( 2(2l+1) \\) 
 
 
 
 
+___
+
+*Define*: Pauli Exclusion Principle  
+
+"No two electrons in a quantum system can occupy the same quantum state"
+
+___
 
 
+> anything with full subshells (i.e. all paired electrons) will have spin 0; non-full subshells e.g. alkali metals and halogens will have spin \\( \frac{\sqrt{3}}{2} \\). 
+> For getting the angular momentum just take the \\( l \\) of the valence electron and plug it into \\( L = \sqrt{l(l+1)} \hbar \\)
 
 
+### Molecules and Bonding
 
 
+- \\( R_o \\) gives the bond length; distance between nuclei
+- \\( B (eV) \\) gives the bond energy; energy needed to seperate the bond
 
+- diatomic molecules are bonded together really really hard
+- noble gases interact very weakly with other atoms (recall gauss's law) and have really high energies for their excited states
 
+- ionic bonding; electron transfer causing a strong electrostatic attraction; creates electric dipole \\( p = qd \\)
+- covalent bonding;  sharing of electron
+- mixed bonds; a little of both -- most bonds are a little bit of both. None are completely ionic and a few are completely covalent (i.e. \\( H_2, O_2 \\))
+- bond strengths can be estimated using the expression for electrostatic potential \\( U = \frac{-ke^2}{R_o} \\)
+- energy released in a chem. reaction depends on the bond energies; i.e. \\( \Delta E = \sum_{i=1}^{n} \Delta E_i \\) each \\( E_i \\) denotes the bond energy to make/break a bond
 
+ionic bonds
+- two step processes; 1) transfer of electron (costs energy) 2) electron capture (energy gain); electron affinity; i.e. for forming \\( NaCl \\) the energy cost \\( \Delta E \\) is 5.1eV - 3.6eV = 1.5eV where 5.1 is the ionization energy and -3.6 is the electron affinity
+  - so why do bonds form even though it costs energy? Note energy changes depending on the distance between them
+    - bonding will happen at a critical distance \\( R_c = \frac{ke^2}{\Delta E} \\)
+    - can estimate the binding energy \\( B \approx \frac{ke^2}{R_o} - \Delta E \\)
+- define **valence**: no. of electrons an atom gains/loses in forming a molecule.
+- a lot of atom behaviour depends on the valence of the atom
+
+covalent bonds
+- must solve Schrodinger equation for the covalent bond
+  - i am not going to be doing that now...
+- 
 
 
 

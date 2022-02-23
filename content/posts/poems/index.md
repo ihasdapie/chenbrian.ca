@@ -325,14 +325,41 @@ Vivas to those who have failed: for they become the river.
 
 
 
+## February Evening in New York 
+[source](https://www.poetryfoundation.org/poems/42535/february-evening-in-new-york)  
+**Denise Levertov**  
+`As the stores close, a winter light`  
+`opens air to iris blue,   `  
+&nbsp;&nbsp;&nbsp;&nbsp;`glint of frost through the smoke  `  
+&nbsp;&nbsp;&nbsp;&nbsp;`grains of mica, salt of the sidewalk.  `  
+`As the buildings close, released autonomous     `  
+&nbsp;&nbsp;&nbsp;&nbsp;`feet pattern the streets  `  
+&nbsp;&nbsp;&nbsp;&nbsp;`in hurry and stroll; balloon heads  `  
+&nbsp;&nbsp;&nbsp;&nbsp;`drift and dive above them; the bodies     `  
+&nbsp;&nbsp;&nbsp;&nbsp;`aren't really there.  `  
+`As the lights brighten, as the sky darkens,  `  
+&nbsp;&nbsp;&nbsp;&nbsp;`a woman with crooked heels says to another woman     `  
+&nbsp;&nbsp;&nbsp;&nbsp;`while they step along at a fair pace,  `  
+&nbsp;&nbsp;&nbsp;&nbsp;*`"You know, I'm telling you, what I love best`*   
+&nbsp;&nbsp;&nbsp;&nbsp;*`is life. I love life! Even if I ever get  `*  
+&nbsp;&nbsp;&nbsp;&nbsp;*`to be old and wheezy—or limp! You know?     `*  
+&nbsp;&nbsp;&nbsp;&nbsp;*`Limping along?—I'd still ... "`* `Out of hearing.     `  
+`To the multiple disordered tones  `  
+&nbsp;&nbsp;&nbsp;&nbsp;`of gears changing, a dance  `  
+&nbsp;&nbsp;&nbsp;&nbsp;`to the compass points, out, four-way river.     `  
+&nbsp;&nbsp;&nbsp;&nbsp;`Prospect of sky  `  
+&nbsp;&nbsp;&nbsp;&nbsp;`wedged into avenues, left at the ends of streets,     `  
+&nbsp;&nbsp;&nbsp;&nbsp;`west sky, east sky: more life tonight! A range     `  
+&nbsp;&nbsp;&nbsp;&nbsp;`of open time at winter's outskirts`  
 
 
 
-
-
-
-
-
+> It's nice how I came across this poem the day after staying up late chatting with friends about art, music, and life.
+> I suppose my own life choices in going off to Toronto to school is a little like going to my [Canadian] "New York": a place of opportunity and excitement and *where life happens*.
+> "... and the bodies aren't really there...": it's easy to get caught up in the sea of people; others can seem like faceless balloon heads and to get lost.
+> That's where good friends come in -- those late night talks over [homemade bubble tea](https://www.youtube.com/watch?v=firTo7s_i9c) and leftover pasta have a wonderful effect.  
+> _I love life_.  
+> Also, there's some really wonderful use of meter [as pointed out by my roommate]; the stresses on `brighten` and `darken` in the 2nd stanza, the weird meter on `crooked heels`, and so on...
 
 
 
@@ -340,3 +367,27 @@ Vivas to those who have failed: for they become the river.
 
 
 $$ _{\text{I don't own the rights to anything here (but I've made sure to backlink to the source!) Let me know if I should take anything down.}} $$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

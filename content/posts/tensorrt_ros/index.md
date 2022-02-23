@@ -18,6 +18,14 @@ Download `TensorRT` from [here](https://developer.nvidia.com/tensorrt-getting-st
 You do have to make an 'Nvidia Developers Program' account to download the `TensorRT` package, which I have mixed feelings about.
 However this is easily bypassed if you are OK with building it from [source](https://github.com/NVIDIA/TensorRT)
 
+- use the `.tar.gz` file; the debian installer gets upset if you have `cuda` that isn't the latest version
+
+
+- Grab `https://github.com/onnx/onnx-tensorrt/`
+  - Don't use `setup.py install`, just follow the build steps and then `cd` to the base repo directory and run `python3 -m pip install .`.
+  - if it complains about `RuntimeError: module compiled against API version 0xe but this version of numpy is 0xd`
+    - `run python3 -m pip install numpy --upgrade`
+
 
 
 - Exporting and loading `onnx`
