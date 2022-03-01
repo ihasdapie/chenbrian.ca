@@ -11,6 +11,16 @@ tags: ["notes", "engsci"]
 
 // work in progress //
 
+
+{{< pdf src="notes.pdf" >}}
+Or, download [here](notes.pdf)
+
+
+
+Notes prior to reading week can be found below. 
+Right before reading week my roommate introduced me to the [NotesTeX](https://github.com/Adhumunt/NotesTeX) template and I'm currently using that.
+
+
 ## ECE286: Probability and Statistics
 
 
@@ -2197,6 +2207,10 @@ Law is ...
 3. Rule/Ratio
 4. Reasoning
 5. Holding
+
+
+- patents can have classifications (which will usually be given in patent search results)
+- can also search classifications and then filter by that.
 
 
 
