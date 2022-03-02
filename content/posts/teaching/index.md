@@ -23,6 +23,8 @@ Either download it and run locally, use [Google Colab](https://colab.research.go
 
 ## ESC190
 - [Tutorial 1](https://github.com/ihasdapie/teaching/blob/main/ESC190/esc190_tutorial-1.ipynb)
+- [Tutorial 2 Notes](https://github.com/ihasdapie/teaching/blob/main/ESC190/esc190-tutorial-2-notes.pdf)
+- [Midterm review](https://github.com/ihasdapie/teaching/blob/main/ESC190/esc190-tutorial-2-notes.pdf)
 
 (All else currently WIP), see: [github.com/ihasdapie/teaching/](https://github.com/ihasdapie/teaching/)
 
