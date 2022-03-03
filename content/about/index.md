@@ -10,7 +10,7 @@ back_to_top: false
 
 ## What am I up to right now?
 
-- Incoming SWE Intern at [Open Robotics Software Foundation](https://www.openrobotics.org/)!
+- Incoming SWE Intern at [Open Robotics Software Foundation](https://www.openrobotics.org/)
 - Systems & Simulations team co-lead @ [aUToronto](https://www.autodrive.utoronto.ca/): Automated testing & evaluation of autonomous vehicles, deep learning acceleration with TensorRT, CI/CD, and more!
 - Research @ [ISML](https://www.eecg.utoronto.ca/~roman/): I work with accelerating machine learning tasks on memristor crossbars -- first author paper pending submission
 - Web dev & data collection for [BC Parks Foundation](https://bcparksfoundation.ca/): currently in private beta
@@ -22,7 +22,7 @@ back_to_top: false
 
 
 ## Resume
-{{< pdf src= "resume.pdf" >}}
+{{< pdf src= "../resume.pdf" >}}
 
 <details>
   <summary>View as image</summary>
