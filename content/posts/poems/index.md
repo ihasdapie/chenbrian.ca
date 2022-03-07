@@ -363,6 +363,29 @@ Vivas to those who have failed: for they become the river.
 
 
 
+## Legacies
+[source](https://www.poetryfoundation.org/poems/48227/legacies)  
+**Nikki Giovanni**  
+
+
+her grandmother called her from the playground     
+&nbsp;&nbsp;&nbsp;&nbsp;“yes, ma’am”  
+&nbsp;&nbsp;&nbsp;&nbsp;“i want chu to learn how to make rolls” said the old       
+woman proudly  
+but the little girl didn’t want  
+to learn how because she knew  
+even if she couldn’t say it that  
+that would mean when the old one died she would be less     
+dependent on her spirit so  
+she said  
+&nbsp;&nbsp;&nbsp;&nbsp;“i don’t want to know how to make no rolls”  
+with her lips poked out  
+and the old woman wiped her hands on  
+her apron saying “lord  
+&nbsp;&nbsp;&nbsp;&nbsp;these children”  
+and neither of them ever  
+said what they meant  
+and i guess nobody ever does  
 
 
 
