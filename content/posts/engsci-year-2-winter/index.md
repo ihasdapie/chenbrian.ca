@@ -93,16 +93,10 @@ Note similarity to the partition formula; combinations can be thought as the set
 For events A, B:
 $$ P(A\cup B) = P(A) + P(B) - P(A\cap B)$$
 
-For \\(  n \\) mutually exclusive events \\( A_1, A_2 ... A_n \\)
-$$ P(A_1 \cup A_2 \cup ... A_n) = P(A_1) + P(A_2) + ... + P(A_n)$$
+For > 1 event,
 
-And if \\( A_1, A_2 ... A_n \\) is a partition of sample space S, 
+$$ P(A \cup B \cup C) = P(A) + P(B) + P(C) - P(B \cap C) - P(A\cap B) - P(A \cap C) + P(A \cap B \cap C) $$
 
-$$ P(A_1 \cup A_2 \cup ... A_n) = P(A_1) + P(A_2) + ... + P(A_n)$$
-
-
-And:
-$$ P(A \cup B) + P(A) + P(B) $$
 
 ##### Conditional Probability
 
