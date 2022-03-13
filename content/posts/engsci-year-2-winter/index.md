@@ -100,7 +100,7 @@ $$ P(A \cup B \cup C) = P(A) + P(B) + P(C) - P(B \cap C) - P(A\cap B) - P(A \cap
 
 ##### Conditional Probability
 
-$$ P(B|A) = \frac{P(A\cap B}{P(A)}$$
+$$ P(B|A) = \frac{P(A\cap B)}{P(A)}$$
 > The probability of B occurring, given that A occurs
 
 
