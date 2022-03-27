@@ -37,7 +37,10 @@ Email at `brianchen.chen (at) mail.utoronto.ca`
 
 #### About this page
 This site's design was inspired by the great minds behind [bettermotherfuckingwebsite.com](http://bettermotherfuckingwebsite.com/). 
-If you would like to also like to have a site that *isn't an absolute eyesore* and *doesn't load a 40-pound jQuery file*, check out the [hugo theme](https://github.com/ihasdapie/bettermotherfuckinghugowebsite/) behind this website.
+If you would like to also like to have a site that *isn't an absolute eyesore* and *doesn't load a 40-pound jQuery file*, check out the [hugo theme](https://github.com/ihasdapie/bettermotherfuckinghugowebsite/) behind this website. 
+Also, it is [more eco-friendly](https://www.websitecarbon.com/website/chenbrian-ca/)!
+
+
 
 
 
