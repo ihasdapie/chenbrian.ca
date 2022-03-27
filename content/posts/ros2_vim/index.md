@@ -5,6 +5,7 @@ draft: false
 katex: true
 back_to_top: false
 tags: ['programming', 'vim', 'robots']
+website_carbon: true
 ---
 
 

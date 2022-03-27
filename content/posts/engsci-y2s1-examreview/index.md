@@ -6,6 +6,7 @@ katex: true
 tags: ['notes', 'engsci']
 back_to_top: true
 toc: true
+website_carbon: true
 ---
 
 Exam 'cheat sheets' for EngSci 2nd year semester fall semester. 

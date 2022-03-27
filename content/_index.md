@@ -3,6 +3,7 @@ title: Hi, I'm Brian
 table: true
 tags: ['about_me']
 katex: true
+website_carbon: true
 ---
 
 ####  And I'm a student, software developer, and pokemon go enthusiast

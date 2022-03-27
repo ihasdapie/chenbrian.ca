@@ -4,6 +4,7 @@ slug: "conway.3js"
 date: 2022-02-05T22:14:08-05:00
 draft: false
 katex: false
+website_carbon: true
 toc: false
 tags: ["fun", "programming", "projects"]
 ---

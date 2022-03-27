@@ -5,6 +5,7 @@ draft: true
 katex: true
 back_to_top: true
 tags: ['robots', 'programming']
+website_carbon: true
 ---
 
 

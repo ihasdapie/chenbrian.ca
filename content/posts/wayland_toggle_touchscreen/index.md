@@ -6,6 +6,7 @@ draft: false
 katex: false
 toc: false
 tags: ["programming", "linux"]
+website_carbon: true
 ---
 
 Back when I was still on X11 [^1] , I had this little `bash` script to toggle my touchscreen on/off since I didn't use it all that often except to sign the occasional PDF, and it sucked up power[^2].

@@ -6,6 +6,7 @@ katex: true
 back_to_top: true
 toc: true
 tags: ["other", "fun"]
+website_carbon: true
 ---
 
 

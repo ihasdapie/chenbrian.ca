@@ -7,6 +7,7 @@ katex: true
 back_to_top: true
 toc: true
 tags: ["notes", "engsci"]
+website_carbon: true
 ---
 
 // work in progress //

@@ -6,6 +6,7 @@ draft: true
 katex: true
 toc: true
 tags: ["notes", "engsci"]
+website_carbon: true
 ---
 
 ## ECE259 - MT1

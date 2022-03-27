@@ -6,6 +6,7 @@ draft: false
 katex: false
 back_to_top: true
 tags: ["engsci", "other", "programming"]
+website_carbon: true
 ---
 
 Needed to use a Pi Pico for one of my courses (which mandated circuitpython ... for reasons unknown) and noticed that Adafruit's documentation for using CircuitPython with something that wasn't Mu Editor was not really up to par.
