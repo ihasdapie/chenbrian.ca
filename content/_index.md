@@ -12,7 +12,7 @@ website_carbon: true
 
 ... and let's put a face to the name as well
 
-I'm a student at the University of Toronto Engineering Science program passionate about making cool stuff and learning more about the world we live in.
+I'm an [Engineering Science](https://engsci.utoronto.ca/) student at the University of Toronto majoring in Computer Engineering, who is passionate about making cool stuff and learning more about the world we live in.
 When I'm not cramming for school, I enjoy cooking and playing badminton.
 
 While you're here, why don't you check out my [about me]({{< ref "/about">}}) page?
@@ -32,8 +32,7 @@ Or, take a look at my [blog]({{<ref "/posts">}})?
 
 - Github: [github.com/ihasdapie](https://github.com/ihasdapie)
 - LinkedIn: [linkedin.com/in/brianchen28914](https://linkedin.com/in/brianchen28914)
-
-Email at `brianchen.chen (at) mail.utoronto.ca`
+- Email at `brianchen.chen (at) mail.utoronto.ca`
 
 
 #### About this page

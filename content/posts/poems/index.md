@@ -389,6 +389,39 @@ said what they meant
 and i guess nobody ever does  
 
 
+## At Sunset 
+[source](https://www.poetryfoundation.org/poems/54036/at-sunset-56d233ed46e6e)  
+**Jason Shinder**
+
+Your death must be loved this much.  
+ 
+You have to know the grief—now.  
+Standing by the water’s edge,  
+ 
+looking down at the wave  
+ 
+touching you. You have to lie,  
+stiff, arms folded, on a heap of earth  
+ 
+and see how far the darkness  
+ 
+will take you. I mean it, this, now—  
+before the ghost the cold leaves  
+ 
+in your breath, rises;  
+ 
+before the toes are put together  
+inside the shoes. There it is—the goddamn  
+ 
+orange-going-into-rose descending  
+ 
+circle of beauty and time.  
+You have nothing to be sad about.  
+
+
+
+
+
 
 $$ _{\text{I don't own the rights to anything here (but I've made sure to backlink to the source!) Let me know if I should take anything down.}} $$
 
