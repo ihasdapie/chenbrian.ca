@@ -2,7 +2,7 @@
 date: 2022-04-10T02:56:07-04:00
 draft: false
 katex: false
-toc: true
+toc: false
 tags: []
 website_carbon: true
 ---
