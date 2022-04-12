@@ -12,7 +12,7 @@ website_carbon: true
 ## What am I up to right now?
 
 - Incoming SWE Intern at [Open Robotics Software Foundation](https://www.openrobotics.org/)
-- Systems & Simulations team co-lead @ [aUToronto](https://www.autodrive.utoronto.ca/): Automated testing & evaluation of autonomous vehicles, deep learning acceleration with TensorRT, CI/CD, and more!
+- Software system co-lead @ [aUToronto](https://www.autodrive.utoronto.ca/): Automated testing & evaluation of autonomous vehicles, deep learning acceleration with TensorRT, CI/CD, and more!
 - Research @ [ISML](https://www.eecg.utoronto.ca/~roman/): I work with accelerating machine learning tasks on memristor crossbars -- first author paper pending submission
 - Web dev & data collection for [BC Parks Foundation](https://bcparksfoundation.ca/): currently in private beta
 - [Side Projects]({{< ref "posts/projects" >}})
