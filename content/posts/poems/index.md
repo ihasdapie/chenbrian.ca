@@ -418,6 +418,15 @@ orange-going-into-rose descending
 circle of beauty and time.  
 You have nothing to be sad about.  
 
+## Hellonica (Excerpt)
+Source: FreeBSD Fortunes 7 #473  
+**Brian Aldiss**
+When you are young, you enjoy a sustained illusion that sooner or later something marvelous is going to happen, that you are going to transcend your parents' limitations...
+At the same time, you feel sure that in all the wilderness of possibility; in all the forests of opinion, there is a vital something that can be known -- known and grasped.
+That we will eventually know it, and convert the whole mystery into a coherent narrative.
+So that then one's true life -- the point of everything -- will emerge from the mist into a pure light, into total comprehension.
+But it isn't like that at all.
+But if it isn't, where did the idea come from, to torture and unsettle us?
 
 
 
