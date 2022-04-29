@@ -55,8 +55,13 @@ B: PROP=2
 
 2. Run these commands
 
-- **Disabling the device**:  `sudo sh -c "echo '0018:06CB:19AC.0001' > /sys/bus/hid/drivers/hid-multitouch/unbind"`
-- **Enabling the device**: `sudo sh -c "echo '0018:06CB:19AC.0001' > /sys/bus/hid/drivers/hid-multitouch/bind"`
+- **Disabling the device**:
+
+`sudo sh -c "echo '0018:06CB:19AC.0001' >
+/sys/bus/hid/drivers/hid-multitouch/unbind"`
+- **Enabling the device**: 
+
+`sudo sh -c "echo '0018:06CB:19AC.0001' > /sys/bus/hid/drivers/hid-multitouch/bind"`
 
 
 Alternatively, make a script to toggle it
