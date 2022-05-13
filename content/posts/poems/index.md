@@ -4,7 +4,7 @@ date: 2022-01-08T00:26:05-05:00
 draft: false
 katex: true
 back_to_top: true
-toc: true
+toc: true 
 tags: ["other", "fun"]
 website_carbon: true
 ---
@@ -428,7 +428,49 @@ So that then one's true life -- the point of everything -- will emerge from the 
 But it isn't like that at all.
 But if it isn't, where did the idea come from, to torture and unsettle us?
 
+## Moon
+[Source](https://www.poetryfoundation.org/poetrymagazine/poems/55799/moon-56d237b984e78)
+**Kathleen Jamie**
 
+Last night, when the moon  
+slipped into my attic room  
+as an oblong of light,  
+I sensed she’d come to commiserate.  
+
+It was August. She traveled  
+with a small valise  
+of darkness, and the first few stars  
+returning to the northern sky,  
+
+and my room, it seemed,  
+had missed her. She pretended  
+an interest in the bookcase  
+while other objects  
+
+stirred, as in a rock pool,  
+with unexpected life:  
+strings of beads in their green bowl gleamed,  
+the paper-crowded desk;  
+
+the books, too, appeared inclined  
+to open and confess.  
+Being sure the moon  
+harbored some intention,  
+
+I waited; watched for an age  
+her cool gaze shift  
+first toward a flower sketch  
+pinned on the far wall  
+
+then glide down to recline  
+along the pinewood floor,  
+before I’d had enough. *Moon*,  
+I said, *We’re both scarred now.*  
+
+*Are they quite beyond you*,  
+*the simple words of love? Say them.*  
+*You are not my mother;*  
+*with my mother, I waited unto death*.
 
 
 
