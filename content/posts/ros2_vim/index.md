@@ -1,16 +1,17 @@
 ---
-title: "Using NeoVim for ROS2 c++ development"
+title: "Setting up code completion for ROS2 `c++` development"
+slug: ros2_cpp_code_completion
 date: 2022-01-04T04:23:20-05:00
 draft: false
-katex: true
+toc: true
+katex: false
 back_to_top: false
 tags: ['programming', 'vim', 'robots']
 website_carbon: true
 ---
 
 
-## Using `clangd`
-
+## Using `clangd` 
 
 ROS2 puts its headers into a rather non-standard location, `/opt/ros2/<ROS_DISTRO>/include`.
 Obviously this doesn't play well with standard `clangd` setups, and it would be *too* easy if it just worked out of the box with `vim`!
@@ -22,9 +23,24 @@ Most editors like vscode or clion have their own way of handling scenarios like 
 With vim this is as little uglier. 
 Nothing that `clang` supports using either a `compile_commands.json` file or a `compile_flags.txt` file [source](https://clangd.llvm.org/installation.html#project-setup), we can either:
 
+### Method 0
+As it turns out there are [`colcon mixins`](https://colcon.readthedocs.io/en/released/reference/verb/mixin.html), though the use of which is not exactly well documented.
+Steps for use are as follows:
+
+1. Install the `python3-colcon-mixin` package; `sudo apt install python3-colcon-mixin`
+2. Fetch the 'default' `colcon` mixins: 
+  1. Add the default mixins file:
+  ``` 
+  colcon mixin add default https://raw.githubusercontent.com/colcon/colcon-mixin-repository/master/index.yaml
+  ```
+  2. Fetch them: `colcon mixin update default`
+3. Use them: `colcon build --mixin compile_commands`
+
+And this will work out of the box to generate the relevant `compile_commands.json` files.
 
 
-1. Generate a `compile_commands` file using `colcon build --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=ON`
+### Method 1
+Generate a `compile_commands` file using `colcon build --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=ON`
 It's also probably prudent to add this to your `CMakeLists.txt` file anyways, 
 
 ```cmake
@@ -46,21 +62,19 @@ If all else fails, try dropping in a minimal `compile_commands.json` file with t
 
 ```json
 // compile_commands.json
-[
-{
+[ {
   "directory": "<YOUR_ROS2_WORKSPACE>/src/build/<YOUR_ROS2_PACKAGE",
   "command": "/usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DSPDLOG_COMPILED_LIB -isystem /opt/ros2/foxy/include -Wall -Wextra -Wpedantic -std=gnu++14 -o CMakeFiles/<YOUR_PACKAGE_NAME>.dir/src/<YOUR_FILE_NAME>.o -c <YOUR_ROS2_WORKSPACE>/src/<YOUR_ROS2_PACKAGE>/src/<YOUR_FILE_NAME>.cpp",
   "file": "<YOUR_ROS2_WORKSPACE>/src/<YOUR_ROS2_PACKAGE>/src/<YOUR_FILE_NAME>.cpp"
-}
-]
+} ]
 ```
 
 
 
 
 
-
-2. Place a `compile_flags.txt` file with `-I /opt/ros2/<ROS_DISTRO>/include` in your project root
+### Method 2
+Place a `compile_flags.txt` file with `-I /opt/ros2/<ROS_DISTRO>/include` in your project root
 
 
 
