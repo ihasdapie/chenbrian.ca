@@ -1,6 +1,6 @@
 ---
-title: "Setting up code completion for ROS2 `c++` development"
-slug: ros2_cpp_code_completion
+title: "My terminal-centric workflow for ROS 2"
+slug: ros2_terminal_workflow
 date: 2022-01-04T04:23:20-05:00
 draft: false
 toc: true
@@ -10,11 +10,13 @@ tags: ['programming', 'vim', 'robots']
 website_carbon: true
 ---
 
+> This is a work in progress
 
-## Using `clangd` 
 
-ROS2 puts its headers into a rather non-standard location, `/opt/ros2/<ROS_DISTRO>/include`.
-Obviously this doesn't play well with standard `clangd` setups, and it would be *too* easy if it just worked out of the box with `vim`!
+## LSP with `clangd` 
+
+ROS2 puts its headers into `/opt/ros2/<ROS_DISTRO>/include`.
+This doesn't work out of the box with my fairly default `clangd` setup, and it would be *too* easy if it just worked out of the box with `vim`!
 Most editors like vscode or clion have their own way of handling scenarios like this, e.g. vscode using a `c_cpp_properties.json` file.
 
 > For vscode setup, see [this](https://www.allisonthackston.com/articles/vscode-docker-ros2.html) or [this](https://erdalpekel.de/?p=157)
@@ -23,7 +25,7 @@ Most editors like vscode or clion have their own way of handling scenarios like 
 With vim this is as little uglier. 
 Nothing that `clang` supports using either a `compile_commands.json` file or a `compile_flags.txt` file [source](https://clangd.llvm.org/installation.html#project-setup), we can either:
 
-### Method 0
+### Method 0: Colcon mixins compile_commands
 As it turns out there are [`colcon mixins`](https://colcon.readthedocs.io/en/released/reference/verb/mixin.html), though the use of which is not exactly well documented.
 Steps for use are as follows:
 
@@ -39,7 +41,7 @@ Steps for use are as follows:
 And this will work out of the box to generate the relevant `compile_commands.json` files.
 
 
-### Method 1
+### Method 1: CMake
 Generate a `compile_commands` file using `colcon build --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=ON`
 It's also probably prudent to add this to your `CMakeLists.txt` file anyways, 
 
@@ -70,10 +72,7 @@ If all else fails, try dropping in a minimal `compile_commands.json` file with t
 ```
 
 
-
-
-
-### Method 2
+### Method 3: compile_flags.txt
 Place a `compile_flags.txt` file with `-I /opt/ros2/<ROS_DISTRO>/include` in your project root
 
 
