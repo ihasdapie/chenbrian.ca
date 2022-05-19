@@ -125,9 +125,10 @@ What this entailed was the sharing of a few `unix` sockets.
       mygpu:
         type: gpu
     ```
-3. Look for where your wayland and xwayland sockets are
+3. Look for where your wayland and xwayland sockets are. You will also need your host's `Xauthority` file, which is usually located at `~/.Xauthority`. 
+In my case I screwed with it a little much and the file is in `/run/user/1000/xauth_<random_chars_here>`. 
     - For me they were in `/run/user/1000/wayland-0` and `/tmp/.X11-unix/X1`
-4. Add these to your container. Here I link them to the container and then symlink it to the desired location. In my case I also linked over my `Xauthority` configuration.
+4. Add these to your container. Here I link them to the container and then symlink it to the desired location. 
 ``` conf
 devices:
   Waylandsocket:
