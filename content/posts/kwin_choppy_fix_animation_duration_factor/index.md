@@ -13,8 +13,11 @@ website_carbon: true
 As per title: Delete `AnimationDurationFactor` from `~/.config/kwinrc`  if you have an old installation.
 This overrides the default value in kdeglobals and for me caused my animation speed to get stuck at something stupid.
 
+- [source](https://www.mail-archive.com/kde-bugs-dist@kde.org/msg535255.html)
 
-[source](https://www.mail-archive.com/kde-bugs-dist@kde.org/msg535255.html)
+Also, this is entirely anecdotal but it appears to me that setting `KWIN_TRIPLE_BUFFER=0` in `/etc/profile.d/kwin.sh` to disable triple buffering results in smoother behaviour than with it on despite the typical recommendations online.
+This may be because my laptop runs a Intel UHD620 and two 4K displays and the puny little integrated graphics card can't keep up with triple buffering.
+When using the MX150 on the laptop triple buffering seems to work better.
 
 
 
