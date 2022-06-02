@@ -1,5 +1,5 @@
 ---
-title: "`http://individual.utoronto.ca/chenbrian/`"
+title: "http://individual.utoronto.ca/chenbrian/"
 slug: "individual.utoronto"
 date: 2022-02-22T02:52:00-05:00
 draft: false

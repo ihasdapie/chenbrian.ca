@@ -212,7 +212,7 @@ los () {
 > Not the best way to do this but it works.
 
 
-## Resources:
+## Resources
 - [Passing X11, Wayland](https://discuss.linuxcontainers.org/t/howto-use-the-hosts-wayland-and-xwayland-servers-inside-containers/8765)
 - [Audio Passthrough](https://discuss.linuxcontainers.org/t/audio-via-pulseaudio-inside-container/8768) [^a] 
 - [LXC ROS Workflow](https://artivis.github.io/post/2020/lxc/)
