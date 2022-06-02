@@ -4,7 +4,7 @@ slug: "kwin_choppy_fix"
 date: 2022-05-25T01:22:56-07:00
 draft: false
 katex: false
-toc: true
+toc: false
 tags: ["programming", "linux"]
 website_carbon: true
 ---
