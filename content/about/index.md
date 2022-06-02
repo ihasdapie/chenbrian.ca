@@ -54,7 +54,9 @@ Email at `brianchen.chen (at) mail.utoronto.ca`
 > Q: How can you tell if someone uses Linux?  
 > A: They'll tell you.
 
-I'm currently on Manjaro!
+I'm currently on Manjaro! [^1]
+
+[^1]: Been meaning to switch to vanilla Arch for _years_ but my current setup 1) works and 2) isn't broken yet. Maybe when I get a new machine.
 
 > Q: How can you tell if a programmer uses Vim?  
 > A: You guessed it -- they'll tell you.
