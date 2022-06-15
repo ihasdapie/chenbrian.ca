@@ -1,16 +1,18 @@
 ---
-title: Hi, I'm Brian
+title: "chenbrian.ca"
 table: true
 tags: ['about_me']
 katex: true
 website_carbon: true
 ---
 
-####  And I'm a student, software developer, and pokemon go enthusiast
+# Hi, I'm Brian
+
+####  and I'm a student, software developer, and pokemon go enthusiast
 
 ![me](profile-picture.jpg)
 
-... and let's put a face to the name as well
+> ... and let's put a face to the name as well
 
 I'm an [Engineering Science](https://engsci.utoronto.ca/) student at the University of Toronto majoring in Computer Engineering, who is passionate about making cool stuff and learning more about the world we live in.
 When I'm not cramming for school, I enjoy cooking and playing badminton.

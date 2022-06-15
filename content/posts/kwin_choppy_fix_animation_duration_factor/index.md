@@ -1,5 +1,5 @@
 ---
-title: "PSA: Delete `AnimationDurationFactor` if you have an old installation"
+title: "PSA: Delete `AnimationDurationFactor` if you have an old KDE installation"
 slug: "kwin_choppy_fix"
 date: 2022-05-25T01:22:56-07:00
 draft: false

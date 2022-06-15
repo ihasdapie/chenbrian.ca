@@ -1,5 +1,5 @@
 ---
-title: "About me"
+title: "chenbrian/about"
 date: "2021-10-20"
 draft: false
 katex: false

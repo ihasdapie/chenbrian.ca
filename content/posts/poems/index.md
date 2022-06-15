@@ -420,7 +420,9 @@ You have nothing to be sad about.
 
 ## Hellonica (Excerpt)
 Source: FreeBSD Fortunes 7 #473  
-**Brian Aldiss**
+**Brian Aldiss**  
+
+
 When you are young, you enjoy a sustained illusion that sooner or later something marvelous is going to happen, that you are going to transcend your parents' limitations...
 At the same time, you feel sure that in all the wilderness of possibility; in all the forests of opinion, there is a vital something that can be known -- known and grasped.
 That we will eventually know it, and convert the whole mystery into a coherent narrative.
