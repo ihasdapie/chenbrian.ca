@@ -10,10 +10,12 @@ tags: ["fun", "programming", "projects"]
 ---
 
 
+
+
 A few weeks back one of my roommates mentioned in passing that they were thinking of writing conway's game of life as a little widget for their website.
 I thought that was pretty fun and suggested that it would be really neat if it were in 3D as well.  
 <br>
-...Anyways fast-forward about two hours and I was stuck in a 3-hour lecture.
+... anyways fast-forward about two hours and I was stuck in a 3-hour lecture.
 So I wrote it (as is pretty evident below)
 
 <script type="module" src="conway.js" type="text/javascript"> </script>
