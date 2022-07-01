@@ -1,5 +1,5 @@
 ---
-title: "conway's game of life in 3D w/ three.js"
+title: "conway.3js"
 slug: "conway.3js"
 date: 2022-02-05T22:14:08-05:00
 draft: false
