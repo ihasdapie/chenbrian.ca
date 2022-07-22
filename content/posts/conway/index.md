@@ -47,9 +47,9 @@ Anyways, it's easily embeddable by copying the appropriate files over ([repo](ht
 - game grid resizing
 - interactive camera control
 - better developer api
-- optimizing it ([abrash's black book, ch 17, 18](http://www.jagregory.com/abrash-black-book/#chapter-17-the-game-of-life))
+- optimizing it ([abrash's black book, ch 17, 18](http://www.jagregory.com/abrash-black-book/#chapter-17-the-game-of-life)) [^abrash]
 
-> the abrash black book's section on optimization is a genuinely fascinating read.
+[^abrash]: the abrash black book's section on optimization is a genuinely fascinating read.
 
 <br>
 
