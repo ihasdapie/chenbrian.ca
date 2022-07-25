@@ -28,7 +28,7 @@ Additional features that are half-baked currently include changing the initial s
 It's the kind of thing that I *had* the intention of doing while writing it but kind of got bored after I got the minimum viable product working.
 I'd also like to note that [Three.js](https://threejs.org/) was surprisingly performant and ergonomic to use (though maybe my use-case was just really simple).
 The main intent was to have a swanky little widget I can stick on this site so that I can prove that i cAn fRoNt-EnD tOo[^sortof] because recruiters seem to think otherwise -- even though the bulk of my worked experience is probably fullstack [^horse].
-Maybe I'm not macintosh™ enough to write `css`.
+Maybe I just don't seem macintosh™ enough to write `css`.
 
 [^sortof]: sort of. 
 [^horse]: Fullstack developers: ![horsememe](img/horsememe.png)

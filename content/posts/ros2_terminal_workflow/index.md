@@ -57,7 +57,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON CACHE INTERNAL "")
 
 Note that this requires there to be a buildable `ros2` package in your workspace, so if one is just getting started maybe try cloning the `ros2_tutorials` package or copy-pasting a simple pub-sub just to get a `compile_commands.json` file.
 
-**OR**, try using [bear](https://github.com/rizsotto/Bear) which works great in my experience.
+**OR**, try using [bear](https://github.com/rizsotto/Bear) which works great in my experience, i.e. `bear -- colcon build`
 
 
 If all else fails, try dropping in a minimal `compile_commands.json` file with the following contents, making sure to edit the filepaths accordingly:
