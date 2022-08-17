@@ -8,16 +8,9 @@ tags: []
 website_carbon: true
 ---
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+> ramblings  
+> over  
+> .  
+> .  
+> .  
+> `https`
