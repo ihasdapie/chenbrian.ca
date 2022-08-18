@@ -1,5 +1,6 @@
 ---
 title: "Advent of Code 2021"
+slug: "aoc2021"
 date: 2021-12-09T21:20:53-05:00
 draft: false
 katex: true
@@ -7,6 +8,8 @@ tags: ['programming']
 back_to_top: true
 toc: true
 website_carbon: true
+aliases:
+  - "/posts/2021/advent-of-code-2021"
 ---
 
 

@@ -1,5 +1,6 @@
 ---
 title: "Engsci Y2S1 Exam Review"
+slug: "engsci-y2s1-exam-review"
 date: 2021-12-11T22:16:12-05:00
 draft: false
 katex: true
@@ -7,6 +8,8 @@ tags: ['notes', 'engsci']
 back_to_top: true
 toc: true
 website_carbon: true
+aliases:
+  - "/posts/2021/engsci-y2s1-exam-review"
 ---
 
 Exam 'cheat sheets' for EngSci 2nd year semester fall semester. 

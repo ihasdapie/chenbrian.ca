@@ -7,6 +7,8 @@ katex: true
 toc: true
 tags: ["engsci", "other"]
 website_carbon: true
+aliases:
+  - "/posts/2022/individual.utoronto"
 ---
 
 Turns out UofT students/faculty/etc can host a free personal site (`50mb` max) in [individual.utoronto.ca](http://individual.utoronto.ca/).

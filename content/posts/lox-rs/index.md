@@ -6,6 +6,8 @@ katex: true
 back_to_top: false
 tags: ['programming', 'projects']
 website_carbon: true
+aliases:
+  - "/posts/2021/lox-rs"
 ---
 
 Building an interpreter for `lox` in `rust`, using the [crafting interpreters](https://craftinginterpreters.com) book.

@@ -8,6 +8,8 @@ katex: false
 back_to_top: false
 tags: ['programming', 'vim', 'robots']
 website_carbon: true
+aliases:
+  - "/posts/2022/ros2_terminal_workflow"
 ---
 
 > This is a work in progress

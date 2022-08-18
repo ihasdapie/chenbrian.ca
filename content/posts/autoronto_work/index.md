@@ -1,12 +1,14 @@
 ---
 title: "aUToronto"
-slug: "Autoronto_work"
+slug: "autoronto"
 date: 2022-07-25T01:36:21-07:00
 draft: false
 katex: true
 toc: true
 tags: []
 website_carbon: true
+aliases:
+  - "/posts/2022/autoronto"
 ---
 
 

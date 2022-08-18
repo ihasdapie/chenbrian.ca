@@ -7,6 +7,8 @@ katex: false
 website_carbon: true
 toc: false
 tags: ["fun", "programming", "projects"]
+aliases:
+  - "/posts/2022/conway.3js"
 ---
 
 

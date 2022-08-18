@@ -7,6 +7,8 @@ katex: true
 back_to_top: false
 tags: ['programming', 'about_me', 'projects']
 website_carbon: true
+aliases:
+  - "/posts/2022/latex-resume"
 ---
 
 

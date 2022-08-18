@@ -7,6 +7,8 @@ katex: false
 back_to_top: false
 tags: []
 website_carbon: true
+aliases:
+  - "/posts/2022/jupyterhub-rpi-binder"
 ---
 
 

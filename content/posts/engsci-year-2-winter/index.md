@@ -8,6 +8,8 @@ back_to_top: true
 toc: true
 tags: ["notes", "engsci"]
 website_carbon: true
+aliases:
+  - "/posts/2022/engsci-year-2-winter"
 ---
 
 // work in progress //

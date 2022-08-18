@@ -1,11 +1,14 @@
 ---
 title: "Deploying ONNX Models onto ROS with TensorRT `cpp` API"
+slug: 'tensorrt_ros_notes'
 date: 2022-01-04T05:22:32-05:00
 draft: true
 katex: true
 back_to_top: true
 tags: ['robots', 'programming']
 website_carbon: true
+aliases:
+  - "/posts/2022/tensorrt_ros_notes"
 ---
 
 

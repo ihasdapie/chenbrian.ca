@@ -7,6 +7,8 @@ katex: true
 toc: true
 tags: []
 website_carbon: true
+aliases:
+  - "/posts/2022/lxd_arch_ros2_wayland"
 ---
 
 Rationale: I started my internship at [Open Robotics](https://openrobotics.org/) and I needed to get a development environment set up on my laptop and could not be arsed to set up an ubuntu partition (and I'm a little too bound to my current rat's nest of config files).

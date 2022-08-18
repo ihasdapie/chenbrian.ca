@@ -7,6 +7,8 @@ katex: false
 toc: false
 tags: ["programming", "linux"]
 website_carbon: true
+aliases:
+  - "/posts/2022/kwin_choppy_fix"
 ---
 
 

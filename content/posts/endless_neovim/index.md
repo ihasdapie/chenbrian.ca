@@ -8,6 +8,8 @@ back_to_top: true
 toc: true
 tags: ["vim", "projects"]
 website_carbon: true
+aliases:
+  - "/posts/2022/endless-neovim"
 ---
 
 

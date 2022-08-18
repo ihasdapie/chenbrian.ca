@@ -7,6 +7,8 @@ katex: true
 back_to_top: false
 tags: ['engsci', 'fun']
 website_carbon: true
+aliases:
+  - "/posts/2022/three-laws-of-engineering"
 ---
 
 

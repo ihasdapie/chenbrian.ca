@@ -8,6 +8,8 @@ back_to_top: true
 toc: true
 tags: ['notes', 'programming']
 website_carbon: true
+aliases:
+  - "/posts/2021/clean-architecture-notes"
 
 ---
 

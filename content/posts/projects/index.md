@@ -4,16 +4,17 @@ slug: "projects"
 date: 2021-12-13T21:03:35-05:00
 draft: false
 katex: true
-back_to_top: true
+back_to_top: false
+toc: false
 tags: ['programming', 'projects']
 website_carbon: true
+aliases:
+  - "/posts/2021/projects"
 ---
 
 // Page under construction //   
 
 > "If you built a project and did not write about it, did you really build a project?"
-
- 
 
 
 ## Overview

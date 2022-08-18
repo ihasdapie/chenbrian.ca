@@ -7,6 +7,8 @@ katex: true
 toc: true
 tags: []
 website_carbon: true
+aliases:
+  - "/posts/2022/xrdp"
 ---
 
 
