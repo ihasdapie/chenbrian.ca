@@ -2,7 +2,7 @@
 title: "aUToronto"
 slug: "autoronto"
 date: 2022-07-25T01:36:21-07:00
-draft: false
+draft: true
 katex: true
 toc: true
 tags: []

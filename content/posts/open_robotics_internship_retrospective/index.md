@@ -2,7 +2,7 @@
 title: "Retrospective: Internship @ Open Robotics"
 slug: "osrf-internship-retrospective"
 date: 2022-08-18T01:20:00-07:00
-draft: false
+draft: true
 katex: true
 toc: false
 tags: ['robots', 'programming', 'about_me']
