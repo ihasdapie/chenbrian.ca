@@ -12,14 +12,12 @@ website_carbon: true
 
 ![me](profile-picture.jpg)
 
-> ... and let's put a face to the name as well
-
-I'm an [Engineering Science](https://engsci.utoronto.ca/) student at the University of Toronto majoring in Computer Engineering, who is passionate about making cool stuff and learning more about the world we live in.
+I'm an [Engineering Science](https://engsci.utoronto.ca/) student at the University of Toronto majoring in Computer Engineering.
+Outside of school, I'm passionate about making cool stuff and learning more about the world we live in.
 When I'm not cramming for school, I enjoy cooking and playing badminton.
 
-While you're here, why don't you check out my [about me]({{< ref "/about">}}) page?
+While you're here, why don't you check out my [about me]({{< ref "/about">}}) page, or read more about some [projects]({{< ref "/posts/projects" >}}) I've worked on?
 Or, take a look at my [blog]({{<ref "/posts">}})?
-
 
 ### Quick links
 - [Browse by tags]({{< ref "/tags" >}})
