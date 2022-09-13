@@ -16,7 +16,7 @@ I'm an [Engineering Science](https://engsci.utoronto.ca/) student at the Univers
 Outside of school, I'm passionate about making cool stuff and learning more about the world we live in.
 When I'm not cramming for school, I enjoy cooking and playing badminton.
 
-While you're here, why don't you check out my [about me]({{< ref "/about">}}) page, or read more about some [projects]({{< ref "/posts/projects" >}}) I've worked on?
+While you're here, why don't you check out my [about me]({{< ref "/about">}}) page, or read about some [projects]({{< ref "/posts/projects" >}}) I've worked on?
 Or, take a look at my [blog]({{<ref "/posts">}})?
 
 ### Quick links
