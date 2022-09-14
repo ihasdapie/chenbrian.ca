@@ -2,9 +2,9 @@
 title: "Engsci Year 3 Fall"
 slug: "engsci-year-3-fall"
 date: 2022-09-14T17:40:49-04:00
-draft: true
+draft: false
 katex: false
-toc: true
+toc: false
 tags: ["notes", "engsci"]
 website_carbon: true
 ---
