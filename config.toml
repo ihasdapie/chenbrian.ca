@@ -54,8 +54,10 @@ pygmentsStyle = "emacs"
    url = "/tags/"
    name = "tags"
    weight = 3
-
-
+  [[menu.main]]
+    url = "https://github.com/ihasdapie"
+    name = "github"
+    weight = 4
 
 
 # Footer
@@ -68,9 +70,6 @@ pygmentsStyle = "emacs"
    url = "https://github.com/ihasdapie"
    name = "GitHub"
    weight = 1
-
-
-
 
 # Links format
 [permalinks]
