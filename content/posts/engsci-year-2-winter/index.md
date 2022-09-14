@@ -12,8 +12,6 @@ aliases:
   - "/posts/2022/engsci-year-2-winter"
 ---
 
-// work in progress //
-
 
 {{< pdf src="notes.pdf" >}}
 Or, download [here](notes.pdf)
