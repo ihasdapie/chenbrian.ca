@@ -1,6 +1,9 @@
 update-notes:
   cp ~/Documents/School/EngSci_Notes/Y3S1-ECE/notes.pdf content/posts/engsci-year-3-fall/notes.pdf
 
+newpost name:
+  hugo new "content/posts/{{name}}/index.md"
+
 deploy:
   #!/usr/bin/env bash
   msg="rebuilding site $(date)"
