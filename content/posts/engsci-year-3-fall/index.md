@@ -1,5 +1,5 @@
 ---
-title: "Engsci Year 3 Fall"
+title: "Engsci Year 3 Fall Notes"
 slug: "engsci-year-3-fall"
 date: 2022-09-14T17:40:49-04:00
 draft: false
