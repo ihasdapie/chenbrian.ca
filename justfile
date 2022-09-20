@@ -4,6 +4,12 @@ update-notes:
 newpost name:
   hugo new "content/posts/{{name}}/index.md"
 
+update-resume:
+  "cp" ~/Documents/Work/Resume\&etc/resume/resume.pdf static/resume.pdf
+  pdftopng static/resume.pdf static/resume.png
+  mv static/resume.png-000001.png static/resume.png
+  
+
 deploy:
   #!/usr/bin/env bash
   msg="rebuilding site $(date)"
@@ -29,6 +35,5 @@ deploy:
   git commit -m "$msg"
 
   git pull
-
   git push
 
