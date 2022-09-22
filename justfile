@@ -38,4 +38,3 @@ deploy:
 
   git pull
   git push
-
