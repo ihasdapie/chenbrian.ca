@@ -12,6 +12,8 @@ update-resume:
 
 deploy:
   #!/usr/bin/env bash
+  just update-resume
+  just update-notes
   msg="rebuilding site $(date)"
 
   git add --a
