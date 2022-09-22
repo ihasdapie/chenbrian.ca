@@ -6,7 +6,7 @@ newpost name:
 
 update-resume:
   "cp" ~/Documents/Work/Resume\&etc/resume/resume.pdf static/resume.pdf
-  pdftopng static/resume.pdf static/resume.png
+  pdftopng static/resume.pdf static/resume.png -r 400
   mv static/resume.png-000001.png static/resume.png
   
 

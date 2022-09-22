@@ -2,7 +2,7 @@
 title: "chenbrian/about"
 date: "2021-10-20"
 draft: false
-katex: false
+katex: true
 tags: ['about_me']
 back_to_top: false
 website_carbon: true
@@ -11,15 +11,17 @@ website_carbon: true
 
 ## What am I up to right now?
 
-- SWE Intern at [Open Source Robotics Foundation](https://www.openrobotics.org/)
+- Just wrapped an SWE internship @ [Open Source Robotics Foundation](https://www.openrobotics.org/)
 - Software system co-lead @ [aUToronto](https://www.autodrive.utoronto.ca/): Trajectory motion planning, automated testing & evaluation of autonomous vehicles, deep learning acceleration with TensorRT, CI/CD, and more!
-- Research @ [ISML](https://www.eecg.utoronto.ca/~roman/): I work with accelerating machine learning tasks on memristor crossbars -- first author paper pending submission
-- Web dev & data collection for [BC Parks Foundation](https://bcparksfoundation.ca/): currently in private beta
-- [Side Projects]({{< ref "posts/projects" >}})
 - [TA]({{< ref "posts/teaching" >}})-ing intro programming (ESC180) and data structures & algorithms (ESC190)
+- [Obsessively making pretty notes in \\( \LaTeX \\)]({{< ref "tags/notes" >}})
 - Trying to make it through university!
 
 
+## Cool things I worked on in the past
+- Research @ [ISML](https://www.eecg.utoronto.ca/~roman/): I work with accelerating machine learning tasks on memristor crossbars -- first author paper under review
+- Web dev & data collection for [BC Parks Foundation](https://bcparksfoundation.ca/): currently in private beta
+- [And more]({{< ref "posts/projects" >}})
 
 
 ## Resume
@@ -30,7 +32,7 @@ website_carbon: true
   <img src="{{<baseurl>}}/resume.png" alt="Resume" style="width:100%">
 </details>
 
-Or, download my resume [here]({{<baseurl>}}/resume.pdf)
+If the PDF preview doesn't work for you, you may download it instead by clicking on [this link]({{<baseurl>}}/resume.pdf).
 
 
 ![](https://ghchart.rshah.org/ihasdapie)

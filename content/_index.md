@@ -8,8 +8,9 @@ website_carbon: true
 
 # Hi, I'm Brian
 
-####  and I'm a student, software developer, and pokemon go enthusiast
+####  and I'm a student, software engineer[^engineer], and pokemon go enthusiast
 
+[^engineer]: in training (I'm still in school, plus 'engineer' is a protected title in Canada)
 ![me](profile-picture.jpg)
 
 I'm an [Engineering Science](https://engsci.utoronto.ca/) student at the University of Toronto majoring in Computer Engineering.
@@ -35,7 +36,7 @@ Or, take a look at my [blog]({{<ref "/posts">}})?
 - LinkedIn: [linkedin.com/in/brianchen28914](https://linkedin.com/in/brianchen28914)
 - Email at `brianchen.chen (at) mail.utoronto.ca`
 
---- 
+
 #### About this page
 This site's design was inspired by the great minds behind [bettermotherfuckingwebsite.com](http://bettermotherfuckingwebsite.com/). 
 If you would like to also like to have a site that *isn't an absolute eyesore* and *doesn't load a 40-pound jQuery file*, check out the [hugo theme](https://github.com/ihasdapie/bettermotherfuckinghugowebsite/) behind this website. 
