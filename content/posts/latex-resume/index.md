@@ -35,7 +35,7 @@ For an example of the output, see my [about me]({{< ref "/about">}}) page, or th
 > Disclaimer: using this template is not a guarantee that it will help you get a job. Trust me -- I wish it did.
 
 
-![example](https://raw.githubusercontent.com/ihasdapie/resume/main/resume.png)
+![example](/resume.png)
 
 
 

@@ -19,9 +19,10 @@ aliases:
 
 ## Overview
 **[Browse projects by tag]({{< ref "/tags/projects" >}})**
-- [ROS](https://www.ros.org/): Worked on the open-source Robot Operating System (ROS)[^ros] as a summer intern in 2022. What was really cool about this experience was that I got to work directly with NASA on their [VIPER](https://www.nasa.gov/viper/) lunar rover project, supporting their use of ROS2 and Gazebo on their simulation, ground control, and autonomy systems.
-  - ROS is essentially the [de-facto](http://www.cse.sc.edu/~jokane/agitr/) standard for writing robot software and can be found in Roombas, [spot](http://wiki.ros.org/Robots/Spot), industrial robot arms, and even in [space](https://www.openrobotics.org/blog/2022/2/2/rosinspace)
+- [ROS](https://www.ros.org/): Worked on the open-source Robot Operating System (ROS) as a summer intern in 2022. What was really cool about this experience was that I got to work directly with NASA on their [VIPER](https://www.nasa.gov/viper/) lunar rover project, supporting their use of ROS2 and Gazebo on their simulation, ground control, and autonomy systems.
+  - ROS is essentially the [de-facto](http://www.cse.sc.edu/~jokane/agitr/) standard for writing robot software and can be found in Roombas, Boston Dynamic's [spot](http://wiki.ros.org/Robots/Spot), industrial robot arms, and even in [space](https://www.openrobotics.org/blog/2022/2/2/rosinspace)!
   - [Intern Presentation Slides]({{<ref "#osrf-intern-presentation" >}})
+  - [Presentation at August 2022 Gazebo Community Meeting](https://youtu.be/3qIYnQmpa1Q?t=2501)
   - [REP2012: Service Introspection](https://github.com/ros-infrastructure/rep/pull/360): Enabling service introspection, i.e. allowing for `ros2 service echo` and `ros2 bag record --services`. This highly requested feature has been absent from ROS since the introduction of ROS services in ~2011 and I'm excited to have been able to help make it a reality. See [meta-ticket](https://github.com/ros2/ros2/issues/1285)
     - Lots of changes to [`rcl`](https://github.com/ros2/rcl/pull/997) core ROS library and [`rosidl`](https://github.com/ros2/rosidl/pull/700) (and [associated libs](https://github.com/ros2/rosidl_typesupport/pull/127)) code generation pipeline plus implementing support in [`rclpy`](https://github.com/ros2/rclpy/pull/988) and [`rclcpp`](https://github.com/ros2/rclcpp/pull/1985) client libraries and adding [tooling](https://github.com/ros2/ros2cli/pull/745)
     - Helped introduce mypy compliance in rclpy, [ParameterClient](https://github.com/ros2/rclpy/pull/959), fixing race conditions in certain edge cases when shutting down an `rclpy` node, lots of miscellaneous maintenance tickets, and improving test coverage
@@ -54,6 +55,9 @@ aliases:
 
 #### OSRF Intern Presentation
 {{< pdf src="osrf_intern_pres.pdf" >}}
+
+#### OSRF Intern Presentation Demo
+<iframe width="750" height="500" src="https://www.youtube.com/embed/3qIYnQmpa1Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### GrocerCheck CBC Interview
 {{< video src="cbc_piece.webm" >}}

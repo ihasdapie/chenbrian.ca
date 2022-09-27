@@ -11,8 +11,9 @@ website_carbon: true
 
 
 This semester I'm trying to do it all in  \\( \LaTeX \\).
-There should be an embedded pdf viewer below, but if it doesn't work, you can download the pdf [here](notes.pdf)
+There should be an embedded pdf viewer below, but if it doesn't work[^1], you can download the pdf [here](notes.pdf)
 
+[^1]: This usually the case on mobile devices
 
 {{< pdf src="notes.pdf" >}}
 

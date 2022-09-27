@@ -24,7 +24,7 @@ Or, take a look at my [blog]({{<ref "/posts">}})?
 
 ### Quick links
 - [Browse by tags]({{< ref "/tags" >}})
-- [Projects overview]({{< ref "/posts/projects" >}})
+- [Projects]({{< ref "/posts/projects" >}})
 - [Notes]({{< ref "/tags/notes" >}}) [^notes]
 - [Resume](resume.pdf)
 
