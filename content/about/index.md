@@ -12,7 +12,7 @@ website_carbon: true
 ## What am I up to right now?
 
 - Just wrapped an SWE internship @ [Open Source Robotics Foundation](https://www.openrobotics.org/)
-- Software system co-lead @ [aUToronto](https://www.autodrive.utoronto.ca/): Trajectory motion planning, automated testing & evaluation of autonomous vehicles, deep learning acceleration with TensorRT, CI/CD, and more!
+- Trajectory motion planning sub-team lead @ [aUToronto](https://www.autodrive.utoronto.ca/): This year I'm working on trajectory motion planning for our vehicles. In previous years I've led sub-teams for automated testing & evaluation of autonomous vehicles, deep learning acceleration with TensorRT, CI/CD, simulation, and more!
 - [TA]({{< ref "posts/teaching" >}})-ing intro programming (ESC180) and data structures & algorithms (ESC190)
 - [Obsessively making pretty notes in \\( \LaTeX \\)]({{< ref "tags/notes" >}})
 - Trying to make it through university!

@@ -8,13 +8,14 @@ website_carbon: true
 
 # Hi, I'm Brian
 
-####  and I'm a student, software engineer[^engineer], and pokemon go enthusiast
+####  and I'm a student, software-engineer-in-training[^engineer], and pokemon go enthusiast
 
-[^engineer]: in training (I'm still in school, plus 'engineer' is a protected title in Canada)
+[^engineer]: I'm still in school, plus 'engineer' is a protected title in Canada. Two more years to go!
+
 ![me](profile-picture.jpg)
 
 I'm an [Engineering Science](https://engsci.utoronto.ca/) student at the University of Toronto majoring in Computer Engineering.
-Outside of school, I'm passionate about making cool stuff and learning more about the world we live in.
+Outside of school, I'm passionate about making [cool stuff]({{< ref "/posts/projects" >}}) like self-driving cars, while learning more about the world we live in.
 When I'm not cramming for school, I enjoy cooking and playing badminton.
 
 While you're here, why don't you check out my [about me]({{< ref "/about">}}) page, or read more about some [projects]({{< ref "/posts/projects" >}}) I've worked on?
