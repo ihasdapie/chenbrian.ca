@@ -1,6 +1,6 @@
 ---
-title: "My terminal-centric workflow for ROS 2"
-slug: ros2_terminal_workflow
+title: "ROS2 LSP Setup"
+slug: ros2_lsp_setup
 date: 2022-01-04T04:23:20-05:00
 draft: false
 toc: true
