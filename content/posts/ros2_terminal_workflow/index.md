@@ -31,7 +31,7 @@ Nothing that `clang` supports using either a `compile_commands.json` file or a `
 As it turns out there are [`colcon mixins`](https://colcon.readthedocs.io/en/released/reference/verb/mixin.html), though the use of which is not exactly well documented.
 Steps for use are as follows:
 
-1. Install the `python3-colcon-mixin` package; `sudo apt install python3-colcon-mixin`
+1. Install the `python3-colcon-mixin` package; `sudo apt install python3-colcon-mixin`, or `pip install colcon-mixin`
 2. Fetch the 'default' `colcon` mixins: 
   1. Add the default mixins file:
   ``` 
