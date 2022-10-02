@@ -34,8 +34,9 @@ Steps for use are as follows:
 1. Install the `python3-colcon-mixin` package; `sudo apt install python3-colcon-mixin`, or `pip install colcon-mixin`
 2. Fetch the 'default' `colcon` mixins: 
   1. Add the default mixins file:
-  ``` 
-  colcon mixin add default https://raw.githubusercontent.com/colcon/colcon-mixin-repository/master/index.yaml
+  ```
+     colcon mixin add default https://raw.githubusercontent.com/colcon/colcon-mixin-repository/master/index.yaml
+
   ```
   2. Fetch them: `colcon mixin update default`
 3. Use them: `colcon build --mixin compile_commands`
