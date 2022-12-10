@@ -13,6 +13,6 @@ website_carbon: true
 > Pins:
 > - [Projects]({{< relref "projects" >}}): Projects overview
 > - [Notes]({{< ref "/tags/notes">}}): I took pretty \\( \LaTeX \\) notes. Please admire.
-> - [Setting up LXD for ROS with a really, *really* specific workflow]({{< relref "setting_up_lxd_for_ros2_development" >}})
+> - [A really specific containerized workflow for ROS2 work]({{< relref "setting_up_lxd_for_ros2_development" >}})
 
 [^btw]: btw

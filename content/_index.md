@@ -8,15 +8,15 @@ website_carbon: true
 
 # Hi, I'm Brian
 
-####  and I'm a student, software-engineer-in-training[^engineer], and pokemon go enthusiast
 
-[^engineer]: I'm still in school, plus 'engineer' is a protected title in Canada. Two more years to go!
 
 ![me](profile-picture.jpg)
 
-I'm an [Engineering Science](https://engsci.utoronto.ca/) student at the University of Toronto majoring in Computer Engineering.
-Outside of school, I'm passionate about making [cool stuff]({{< ref "/posts/projects" >}}) like self-driving cars, while learning more about the world we live in.
-When I'm not cramming for school, I enjoy cooking and playing badminton.
+I'm an [Engineering Science](https://engsci.utoronto.ca/) student at the University of Toronto majoring in Computer Engineering. 
+When I'm not cramming for school I like to cook, play badminton, and build [cool stuff]({{< ref "/posts/projects" >}}) like self-driving cars.
+Or, in more general terms: I convert bubble tea to spaghetti code[^spaghet].
+[^spaghet]: but hopefully it tastes good
+
 
 While you're here, why don't you check out my [about me]({{< ref "/about">}}) page, or read more about some [projects]({{< ref "/posts/projects" >}}) I've worked on?
 Or, take a look at my [blog]({{<ref "/posts">}})?
@@ -28,7 +28,7 @@ Or, take a look at my [blog]({{<ref "/posts">}})?
 - [Notes]({{< ref "/tags/notes" >}}) [^notes]
 - [Resume](resume.pdf)
 
-[^notes]: These cover most of 2nd year EngSci courses as well as some of my own studying, tutorial notes for the courses I help teach, and I like to think that some of them are \\( \LaTeX \\)-ed up nicely.
+[^notes]: These cover most of 2nd-3rd year EngSci courses as well as some of my own studying, tutorial notes for the courses I help teach, and I like to think that some of them are \\( \LaTeX \\)-ed up nicely.
 
 
 ###  Connect with me:
