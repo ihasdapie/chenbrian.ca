@@ -538,6 +538,16 @@ Than ours, a friend to man, to whom thou say'st,
                 Ye know on earth, and all ye need to know."
 ```
 
+## The Jackdaw
+[source](https://www.poetryfoundation.org/poems/43997/the-rime-of-the-ancient-mariner-text-of-1834)
+
+
+**Samuel Taylor Coleridge**   
+
+> See link for full text. Too long to copy over here.
+
+
+
 
 
 $$ _{\text{I don't own the rights to anything here (but I've made sure to backlink to the source!) Let me know if I should take anything down.}} $$
