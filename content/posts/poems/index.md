@@ -538,7 +538,7 @@ Than ours, a friend to man, to whom thou say'st,
                 Ye know on earth, and all ye need to know."
 ```
 
-## The Jackdaw
+## The Rime of the Ancient Mariner
 [source](https://www.poetryfoundation.org/poems/43997/the-rime-of-the-ancient-mariner-text-of-1834)
 
 
