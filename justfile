@@ -1,5 +1,6 @@
 update-notes:
   cp ~/Documents/School/EngSci_Notes/Y3S1-ECE/notes.pdf content/posts/engsci-year-3-fall/notes.pdf
+  cp ~/Documents/School/EngSci_Notes/Y3S2-ECE/notes.pdf content/posts/engsci-year-3-winter/notes.pdf
 
 newpost name:
   hugo new "content/posts/{{name}}/index.md"
