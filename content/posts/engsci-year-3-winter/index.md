@@ -2,7 +2,7 @@
 title: "Engsci Year 3 Winter"
 slug: "engsci-year-3-winter"
 date: 2023-01-11T15:28:52-05:00
-draft: true
+draft: false
 katex: true
 toc: true
 tags: ["notes", "engsci"]
