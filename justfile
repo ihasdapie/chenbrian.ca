@@ -6,7 +6,7 @@ newpost name:
   hugo new "content/posts/{{name}}/index.md"
 
 update-resume:
-  "cp" ~/Documents/Work/Resume\etc/resume/resume.pdf static/resume.pdf
+  "cp" ~/Documents/Work/About/resume/resume.pdf static/resume.pdf
   pdftopng -r 400 static/resume.pdf static/resume.png
   mv static/resume.png-000001.png static/resume.png
   
