@@ -14,6 +14,9 @@ The following contains notes for:
 
 - ECE353: Operating Systems
 - CSC473: Advanced Algorithms
+- ECE568: Computer security
+
+Note that all of these were taken during class and as such are somewhat stream-of-consciousness.
 
 
 
