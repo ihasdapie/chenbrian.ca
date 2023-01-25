@@ -7,7 +7,7 @@ newpost name:
 
 update-resume:
   "cp" ~/Documents/Work/About/resume/resume.pdf static/resume.pdf
-  pdftopng -r 400 static/resume.pdf static/resume.png
+  convert static/resume.pdf static/resume.png
   mv static/resume.png-000001.png static/resume.png
   
 
