@@ -8,7 +8,6 @@ newpost name:
 update-resume:
   "cp" ~/Documents/Work/About/resume/resume.pdf static/resume.pdf
   convert static/resume.pdf static/resume.png
-  mv static/resume.png-000001.png static/resume.png
   
 
 deploy:
