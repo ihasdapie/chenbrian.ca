@@ -28,7 +28,7 @@ Or, take a look at my [blog]({{<ref "/posts">}})?
 - [Notes]({{< ref "/tags/notes" >}}) [^notes]
 - [Resume](resume.pdf)
 
-[^notes]: These cover most of 2nd-3rd year EngSci courses as well as some of my own studying, tutorial notes for the courses I help teach, and I like to think that some of them are \\( \LaTeX \\)-ed up nicely.
+[^notes]: I like to think that they're \\( \LaTeX \\)-ed up nicely and are of non-zero utility.
 
 
 ###  Connect with me:
