@@ -346,6 +346,7 @@ index 72749e3..4efadb9 100644
         3. `export PATH="/opt/homebrew/opt/llvm/bin:$PATH"`
         4. `python3 setup.py build --qmake=$(which qmake)`
         5. Now this fails at not being able to find `qapp_macro.h`. // Work in progress //
+        6. UPDATE: homebrew just installs pyside in yet another inane location. Add `/opt/homebrew/Cellar/pyside@2/5.15.8/lib/python3.10/site-packages` to your PYTHONPATH. Now rqt launches but cannot load plugins [Issue link](https://github.com/ros-visualization/rqt/issues/7)
 
 
 
@@ -355,4 +356,5 @@ index 72749e3..4efadb9 100644
 export CXX=$(which aarch64-apple-darwin22-g++-12)
 export CC=$(which aarch64-apple-darwin22-gcc-12)
 ```
-
+## Misc
+- If you get a ton of "dylib was built for newer macos version than being linked" just add `export MACOSX_DEPLOYMENT_TARGET=13.1` or whatever your OS version is to your .envrc
