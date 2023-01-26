@@ -2,7 +2,7 @@
 title: "ros2 rolling on apple silicon"
 slug: "ros2_m1"
 date: 2023-01-21T18:59:53-05:00
-draft: true
+draft: false
 katex: true
 toc: true
 tags: ["programming", "robots"]
