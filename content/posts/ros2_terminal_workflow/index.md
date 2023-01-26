@@ -12,7 +12,7 @@ aliases:
   - "/posts/2022/ros2_terminal_workflow"
 ---
 
-> This is a work in progress
+> TLDR: you want code completions while working with ROS2
 
 
 ## LSP with `clangd` 

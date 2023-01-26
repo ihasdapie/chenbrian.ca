@@ -219,7 +219,7 @@ pub fn dijkstra(grid: &[Vec<i32>], start: (usize, usize), end: (usize, usize)) -
 ```
 
 
-
+> Finals season got to me after the 15th :(
 
 ## Day 16
 [Problem](https://adventofcode.com/2021/day/16)

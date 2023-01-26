@@ -18,7 +18,9 @@ aliases:
 
 The following is a **Work in progress** collection of notes on 'Clean Architecture: A Craftsman's Guide to Software Structure and Design' by Robert C. Martin. [1]
 
-` [1] R. C. Martin, Clean Architecture: A Craftsman’s Guide to Software Structure and Design, 1st ed. USA: Prentice Hall Press, 2017. `
+```
+[1] R. C. Martin, Clean Architecture: A Craftsman’s Guide to Software Structure and Design, 1st ed. USA: Prentice Hall Press, 2017. 
+```
 
 
 ## Paradigms

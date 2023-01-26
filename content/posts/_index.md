@@ -12,7 +12,8 @@ website_carbon: true
 
 > Pins:
 > - [Projects]({{< relref "projects" >}}): Projects overview
-> - [Notes]({{< ref "/tags/notes">}}): I took pretty \\( \LaTeX \\) notes. Please admire.
+> - [Notes]({{< ref "/tags/notes">}}): I took pretty \\( \LaTeX \\) notes. Please enjoy.
 > - [A really specific containerized workflow for ROS2 work]({{< relref "setting_up_lxd_for_ros2_development" >}})
+> - [ros2 rolling on m1]({{< relref "ros2_m1" >}})
 
 [^btw]: btw

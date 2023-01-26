@@ -7,7 +7,7 @@ newpost name:
 
 update-resume:
   "cp" ~/Documents/Work/About/resume/resume.pdf static/resume.pdf
-  convert static/resume.pdf static/resume.png
+  convert -density 600 static/resume.pdf -resize 25%   -quality 100 -alpha remove static/resume.png
   
 
 deploy:

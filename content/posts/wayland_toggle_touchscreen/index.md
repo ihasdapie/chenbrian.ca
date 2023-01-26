@@ -11,7 +11,7 @@ aliases:
   - "/posts/2022/wayland_toggle_touchscreen"
 ---
 
-Back when I was still on X11 [^1] , I had this little `bash` script to toggle my touchscreen on/off since I didn't use it all that often except to sign the occasional PDF, and it sucked up power[^2].
+Back when I was still on X11 [^1] , I had this little `bash` script to toggle my touchscreen on/off, since I didn't use it all that often except to sign the occasional PDF. And it sucked up power[^2].
 
 [^1]: i.e. before I got an external monitor with a DPI vastly different from that of my laptop's...
 [^2]: I'm actually not 100% sure if this will cut power to the device but I hope it does? Probably worthwhile testing. But it *does* disable it.
@@ -68,7 +68,6 @@ B: PROP=2
 
 Alternatively, make a script to toggle it
 
-
 ```bash
 #!/usr/bin/bash
 if [ -d "/sys/bus/hid/drivers/hid-multitouch/0018:06CB:19AC.0001" ]; then
@@ -83,11 +82,6 @@ fi
 
 > This script should work for toggling other input devices as well! I have these commands `alias`'ed in `~/.zshrc`  
 > [source](https://askubuntu.com/questions/927022/how-can-i-disable-touchscreen-while-using-wayland) for how to unbind devices
-
-
-
-
-
 
 
 

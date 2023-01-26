@@ -16,7 +16,6 @@ aliases:
 
 > "If you built a project and did not write about it, did you really build a project?"
 
-
 ## Overview
 **[Browse projects by tag]({{< ref "/tags/projects" >}})**
 - [ROS](https://www.ros.org/): Worked on the open-source Robot Operating System (ROS) as a summer intern in 2022. What was really cool about this experience was that I got to work directly with NASA on their [VIPER](https://www.nasa.gov/viper/) lunar rover project, supporting their use of ROS2 and Gazebo on their simulation, ground control, and autonomy systems.
@@ -27,10 +26,9 @@ aliases:
     - Lots of changes to [`rcl`](https://github.com/ros2/rcl/pull/997) core ROS library and [`rosidl`](https://github.com/ros2/rosidl/pull/700) (and [associated libs](https://github.com/ros2/rosidl_typesupport/pull/127)) code generation pipeline plus implementing support in [`rclpy`](https://github.com/ros2/rclpy/pull/988) and [`rclcpp`](https://github.com/ros2/rclcpp/pull/1985) client libraries and adding [tooling](https://github.com/ros2/ros2cli/pull/745)
     - Helped introduce mypy compliance in rclpy, [ParameterClient](https://github.com/ros2/rclpy/pull/959), fixing race conditions in certain edge cases when shutting down an `rclpy` node, lots of miscellaneous maintenance tickets, and improving test coverage
     - Wrote a vim plugin for the [empy](http://www.alcyone.com/software/empy/) templating engine: [ihasdapie/empy.vim](https://github.com/ihasdapie/empy.vim)
-    - I ♡ [FOSS](https://en.wikipedia.org/wiki/Free_and_open-source_software)
 - [aUToronto](https://www.autodrive.utoronto.ca/), UofT's self-driving car team: I've been a part of this team since 2020 and in doing so have worn many hats. Here are some of them:
-  - Trajectory motion planning lead: designed, implemented, and deployed local trajectory motion planning algorithms to generate kinematically feasible trajectories using hybrid A*
-  - DLA lead, creating a inference engine to run YOLOv5 in real-time across 4 cameras with [TensorRT](https://github.com/NVIDIA/TensorRT/)
+  - Trajectory motion planning lead: designed, implemented, and deployed local trajectory motion planning algorithms to generate kinematically feasible trajectories
+  - DLA lead, creating a inference engine to run YOLOv5 in real-time across 4 cameras with NVIDIA [TensorRT](https://github.com/NVIDIA/TensorRT/)
   - Simulation & Testing co-lead, working on automated integration testing & associated ROS/ROS2 tooling Demo [below]({{< ref "#autotest-autoronto">}})
 - [GrocerCheck](https://grocercheck.ca/): [`Github`](https://github.com/GrocerCheck/GrocerCheck), [Pitch Deck]({{< ref "#grocercheck-pitch-deck" >}})  A website to help people reduce contact at grocery stores and essential services.  Got some press coverage too!
      - [CBC Piece](https://www.cbc.ca/news/canada/british-columbia/bc-youth-entrepreneurs-covid19-1.5784637)

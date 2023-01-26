@@ -1,5 +1,5 @@
 ---
-title: "Pi Pico on Linux"
+title: "interfacing with a pi pico on linux"
 slug: "pi-pico-on-linux"
 date: 2022-01-27T23:08:10-05:00
 draft: false
@@ -20,13 +20,3 @@ Needed to use a Pi Pico for one of my courses (which mandated circuitpython ... 
   - connect using GNU `screen` or whatever you like to use
     - e.x. `screen /dev/ttyACM0 115200`
     - If you get a permissions error, add `sudo` or add yourself to the appropriate group
-
-
-
-
-
-
-
-
-
-

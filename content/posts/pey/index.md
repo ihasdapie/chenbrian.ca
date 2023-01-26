@@ -1,5 +1,5 @@
 ---
-title: "Pey"
+title: "PEY"
 slug: "pey"
 date: 2022-09-15T12:38:09-04:00
 draft: true

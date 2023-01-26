@@ -12,7 +12,7 @@ aliases:
 ---
 
 
-TLDR; I wanted to do *something* with this Raspberry Pi 4 I had lying around. 
+> I wanted to do *something* with this Raspberry Pi 4 I had lying around. 
 
 Figured I would try to get JupyterHub going on it, maybe with a `c` kernel for my students to use.
 Turns out there are a few [issues](https://github.com/matrix-org/synapse/issues/9403) getting jupyterhub built for ARMv7.
@@ -113,7 +113,7 @@ WORKDIR ${HOME}
 ```
 
 
-
+I ended up using this to set up an interactive \\( c \\) environment for my students to do some practice problems for their final exam with (see [here]({{< ref "posts/teaching" >}}))
 
 
 

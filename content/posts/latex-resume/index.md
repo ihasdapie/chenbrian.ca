@@ -12,10 +12,8 @@ aliases:
 ---
 
 
-
-
 Let's face it -- \\( \LaTeX \\)) is *unequivocally cooler* than Word.
-And you want an *unequivocally cool* resume as well.  
+And you want an *unequivocally cool* resume.
 So you tried [altacv](https://github.com/liantze/AltaCV), but it always got absolutely chewed up by ATS systems.
 
 And so you *yearned* for a 🌠cool🥶 single-column layout, but you couldn't find one.  

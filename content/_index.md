@@ -6,20 +6,19 @@ katex: true
 website_carbon: true
 ---
 
+
+
+
+
 # Hi, I'm Brian
+And I'm an [Engineering Science](https://engsci.utoronto.ca/) student at the University of Toronto majoring in Computer Engineering and minoring in Robotics.
+While I'm not cramming for school I like to cook, play badminton, and build [cool stuff]({{< ref "/posts/projects" >}}) like self-driving cars.
+In more general terms: I convert bubble tea to spaghetti code[^spaghet].
+I also occasionally write posts on my [blog]({{<ref "/posts">}}), so feel free to check that out too :)
 
-
-
-![me](profile-picture.jpg)
-
-I'm an [Engineering Science](https://engsci.utoronto.ca/) student at the University of Toronto majoring in Computer Engineering. 
-When I'm not cramming for school I like to cook, play badminton, and build [cool stuff]({{< ref "/posts/projects" >}}) like self-driving cars.
-Or, in more general terms: I convert bubble tea to spaghetti code[^spaghet].
 [^spaghet]: but hopefully it tastes good
 
-
-While you're here, why don't you check out my [about me]({{< ref "/about">}}) page, or read more about some [projects]({{< ref "/posts/projects" >}}) I've worked on?
-Or, take a look at my [blog]({{<ref "/posts">}})?
+![me](profile-picture.jpg)
 
 
 ### Quick links

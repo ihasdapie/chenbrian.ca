@@ -10,7 +10,7 @@ website_carbon: true
 ---
 
 I've come to realize that some courses lend themselves to Latex'd notes better than others.
-The following contains notes for:
+The following pdf contains notes for:
 
 - ECE353: Operating Systems
 - CSC473: Advanced Algorithms

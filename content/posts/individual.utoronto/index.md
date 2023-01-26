@@ -11,8 +11,7 @@ aliases:
   - "/posts/2022/individual.utoronto"
 ---
 
-Turns out UofT students/faculty/etc can host a free personal site (`50mb` max) in [individual.utoronto.ca](http://individual.utoronto.ca/).
-This process is also entirely undocumented.
+Turns out UofT students/faculty/etc can host a free personal site (`50mb` max) in [individual.utoronto.ca](http://individual.utoronto.ca/) through an until-now seemingly entirely undocumented process.
 
 
 1. Claim it through UTORid management [here](https://www.utorid.utoronto.ca/cgi-bin/utorid/info.pl)
