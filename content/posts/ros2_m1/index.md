@@ -358,7 +358,7 @@ export CC=$(which aarch64-apple-darwin22-gcc-12)
 ```
 
 
-3. ros2 rolling [targets c++17](https://docs.ros.org/en/rolling/The-ROS2-Project/Contributing/Code-Style-Language-Versions.html), but you may be trying to use [c++20] for your project. This means that `gmock_vendor` is stuck at a `gmock` version that breaks in `c++20`. Patch the following header file in `install/gmock_vendor`[source](https://github.com/google/googletest/issues/2914)
+3. ros2 rolling [targets c++17](https://docs.ros.org/en/rolling/The-ROS2-Project/Contributing/Code-Style-Language-Versions.html). This means that `gmock_vendor` is stuck at a `gmock` version that breaks in `c++20`, which is rather inconvenient if you are trying to use `c++20` for your project.  Patch the following header file in `install/gmock_vendor`[source](https://github.com/google/googletest/issues/2914)
 
 ```diff a/install/gmock_vendor/src/gmock_vendor/include/gmock/gmock-actions.h b/install/gmock_vendor/src/gmock_vendor/include/gmock/gmock-actions.h
  -using ReturnType = typename std::result_of<MethodPtr(Class*)>::type;
