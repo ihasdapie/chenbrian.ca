@@ -351,6 +351,15 @@ index 72749e3..4efadb9 100644
 
 
 2. c++20 support is [patchy](https://en.cppreference.com/w/cpp/20) at best in AppleClang, which may be a concern if your project is on `c++-20`. You can also use `g++` by installing it with homebrew and then adding these variables to your `.envrc`
+3. ros2 rolling [targets c++17](https://docs.ros.org/en/rolling/The-ROS2-Project/Contributing/Code-Style-Language-Versions.html), but you may be trying to use [c++20] for your project. This means that `gmock_vendor` is stuck at a `gmock` version that breaks in `c++20`. Patch the following header file in `install/gmock_vendor`[source](https://github.com/google/googletest/issues/2914)
+
+```diff a/install/gmock_vendor/src/gmock_vendor/include/gmock/gmock-actions.h b/install/gmock_vendor/src/gmock_vendor/include/gmock/gmock-actions.h
+ -using ReturnType = typename std::result_of<MethodPtr(Class*)>::type;
+ +using ReturnType = typename std::invoke_result_t<MethodPtr, Class>;
+```
+
+
+
 
 ```bash
 export CXX=$(which aarch64-apple-darwin22-g++-12)
