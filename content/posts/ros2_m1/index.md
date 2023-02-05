@@ -368,5 +368,6 @@ export CC=$(which aarch64-apple-darwin22-gcc-12)
 ## Misc
 - If you get a ton of "dylib was built for newer macos version than being linked" just add `export MACOSX_DEPLOYMENT_TARGET=13.1` or whatever your OS version is to your .envrc
 - Compiler choice: homebrew g++ and llvm are a little slow but are more feature-complete with regards to c++20. However `lld` is a lot faster so I've personally been using `AppleClang` with `lld` (which you get from homebrew with llvm...)
+- Homebrew uncrustify is newer than the one in ros2.repos, so you can use `ihasdapie/formulas/uncrustify` to get a older version
 
 
