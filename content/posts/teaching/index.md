@@ -14,7 +14,7 @@ aliases:
 (Currently) all content is in jupyter notebook format and is hosted on my on GitHub at [github.com/ihasdapie/teaching](https://github.com/ihasdapie/teaching). 
 I've also [set up a binder enviroment]({{< ref "posts/jupyterhub-c-docker-ARM" >}}) so that you can work with them interactively by using clicking on this badge:
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ihasdapie/teaching/HEAD)
-or following this link [mybinder.org/v2/gh/ihasdapie/teaching/HEAD](https://mybinder.org/v2/gh/ihasdapie/teaching/HEAD)
+or following this link [mybinder.org/v2/gh/ihasdapie/teaching/HEAD](https://mybinder.org/v2/gh/ihasdapie/teaching/HEAD?urlpath=/tree/)
 
 
 ## ESC180
