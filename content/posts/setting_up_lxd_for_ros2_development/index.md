@@ -30,6 +30,8 @@ The general steps for me were:
     - The container will be running Ubuntu 22.04 or whatever you want.
 4. Enter the system: `lxc exec <container_name> -- sudo --login --user ubuntu`
 
+> I think you may need to use `-- su` instead of `-- sudo` depending on your lxd version
+
 
 ## Mount a directory
 It is also useful to mount a directory and share it with your host
@@ -38,7 +40,7 @@ in the container.
 
 `lxc config device add osrf osrf disk source=/home/ihasdapie/osrf path=/home/ihasdapie/osrf`
 
-In my case I wanted to keep paths consistent between my container and its host, so I just renamed the default 'ubuntu' user to 'ihasdapie'. The follow command from [stackoverflow](https://unix.stackexchange.com/questions/98461/proper-way-of-changing-username-in-ubuntu-or-any-linux) will change the name, group, home directory, and ownership over appropriately.
+In my case I wanted to keep paths consistent between my container and its host, so I just renamed the default 'ubuntu' user to 'ihasdapie'. The following command from [stackoverflow](https://unix.stackexchange.com/questions/98461/proper-way-of-changing-username-in-ubuntu-or-any-linux) will change the name, group, home directory, and ownership over appropriately.
 
 ``` bash
  usermod -d /home/ihasdapie -m -g ihasdapie -l ihasdapie ubuntu
@@ -102,12 +104,14 @@ In order for the permissions to work out you have to make the `{u,g}id`
 s match up between the container and the host. This can be accomplished
 with
 
-`lxc config set osrf raw.idmap both 1000 1000`
+`lxc config set osrf raw.idmap "both 1000 1000"`
 
 That is, assuming that your host `uid` and `gid` are both `1000` and the
 same goes for the user in the container. If not then you would have to
 modify that command a little bit. Alternatively, just use
 `lxc config edit container`
+
+> If your user inside the container does not have the correct uid/gid then file access will not work properly. The easiest way to do this is with some `usermod`/`groupmod` commands to change their `gid` and `uid`. See [this link](https://www.cyberciti.biz/faq/linux-change-user-group-uid-gid-for-all-owned-files/)
 
 
 In any case with this done you should be able to seamlessly work on a
