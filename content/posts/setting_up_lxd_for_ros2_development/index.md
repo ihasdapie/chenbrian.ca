@@ -28,7 +28,7 @@ The general steps for me were:
 3. Create a container with `lxc launch ubuntu:22.04 <container_name>`
     - This will create a new container with the name `<container_name>`
     - The container will be running Ubuntu 22.04 or whatever you want.
-4. Enter the system: `lxc exec osrf -- sudo --login --user ubuntu`
+4. Enter the system: `lxc exec <container_name> -- sudo --login --user ubuntu`
 
 
 ## Mount a directory
