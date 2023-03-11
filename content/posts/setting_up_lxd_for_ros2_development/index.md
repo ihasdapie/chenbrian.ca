@@ -118,6 +118,12 @@ In any case with this done you should be able to seamlessly work on a
 directory inside and out of the container.
 
 
+## Networking
+
+Depending on your host system firewall you may not be able to connect to the internet in your container. 
+You can either 1) disable it or 2) add some more firewall rules! See [this](https://linuxcontainers.org/lxd/docs/master/howto/network_bridge_firewalld/) for an explanation for how to make it work with `firewalld`
+
+
 ## Sharing host X11, Wayland
 I chose to share my host Wayland and XWayland server with the container. 
 What this entailed was the sharing of a few `unix` sockets.
