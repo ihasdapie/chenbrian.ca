@@ -36,5 +36,5 @@ deploy:
   fi
   git commit -m "$msg"
 
-  git pull
+  git pull -X ours
   git push
