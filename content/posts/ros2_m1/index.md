@@ -43,6 +43,7 @@ colcon build\
 --event-handlers console_cohesion+ status+ summary+ terminal_title+ console_package_list+ \ # print things out nicer
 --cmake-args --no-warn-unused-cli \
     -DPython_EXECUTABLE=/Users/PATH/TO/PYTHON/VENV/bin/python \ # modify this to suit your needs. Or just use $(which python3) if you have your virtualenv activated
+    -DPython3_EXECUTABLE=/Users/PATH/TO/PYTHON/VENV/bin/python3 \ # I needed both?
     -DPython_FIND_VIRTUALENV=ONLY \
     -DCMAKE_FIND_FRAMEWORK=LAST \ # I don't recall the specific reason but it doesn't work without it. IIRC it had something to do with the system frameworks conflicting with the packages we are building and the pyenv python.
     -DBUILD_TESTING=ON \ # not needed. I wanted to make sure ros2 worked.
@@ -51,7 +52,7 @@ colcon build\
     -DCMAKE_OSX_SYSROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk \
     -DCMAKE_OSX_ARCHITECTURES='arm64' \
     -DCMAKE_PREFIX_PATH=$(brew --prefix jsoncpp)/lib:$(brew --prefix qt@5):/opt/homebrew/Cellar/qt@5/5.15.8_1:/opt/homebrew/opt/boost/lib/cmake:/opt/homebrew \ # A bunch of these should actually be $(brew --prefix)/lib but anyhow...
-    -DPYTHON_LIBRARY=/Users/YOUR_USERNAME/.pyenv/3.10.9/lib/libpython3.10.dylib \ # you will have to modify this with your username and python version
+    -DPYTHON_LIBRARY=/Users/YOUR_USERNAME/.pyenv/versions/3.10.9/lib/libpython3.10.dylib \ # you will have to modify this with your username and python version
     -DPYTHON_INCLUDE_DIR=/Users/ihasdapie/.pyenv/versions/3.10.9/include/python3.10 \
 ```
 
@@ -80,7 +81,7 @@ direnv allow
 
 ```bash
 # We need numpy headers
-python -m pip install numpy --no-binary=:all:
+python3 -m pip install numpy --no-binary=:all:
 python3 -m pip install -U argcomplete catkin_pkg colcon-common-extensions coverage cryptography empy flake8 flake8-blind-except flake8-builtins flake8-class-newline flake8-comprehensions flake8-deprecated flake8-docstrings flake8-import-order flake8-quotes ifcfg importlib-metadata lark-parser lxml mock mypy==0.761netifaces nose pep8 pydocstyle pydot "pyparsing>=2.4,<3" pytest-mock rosdep setuptools vcstool matplotlib psutil rosdistro
 ```
 > For reference a `pip freeze` on my system gives [requirements.txt](requirements.txt)
