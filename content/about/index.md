@@ -50,9 +50,9 @@ If the PDF preview doesn't work for you, you may download it instead by clicking
 > Q: How can you tell if someone uses Linux?  
 > A: They'll tell you.
 
-I'm currently on Manjaro! [^1]
+I'm currently on ~~Manjaro~~ Tumbleweed! [^1]
 
-[^1]: Been meaning to switch to vanilla Arch for _years_ but my current setup 1) works and 2) isn't broken yet. Maybe when I get a new machine.
+[^1]: I'll probably write something up about this sometime
 
 > Q: How can you tell if a programmer uses Vim?  
 > A: You guessed it -- they'll tell you.
