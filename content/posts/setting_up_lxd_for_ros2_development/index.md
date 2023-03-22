@@ -169,6 +169,8 @@ devices:
     type: disk
 ```
 
+> If you find an error with "cannot connect to `/mnt/wayland1/wayland-0`" you may have to `mkdir /mnt/wayland1` in the container
+
 The downside of this is that the symlinks don't persist after the container restarts. 
 I just check for it in my `~/.zprofile`.
 
@@ -194,7 +196,7 @@ I put these into the `~/.zprofile` inside the container. You can do the same wit
 
 
 6. Enjoy!
-You should now be able to run `xclock` and find it working.
+You should now be able to run `xclock` or `rviz` or any gui application and find it working.
 
 
 ## ROS
