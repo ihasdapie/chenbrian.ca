@@ -173,6 +173,7 @@ The downside of this is that the symlinks don't persist after the container rest
 I just check for it in my `~/.zprofile`.
 
 5. Set some environment variables
+
 I put these into the `~/.zprofile` inside the container. You can do the same with your `~/.profile` or however you choose to handle environment variables. I think `lxc` provides some tools to set them in the `lxc` config for the container.
 
 

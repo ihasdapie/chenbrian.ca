@@ -82,7 +82,7 @@ direnv allow
 ```bash
 # We need numpy headers
 python3 -m pip install numpy --no-binary=:all:
-python3 -m pip install -U argcomplete catkin_pkg colcon-common-extensions coverage cryptography empy flake8 flake8-blind-except flake8-builtins flake8-class-newline flake8-comprehensions flake8-deprecated flake8-docstrings flake8-import-order flake8-quotes ifcfg importlib-metadata lark-parser lxml mock mypy==0.761netifaces nose pep8 pydocstyle pydot "pyparsing>=2.4,<3" pytest-mock rosdep setuptools vcstool matplotlib psutil rosdistro
+python3 -m pip install -U argcomplete catkin_pkg colcon-common-extensions coverage cryptography empy flake8 flake8-blind-except flake8-builtins flake8-class-newline flake8-comprehensions flake8-deprecated flake8-docstrings flake8-import-order flake8-quotes ifcfg importlib-metadata lark-parser lxml mock mypy==0.761 netifaces nose pep8 pydocstyle pydot "pyparsing>=2.4,<3" pytest-mock rosdep setuptools vcstool matplotlib psutil rosdistro
 ```
 > For reference a `pip freeze` on my system gives [requirements.txt](requirements.txt)
 
