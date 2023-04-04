@@ -28,6 +28,11 @@ Either download it and run locally, use [Google Colab](https://colab.research.go
 - [Tutorial 1](https://github.com/ihasdapie/teaching/blob/main/ESC190/esc190_tutorial-1.ipynb)
 - [Tutorial 2 Notes](https://github.com/ihasdapie/teaching/blob/main/ESC190/esc190-tutorial-2-notes.pdf)
 - [Midterm review](https://github.com/ihasdapie/teaching/blob/main/ESC190/esc190-tutorial-2-notes.pdf)
+- [Heaps and DP handout](https://github.com/ihasdapie/teaching/blob/main/ESC190/heaps_and_dp_handout.pdf) (\\( \LaTeX'd \\))
+- [Heaps and DP Office hours notes](https://github.com/ihasdapie/teaching/blob/main/ESC190/heaps_and_dp_written.pdf)
+- [Final exam review 2022](https://github.com/ihasdapie/teaching/blob/main/ESC190/final_review_written_notes.pdf)
+- [Heaps and graphs office hours notes 2022](https://github.com/ihasdapie/teaching/blob/main/ESC190/heaps_and_graphs_written.pdf)
+
 
 (All else currently WIP), see: [github.com/ihasdapie/teaching/](https://github.com/ihasdapie/teaching/)
 
