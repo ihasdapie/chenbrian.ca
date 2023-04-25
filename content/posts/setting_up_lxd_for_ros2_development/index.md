@@ -227,6 +227,19 @@ los () {
 > Not the best way to do this but it works.
 
 
+2. If networking doesn't work
+
+- allow lxd in firewalld and fix iptables
+```
+sudo firewall-cmd --zone=trusted --change-interface=lxdbr0 --permanent
+sudo firewall-cmd --reload
+sudo iptables -I DOCKER-USER -o lxdbr0 -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+sudo iptables -I DOCKER-USER -i lxdbr0 -o wlp0s20f3 -j ACCEPT
+```
+
+
+
+
 ## Resources
 - [Passing X11, Wayland](https://discuss.linuxcontainers.org/t/howto-use-the-hosts-wayland-and-xwayland-servers-inside-containers/8765)
 - [Audio Passthrough](https://discuss.linuxcontainers.org/t/audio-via-pulseaudio-inside-container/8768) [^a] 
