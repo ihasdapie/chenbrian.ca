@@ -1,5 +1,5 @@
 ---
-title: "Engsci Year 2 Winter"
+title: "Engsci Year 2 Winter Notes"
 slug: "engsci-year-2-winter"
 date: 2022-01-10T19:53:48-05:00
 draft: false
