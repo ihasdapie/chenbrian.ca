@@ -11,7 +11,7 @@ website_carbon: true
 
 ## What am I up to right now?
 
-- Just wrapped an SWE internship @ [Open Source Robotics Foundation](https://www.openrobotics.org/)
+- Interning @ Tesla Autopilot
 - Telling cars to drive themselves @ [aUToronto](https://www.autodrive.utoronto.ca/)
 - [TA]({{< ref "posts/teaching" >}})-ing data structures & algorithms (ESC180/ESC190)
 - [Making pretty notes]({{< ref "tags/notes" >}})
@@ -19,6 +19,7 @@ website_carbon: true
 
 
 ## Cool things I worked on in the past
+- Worked on ROS2 for NASA's [VIPER](https://www.nasa.gov/viper) lunar rover @ [Open Robotics](https://openrobotics.org/)
 - Research @ [ISML](https://www.eecg.utoronto.ca/~roman/): Accelerating machine learning tasks on memristor crossbars (paper coming soon!)
 - Web dev & data collection for the [BC Parks Foundation](https://bcparksfoundation.ca/)'s DiscoverParks initiative (private beta)
 - Helping people shop for groceries more safely during COVID-19 with [grocercheck.ca](https://grocercheck.ca/)
