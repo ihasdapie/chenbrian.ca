@@ -12,7 +12,7 @@ aliases:
   - "/posts/2021/projects"
 ---
 
-// Page under construction //   
+// Page under construction (Actually, this page has been abandoned since early 2022...) //   
 
 > "If you built a project and did not write about it, did you really build a project?"
 

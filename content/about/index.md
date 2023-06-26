@@ -11,28 +11,27 @@ website_carbon: true
 
 ## What am I up to right now?
 
-- Interning @ Tesla Autopilot
+- Interning for Tesla Autopilot
+- [Making pretty notes]({{< ref "tags/notes" >}}) while trying to make it through university!
+
+##  Connect with me:
+
+- [Github](https://github.com/ihasdapie)
+- [LinkedIn](https://linkedin.com/in/brianchen28914)
+- Email at `brianchen.chen (at) mail.utoronto.ca`
+
+
+## Some things I've worked on in the past:
+- ROS2 for NASA's [VIPER](https://www.nasa.gov/viper) lunar rover @ [Open Robotics](https://openrobotics.org/)
+- Research @ [ISML](https://www.eecg.utoronto.ca/~roman/): Accelerating machine learning tasks on memristor crossbars
 - Telling cars to drive themselves @ [aUToronto](https://www.autodrive.utoronto.ca/)
 - [TA]({{< ref "posts/teaching" >}})-ing data structures & algorithms (ESC180/ESC190)
-- [Making pretty notes]({{< ref "tags/notes" >}})
-- Trying to make it through university!
-
-
-## Cool things I worked on in the past
-- Worked on ROS2 for NASA's [VIPER](https://www.nasa.gov/viper) lunar rover @ [Open Robotics](https://openrobotics.org/)
-- Research @ [ISML](https://www.eecg.utoronto.ca/~roman/): Accelerating machine learning tasks on memristor crossbars (paper coming soon!)
 - Web dev & data collection for the [BC Parks Foundation](https://bcparksfoundation.ca/)'s DiscoverParks initiative (private beta)
 - Helping people shop for groceries more safely during COVID-19 with [grocercheck.ca](https://grocercheck.ca/)
 - [And more]({{< ref "posts/projects" >}})
 
 > For more details, see my [projects page]({{< ref "posts/projects" >}}) or [contact me]({{< ref "#connect-with-me" >}})
 
-##  Connect with me:
-
-- [Check out my projects on Github](https://github.com/ihasdapie)
-- [Connect with me on LinkedIn](https://linkedin.com/in/brianchen28914)
-- [Check out my cooking instagram](https://instagram.com/brianschicken)
-- Email at `brianchen.chen (at) mail.utoronto.ca`
 
 
 ## Resume
