@@ -11,8 +11,9 @@ website_carbon: true
 
 ## What am I up to right now?
 
-- Interning for Tesla Autopilot
-- [Making pretty notes]({{< ref "tags/notes" >}}) while trying to make it through university!
+- Intern @ Tesla Autopilot
+- [Making pretty notes]({{< ref "tags/notes" >}})
+- Trying to make it through university :')
 
 ##  Connect with me:
 
