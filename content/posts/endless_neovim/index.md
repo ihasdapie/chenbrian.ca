@@ -2,7 +2,7 @@
 title: "\"The Endless River\", or me, myself, and editing my `init.vim`"
 slug: "endless-neovim"
 date: 2022-01-13T13:35:35-05:00
-draft: false
+draft: true
 katex: true
 back_to_top: true
 toc: true
