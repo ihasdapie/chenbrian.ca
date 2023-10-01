@@ -39,7 +39,7 @@ Steps for use are as follows:
 
   ```
   2. Fetch them: `colcon mixin update default`
-3. Use them: `colcon build --mixin compile_commands`
+3. Use them: `colcon build --mixin compile-commands`
 
 And this will work out of the box to generate the relevant `compile_commands.json` files.
 

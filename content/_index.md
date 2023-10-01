@@ -30,7 +30,6 @@ I also occasionally write posts on my [blog]({{<ref "/posts">}}), so feel free t
 ###  Connect with me:
 
 - Github: [github.com/ihasdapie](https://github.com/ihasdapie)
-- LinkedIn: [linkedin.com/in/brianchen28914](https://linkedin.com/in/brianchen28914)
 - Email at `brianchen.chen (at) mail.utoronto.ca`
 
 
