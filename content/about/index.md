@@ -18,7 +18,6 @@ website_carbon: true
 ##  Connect with me:
 
 - [Github](https://github.com/ihasdapie)
-- [LinkedIn](https://linkedin.com/in/brianchen28914)
 - Email at `brianchen.chen (at) mail.utoronto.ca`
 
 
@@ -27,7 +26,7 @@ website_carbon: true
 - Research @ [ISML](https://www.eecg.utoronto.ca/~roman/): Accelerating machine learning tasks on memristor crossbars
 - Telling cars to drive themselves @ [aUToronto](https://www.autodrive.utoronto.ca/)
 - [TA]({{< ref "posts/teaching" >}})-ing data structures & algorithms (ESC180/ESC190)
-- Web dev & data collection for the [BC Parks Foundation](https://bcparksfoundation.ca/)'s DiscoverParks initiative (private beta)
+- Building [discoverparks.ca](discoverparks.ca) for [BC Parks Foundation](https://bcparksfoundation.ca/).  ([Photo: this cool billboard ad for this project at at YVR international arrivals](./bcpf_dp_ad.jpg))
 - Helping people shop for groceries more safely during COVID-19 with [grocercheck.ca](https://grocercheck.ca/)
 - [And more]({{< ref "posts/projects" >}})
 
