@@ -50,7 +50,7 @@ If the PDF preview doesn't work for you, you may download it instead by clicking
 > Q: How can you tell if someone uses Linux?  
 > A: They'll tell you.
 
-I'm currently on ~~Manjaro~~ ~~Tumbleweed~~! [^1] [^2]
+I'm currently on ~~Manjaro~~  [^1] ~~Tumbleweed~~ [^2] Arch!
 
 [^1]: I'll probably write something up about this sometime
 [^2]: Tumbleweed broke on me. Back to Arch I go :/
