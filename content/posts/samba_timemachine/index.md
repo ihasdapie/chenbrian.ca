@@ -58,5 +58,7 @@ One important thing to note is that your external hard drive _cannot be_ formatt
 ```
 
 
+Additionally, there are some caveats with the filesystem used on the external hard drive. NTFS and BTRFS and ext4, etc support xattr well, but exFAT doesn't (or FAT32, etc). So remove `streams_xattr` from the samba conf for that share if it is a FAT-formatted drive
+
 
 
