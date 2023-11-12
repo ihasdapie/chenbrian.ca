@@ -22,7 +22,6 @@ I also occasionally write posts on my [blog]({{<ref "/posts">}}), so feel free t
 - [Browse by tags]({{< ref "/tags" >}})
 - [Projects]({{< ref "/posts/projects" >}})
 - [Notes]({{< ref "/tags/notes" >}}) [^notes]
-- [Resume](resume.pdf)
 
 [^notes]: I like to think that they're \\( \LaTeX \\)-ed up nicely and are of non-zero utility.
 
