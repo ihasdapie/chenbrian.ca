@@ -12,7 +12,7 @@ update-resume:
 
 deploy:
   #!/usr/bin/env bash
-  just update-resume
+  # just update-resume
   just update-notes
   msg="rebuilding site $(date)"
 
