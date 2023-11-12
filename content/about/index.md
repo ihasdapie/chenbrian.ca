@@ -33,16 +33,16 @@ website_carbon: true
 > For more details, see my [projects page]({{< ref "posts/projects" >}}) or [contact me]({{< ref "#connect-with-me" >}})
 
 
-
+<!--
 ## Resume
 {{< pdf src= "../resume.pdf" >}}
 
 <details>
   <summary>View as image</summary>
   <img src="{{<baseurl>}}/resume.png" alt="Resume" style="width:100%">
-</details>
+</details> 
 
-If the PDF preview doesn't work for you, you may download it instead by clicking on [this link]({{<baseurl>}}/resume.pdf).
+If the PDF preview doesn't work for you, you may download it instead by clicking on [this link]({{<baseurl>}}/resume.pdf). -->
 
 
 ## Misc
