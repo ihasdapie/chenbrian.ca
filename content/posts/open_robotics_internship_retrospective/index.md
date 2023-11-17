@@ -116,6 +116,9 @@ ros2/ros2#1285: Service Introspection
 {{< pdf src= "./deck.pdf" >}}
 
 
+I got [mentioned at roscon 2023!](https://roscon.ros.org/2023/talks/The_State_of_ROS_From_the_Iron_Age_to_the_Jazzy_Age.pdf)
+
+
 
 
 
