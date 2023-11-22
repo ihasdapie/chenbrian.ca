@@ -61,5 +61,6 @@ I'm currently on ~~Manjaro~~  [^1] ~~Tumbleweed~~ [^2] Arch!
 
 Excuse me, I use [nvim](https://github.com/ihasdapie/dotfiles).
 
+![eighth_day_dotfile](img/eighth_day_dotfile.png)
 
 
