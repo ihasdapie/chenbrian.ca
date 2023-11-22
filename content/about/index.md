@@ -10,23 +10,23 @@ website_carbon: true
 
 
 ## What am I up to right now?
+- Trying to get through university :)
 
-- Intern @ Tesla Autopilot
-- [Making pretty notes]({{< ref "tags/notes" >}})
-- Trying to make it through university :')
 
 ##  Connect with me:
 
+- Email: `brianchen.chen (at) mail.utoronto.ca`
 - [Github](https://github.com/ihasdapie)
-- Email at `brianchen.chen (at) mail.utoronto.ca`
 
 
 ## Some things I've worked on in the past:
-- ROS2 for NASA's [VIPER](https://www.nasa.gov/viper) lunar rover @ [Open Robotics](https://openrobotics.org/)
+- Autopilot @ Tesla
+- ROS2 for NASA's [VIPER](https://www.nasa.gov/viper) lunar rover @ [Open Robotics](https://openrobotics.org/) (Now an Alphabet company)
 - Research @ [ISML](https://www.eecg.utoronto.ca/~roman/): Accelerating machine learning tasks on memristor crossbars
 - Telling cars to drive themselves @ [aUToronto](https://www.autodrive.utoronto.ca/)
 - [TA]({{< ref "posts/teaching" >}})-ing data structures & algorithms (ESC180/ESC190)
 - Building [discoverparks.ca](discoverparks.ca) for [BC Parks Foundation](https://bcparksfoundation.ca/).  ([Photo: this cool billboard ad for this project at at YVR international arrivals](./bcpf_dp_ad.jpg))
+- [Making pretty notes]({{< ref "tags/notes" >}})
 - Helping people shop for groceries more safely during COVID-19 with [grocercheck.ca](https://grocercheck.ca/)
 - [And more]({{< ref "posts/projects" >}})
 
