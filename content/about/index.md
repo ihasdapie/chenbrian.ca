@@ -20,6 +20,7 @@ website_carbon: true
 
 
 ## Some things I've worked on in the past:
+- ProdEng @ Uber
 - Autopilot @ Tesla
 - ROS2 for NASA's [VIPER](https://www.nasa.gov/viper) lunar rover @ [Open Robotics](https://openrobotics.org/) (Now an Alphabet company)
 - Research @ [ISML](https://www.eecg.utoronto.ca/~roman/): Accelerating machine learning tasks on memristor crossbars
