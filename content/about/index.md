@@ -49,6 +49,8 @@ If the PDF preview doesn't work for you, you may download it instead by clicking
 
 ## Misc
 
+Fun fact: I have an Erdős number of 4. Not particularly impressive, but I think it's cool.
+
 > Q: How can you tell if someone uses Linux?  
 > A: They'll tell you.
 
