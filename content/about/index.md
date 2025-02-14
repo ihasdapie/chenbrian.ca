@@ -11,6 +11,7 @@ website_carbon: true
 
 ## What am I up to right now?
 - Incoming @ Tesla Autopilot
+- Building [kortex](https://www.kortex.co/)
 - Research @ [TISL](https://tisl.cs.utoronto.ca/), co-supervised by nvidia research
 - Trying to get through university :)
 
