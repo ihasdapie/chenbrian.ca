@@ -11,6 +11,7 @@ website_carbon: true
 
 ## What am I up to right now?
 - Incoming @ Tesla Autopilot
+- Research @ [TISL](https://tisl.cs.utoronto.ca/), co-supervised by nvidia research
 - Trying to get through university :)
 
 
@@ -23,17 +24,18 @@ website_carbon: true
 ## Some things I've worked on in the past:
 - ProdEng @ Uber
 - Autopilot @ Tesla
-- ROS2 for NASA's [VIPER](https://www.nasa.gov/viper) lunar rover @ [Open Robotics](https://openrobotics.org/) (Now an Alphabet company)
-- Research @ [ISML](https://www.eecg.utoronto.ca/~roman/): Accelerating machine learning tasks on memristor crossbars
-- Telling cars to drive themselves @ [aUToronto](https://www.autodrive.utoronto.ca/)
+- SWE @ [Open Robotics](https://openrobotics.org/) (Now an Alphabet company)
+    - Got to work on NASA's [VIPER](https://www.nasa.gov/viper) lunar rover!
+- Research @ [ISML](https://www.eecg.utoronto.ca/~roman/)
+    - Accelerating machine learning tasks on memristor crossbars
+- Teaching cars to drive themselves @ [aUToronto](https://www.autodrive.utoronto.ca/)
 - [TA]({{< ref "posts/teaching" >}})-ing data structures & algorithms (ESC180/ESC190)
-- Building [discoverparks.ca](discoverparks.ca) for [BC Parks Foundation](https://bcparksfoundation.ca/).  ([Photo: this cool billboard ad for this project at at YVR international arrivals](./bcpf_dp_ad.jpg))
+- Building [discoverparks.ca](discoverparks.ca) for [BC Parks Foundation](https://bcparksfoundation.ca/).  ([cool discoverparks ad at YVR](./bcpf_dp_ad.jpg))
 - [Making pretty notes]({{< ref "tags/notes" >}})
 - Helping people shop for groceries more safely during COVID-19 with [grocercheck.ca](https://grocercheck.ca/)
 - [And more]({{< ref "posts/projects" >}})
 
 > For more details, see my [projects page]({{< ref "posts/projects" >}}) or [contact me]({{< ref "#connect-with-me" >}})
-
 
 <!--
 ## Resume
@@ -66,5 +68,14 @@ I'm currently on ~~Manjaro~~  [^1] ~~Tumbleweed~~ [^2] Arch!
 Excuse me, I use [nvim](https://github.com/ihasdapie/dotfiles).
 
 ![eighth_day_dotfile](img/eighth_day_dotfile.png)
+
+
+#### About this page
+This site's design was inspired by the great minds behind [bettermotherfuckingwebsite.com](http://bettermotherfuckingwebsite.com/). 
+If you would like to also like to have a site that *isn't an absolute eyesore* and *doesn't load a 40-pound jQuery file*, check out the [hugo theme](https://github.com/ihasdapie/bettermotherfuckinghugowebsite/) behind this website. 
+Also, it is [more eco-friendly](https://www.websitecarbon.com/website/chenbrian-ca/)!
+
+
+
 
 
