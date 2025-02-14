@@ -18,11 +18,11 @@ I also occasionally write posts on my [blog]({{<ref "/posts">}}), so feel free t
 
 
 ### Quick links
-- [Browse by tags]({{< ref "/tags" >}})
-- [Projects]({{< ref "/posts/projects" >}})
-- [Notes]({{< ref "/tags/notes" >}}) [^notes]
 - Github: [github.com/ihasdapie](https://github.com/ihasdapie)
 - Google Scholar: [scholar.google.com](https://scholar.google.com/citations?hl=en&user=1fvqKyoAAAAJ)
+- [Blog by tags]({{< ref "/tags" >}})
+- [Projects]({{< ref "/posts/projects" >}})
+- [Notes]({{< ref "/tags/notes" >}}) [^notes]
 
 [^notes]: I like to think that they're \\( \LaTeX \\)-ed up nicely 
 
