@@ -17,9 +17,7 @@ enableGitInfo = true
 googleAnalytics = "G-B0ZFV4LTG2"
 
 # Copyright
-copyright = "© 2022 — Brian Chen — All rights reserved."
-
-
+copyright = "© 2025 — Brian Chen — All rights reserved."
 
 
 # Highlighting
@@ -30,71 +28,60 @@ pygmentsoptions = "linenos=table"
 pygmentsStyle = "emacs"
 
 
-
-
-
 # Taxonomies
 [taxonomies]
-  tag = "tags"
-  category = "categories"
+tag = "tags"
+category = "categories"
 
 
 # Menu
 [menu]
 # Header
-  [[menu.main]]
-    url = "/about/"
-    name = "about"
-    weight = 1
-  [[menu.main]]
-    url = "/posts/"
-    name = "posts"
-    weight = 2
-  [[menu.main]]
-   url = "/tags/"
-   name = "tags"
-   weight = 3
-  [[menu.main]]
-    url = "https://github.com/ihasdapie"
-    name = "github"
-    weight = 4
+[[menu.main]]
+url = "/posts/"
+name = "posts"
+weight = 2
+[[menu.main]]
+url = "https://github.com/ihasdapie"
+name = "github"
+weight = 3
+[[menu.main]]
+url = "/resume.pdf"
+name = "cv"
+weight = 4
 
 
 # Footer
- [[menu.footer]]
-  url = "https://github.com/ihasdapie/bettermotherfuckinghugowebsite/"
-  name = "Theme"
-  weight = 1
+[[menu.footer]]
+url = "https://github.com/ihasdapie/bettermotherfuckinghugowebsite/"
+name = "Theme"
+weight = 1
 
- [[menu.footer]]
-   url = "https://github.com/ihasdapie"
-   name = "GitHub"
-   weight = 1
+[[menu.footer]]
+url = "https://github.com/ihasdapie"
+name = "GitHub"
+weight = 1
 
 # Links format
 [permalinks]
-  posts = "/posts/:slug/"
+posts = "/posts/:slug/"
 
 [params]
-  # Date format (default: Jan 2, 2006)
-  # datefmt  = "Jan 2, 2006"
+# Date format (default: Jan 2, 2006)
+# datefmt  = "Jan 2, 2006"
 
 [markup]
-  [markup.goldmark.parser]
-    block = true
-    title = true
+[markup.goldmark.parser]
+block = true
+title = true
 
 
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
 
 
-  [markup.tableOfContents]
-    startLevel = 2
-    endLevel = 3
-    ordered = false
-
-
-
-
+[markup.tableOfContents]
+startLevel = 2
+endLevel = 3
+ordered = false

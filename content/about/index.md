@@ -9,36 +9,6 @@ website_carbon: true
 ---
 
 
-## What am I up to right now?
-- Incoming @ Tesla Autopilot
-- Building [kortex](https://www.kortex.co/)
-- Research @ [TISL](https://tisl.cs.utoronto.ca/), co-supervised by nvidia research
-- Trying to get through university :)
-
-
-##  Connect with me:
-
-- Email: `brianchen.chen (at) mail.utoronto.ca`
-- [Github](https://github.com/ihasdapie)
-
-
-## Some things I've worked on in the past:
-- ProdEng @ Uber
-- Autopilot @ Tesla
-- SWE @ [Open Robotics](https://openrobotics.org/) (Now an Alphabet company)
-    - Got to work on NASA's [VIPER](https://www.nasa.gov/viper) lunar rover!
-- Research @ [ISML](https://www.eecg.utoronto.ca/~roman/)
-    - Accelerating machine learning tasks on memristor crossbars
-- Teaching cars to drive themselves @ [aUToronto](https://www.autodrive.utoronto.ca/)
-- [TA]({{< ref "posts/teaching" >}})-ing data structures & algorithms (ESC180/ESC190)
-- Building [discoverparks.ca](discoverparks.ca) for [BC Parks Foundation](https://bcparksfoundation.ca/).  ([cool discoverparks ad at YVR](./bcpf_dp_ad.jpg))
-- [Making pretty notes]({{< ref "tags/notes" >}})
-- Helping people shop for groceries more safely during COVID-19 with [grocercheck.ca](https://grocercheck.ca/)
-- [And more]({{< ref "posts/projects" >}})
-
-> For more details, see my [projects page]({{< ref "posts/projects" >}}) or [contact me]({{< ref "#connect-with-me" >}})
-
-<!--
 ## Resume
 {{< pdf src= "../resume.pdf" >}}
 
@@ -47,7 +17,7 @@ website_carbon: true
   <img src="{{<baseurl>}}/resume.png" alt="Resume" style="width:100%">
 </details> 
 
-If the PDF preview doesn't work for you, you may download it instead by clicking on [this link]({{<baseurl>}}/resume.pdf). -->
+If the PDF preview doesn't work for you, you may download it instead by clicking on [this link]({{<baseurl>}}/resume.pdf).
 
 
 ## Misc
@@ -59,14 +29,12 @@ Fun fact: I have an Erdős number of 4. Not particularly impressive, but I think
 
 I'm currently on ~~Manjaro~~  [^1] ~~Tumbleweed~~ [^2] Arch!
 
-[^1]: I'll probably write something up about this sometime
 [^2]: Tumbleweed broke on me. Back to Arch I go :/
 
 
-> Q: How can you tell if a programmer uses Vim?  
-> A: You guessed it -- they'll tell you.
+> Q: How can you tell if a someone uses ~~vim~~ [nvim](https://github.com/ihasdapie/dotfiles)  
+> A: They'll tell you.
 
-Excuse me, I use [nvim](https://github.com/ihasdapie/dotfiles).
 
 ![eighth_day_dotfile](img/eighth_day_dotfile.png)
 

@@ -2,7 +2,7 @@
 title: "SAMBA file share for time machine"
 slug: "Samba_timemachine"
 date: 2023-03-10T22:56:58-05:00
-draft: true
+draft: false
 katex: true
 toc: true
 tags: []

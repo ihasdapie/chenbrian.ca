@@ -2,7 +2,7 @@
 title: "some poems"
 slug: "some-poems"
 date: 2022-01-08T00:26:05-05:00
-draft: false
+draft: true
 katex: true
 back_to_top: true
 toc: true 
