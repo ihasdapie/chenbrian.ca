@@ -59,7 +59,7 @@ I'm currently on ~~Manjaro~~ ~~Tumbleweed~~ Arch!
 
 
 
-![eighth_day_dotfile](about/img/eighth_day_dotfile.png)
+![eighth_day_dotfile](eighth_day_dotfile.png)
 (courtesy of my good friend Matthew)
 
 
