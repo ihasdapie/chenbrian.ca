@@ -28,22 +28,6 @@ I present: my [fork of altacv](https://github.com/ihasdapie/resume/) with a few 
 5. Disabling word wrapping and hyphenation
 6. Various changes to `\makecvevent`, etc. to improve pdf-to-text conversion
 
-For an example of the output, see my [about me]({{< ref "/about">}}) page, or the picture below.
+For an example of the output, see my [resume](/resume.pdf), or the picture below.
 
 > Disclaimer: using this template is not a guarantee that it will help you get a job. Trust me -- I wish it did.
-
-
-![example](/resume.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
