@@ -11,7 +11,7 @@ website_carbon: true
 ![me](profile-picture.jpg)
 
 I'm an [Engineering Science](https://engsci.utoronto.ca/) student at the University of Toronto, majoring in Electrical and Computer Engineering.
-My primary interests are in robotics, distributed systems, machine learning, and performance engineering.
+My primary interests are in robotics, distributed systems, machine learning, optimization, and reliability.
 In short, I like to build things that 1) work, 2) work well, and 3) work well together.
 
 ### What am I up to right now?
@@ -25,7 +25,7 @@ In short, I like to build things that 1) work, 2) work well, and 3) work well to
 - ProdEng @ Uber
 - Autopilot @ Tesla
 - ROS & NASA [VIPER](https://www.nasa.gov/viper) lunar rover @ [Open Robotics](https://openrobotics.org/) (Now an Alphabet company)
-- Accelerating machine learning on memristor crossbars @ [ISML](https://www.eecg.utoronto.ca/~roman/)
+- Memristive ML Acceleration @ [ISML](https://www.eecg.utoronto.ca/~roman/)
 - Autonomous vehicles @ [aUToronto](https://www.autodrive.utoronto.ca/)
 
 
