@@ -45,10 +45,10 @@ weight = 2
 url = "https://github.com/ihasdapie"
 name = "github"
 weight = 3
-[[menu.main]]
-url = "/resume.pdf"
-name = "cv"
-weight = 4
+# [[menu.main]]
+# url = "/resume.pdf"
+# name = "cv"
+# weight = 4
 
 
 # Footer
