@@ -1,44 +1,34 @@
 ---
 title: "Brian Chen"
 table: true
-tags: ['about_me']
+tags: ["about_me"]
 katex: true
 website_carbon: true
 ---
 
-
-
 ![me](profile-picture.jpg)
 
-I'm an [Engineering Science](https://engsci.utoronto.ca/) student at the University of Toronto, majoring in Electrical and Computer Engineering.
+Hi, I'm Brian.
+
+I studied [Engineering Science](https://engsci.utoronto.ca/) at the University of Toronto where I majored in Electrical and Computer Engineering.
 My primary interests are in robotics, distributed systems, machine learning, optimization, and reliability.
 In short, I like to build things that 1) work, 2) work well, and 3) work well together.
 
-### What am I up to right now?
-- Incoming @ Tesla Autopilot
+In the past, I've worked on:
+
 - Building [kortex](https://www.kortex.co/)
 - Research @ [TISL](https://tisl.cs.utoronto.ca/), co-supervised by NVIDIA research
-- Trying to graduate :)
-
-
-### Some things I've worked on in the past:
 - ProdEng @ Uber
 - Autopilot @ Tesla
 - ROS & NASA [VIPER](https://www.nasa.gov/viper) lunar rover @ [Open Robotics](https://openrobotics.org/) (Now an Alphabet company)
 - Memristive ML Acceleration @ [ISML](https://www.eecg.utoronto.ca/~roman/)
 - Autonomous vehicles @ [aUToronto](https://www.autodrive.utoronto.ca/)
 
-
-###  Connect with me:
+### Connect with me:
 
 - Email: `brianchen.chen (at) mail.utoronto.ca`
 - Github: [github.com/ihasdapie](https://github.com/ihasdapie)
 - Google Scholar: [scholar.google.com](https://scholar.google.com/citations?hl=en&user=1fvqKyoAAAAJ)
-
-
-
-
-
 
 <details>
   <summary>Other</summary>
@@ -52,19 +42,10 @@ In short, I like to build things that 1) work, 2) work well, and 3) work well to
 
 I'm currently on ~~Manjaro~~ ~~Tumbleweed~~ Arch!
 
-
 > Q: How can you tell if a someone uses ~~vim~~ [nvim](https://github.com/ihasdapie/dotfiles)  
 > A: They'll tell you.
-
-
-
 
 ![eighth_day_dotfile](eighth_day_dotfile.png)
 (courtesy of my good friend Matthew)
 
-
-
-
-
-</details> 
-
+</details>
