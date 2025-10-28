@@ -1,6 +1,6 @@
 ---
-title: "SAMBA file share for time machine"
-slug: "Samba_timemachine"
+title: "samba fun"
+slug: "samba"
 date: 2023-03-10T22:56:58-05:00
 draft: false
 katex: true
@@ -11,8 +11,8 @@ website_carbon: true
 
 Short post.
 
-I wanted to repurpose an old external hard drive into a NAS and do time machine backups on it as well. 
-Here's the `smb.conf` I used -- some special stuff needs to be done to make it work with time machine. 
+I wanted to repurpose an old external hard drive into a NAS and do time machine backups on it as well.
+Here's the `smb.conf` I used -- some special stuff needs to be done to make it work with time machine.
 Mostly just adding `fruit:time machine = yes` and the accompanying parameters.
 
 One important thing to note is that your external hard drive _cannot be_ formatted as any `FAT` since it doesn't support extended attributes which SAMBA needs to make time machine work. I used btrfs.
@@ -57,8 +57,15 @@ One important thing to note is that your external hard drive _cannot be_ formatt
 	default case = lower
 ```
 
-
 Additionally, there are some caveats with the filesystem used on the external hard drive. NTFS and BTRFS and ext4, etc support xattr well, but exFAT doesn't (or FAT32, etc). So remove `streams_xattr` from the samba conf for that share if it is a FAT-formatted drive
 
+Right now I'm trying to set up [immich](https://immich.app/) on my server to replace google photos.
+But backblaze has free unlimited backup, but only for mac or windows. So what I did was set up an external drive
 
+```
+ sudo mount -t cifs //ihasdapiexmac/disk0 ~/Volumes/disk0 -o username=familyfileshare,dir_mode=0777,file_mode=0777
+```
 
+Not sure why i can't create files without dir_mode, file_mode not set to 777
+
+Then I set up backblaze to back up that mounted drive :)
