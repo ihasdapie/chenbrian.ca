@@ -6,8 +6,6 @@ title = 'chenbrian'
 theme = "bettermotherfuckinghugowebsite"
 
 # Pagination
-paginate = 25
-paginatePath = "page"
 
 
 # enable last updated
@@ -27,6 +25,10 @@ pygmentsCodeFencesGuessSyntax = true
 pygmentsoptions = "linenos=table"
 pygmentsStyle = "emacs"
 
+# pagination
+[pagination]
+pagerSize = 25
+path = "page"
 
 # Taxonomies
 [taxonomies]
