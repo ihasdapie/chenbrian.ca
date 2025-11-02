@@ -8,10 +8,8 @@ website_carbon: true
 
 ![me](profile-picture.jpg)
 
-Hey, I'm Brian.
-
-I studied [Engineering Science](https://engsci.utoronto.ca/) at the University of Toronto where I majored in Electrical and Computer Engineering.
-Nowadays I spend my days working on Autopilot at Tesla.
+I'm an engineer at Tesla working on Autopilot where I work on getting cars to drive themselves.
+Prior to this, I studied [Engineering Science](https://engsci.utoronto.ca/) at the University of Toronto where I majored in Electrical and Computer Engineering.
 My primary interests are in robotics, distributed systems, machine learning, optimization, and reliability.
 In short, I like to build things that 1) work, 2) work well, and 3) work well together.
 
