@@ -25,7 +25,7 @@ In the past, I've worked on:
 
 ### Connect with me:
 
-- Email: `brianchen.chen (at) mail.utoronto.ca`
+- Email: `brianchen.chen (at) alumni.utoronto.ca`
 - Github: [github.com/ihasdapie](https://github.com/ihasdapie)
 - Google Scholar: [scholar.google.com](https://scholar.google.com/citations?hl=en&user=1fvqKyoAAAAJ)
 
