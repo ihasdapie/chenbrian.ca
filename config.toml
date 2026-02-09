@@ -15,7 +15,7 @@ enableGitInfo = true
 googleAnalytics = "G-B0ZFV4LTG2"
 
 # Copyright
-copyright = "© 2025 — Brian Chen — All rights reserved."
+# copyright = "© 2026 — Brian Chen — All rights reserved."
 
 
 # Highlighting
@@ -40,13 +40,13 @@ category = "categories"
 [menu]
 # Header
 [[menu.main]]
-url = "/posts/"
-name = "posts"
-weight = 2
-[[menu.main]]
-url = "https://github.com/ihasdapie"
-name = "github"
-weight = 3
+# url = "/posts/"
+# name = "posts"
+# weight = 2
+# [[menu.main]]
+# url = "https://github.com/ihasdapie"
+# name = "github"
+# weight = 3
 # [[menu.main]]
 # url = "/resume.pdf"
 # name = "cv"
@@ -54,15 +54,15 @@ weight = 3
 
 
 # Footer
-[[menu.footer]]
-url = "https://github.com/ihasdapie/bettermotherfuckinghugowebsite/"
-name = "Theme"
-weight = 1
+# [[menu.footer]]
+# url = "https://github.com/ihasdapie/bettermotherfuckinghugowebsite/"
+# name = "Theme"
+# weight = 1
 
-[[menu.footer]]
-url = "https://github.com/ihasdapie"
-name = "GitHub"
-weight = 1
+# [[menu.footer]]
+# url = "https://github.com/ihasdapie"
+# name = "GitHub"
+# weight = 1
 
 # Links format
 [permalinks]
