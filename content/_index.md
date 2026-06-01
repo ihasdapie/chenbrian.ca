@@ -8,17 +8,17 @@ website_carbon: true
 
 ![me](profile-picture.jpg)
 
-Currently, I'm an engineer at [Tesla AI](https://www.tesla.com/ai) working on making ~autopilot~ FSD work good.
-In my past academic life, I studied [Engineering Science](https://engsci.utoronto.ca/) at the University of Toronto where I majored in Electrical and Computer Engineering.
+I'm an engineer at [Tesla AI](https://www.tesla.com/ai) working on making autopilot work good.
+
+In the past, I studied [Engineering Science](https://engsci.utoronto.ca/) at the University of Toronto where I majored in Electrical and Computer Engineering.
 My primary interests are in robotics, machine learning, distributed systems, optimization, and reliability.
 In short, I aim to build _useful_ things that 1) work, 2) work well, and 3) work well together.
 
-Some of my past experiences include:
-
+Some work related things I have done include:
 - Being the first engineer at a startup @ [kortex](https://www.kortex.co/) (now [eden.so](https://eden.so/))
 - Upside-down reinforcement learning @ [TISL](https://tisl.cs.utoronto.ca/), co-supervised by NVIDIA research
 - Autoscaling, production engineering, and memory optimization @ [Uber](https://www.uber.com/en-US/blog/engineering/)
-- [ROS](https://www.ros.org/) for the NASA [VIPER](https://www.nasa.gov/viper) lunar rover @ [Open Robotics](https://openrobotics.org/) (now under Alphabet)
+- [ROS](https://www.ros.org/) for the NASA [VIPER](https://www.nasa.gov/viper) lunar rover @ [Open Robotics](https://openrobotics.org/) (now Alphabet)
 - [Memristor](https://en.wikipedia.org/wiki/Memristor) ML Acceleration @ [ISML](https://www.eecg.utoronto.ca/~roman/)
 - Autonomous vehicles @ [aUToronto](https://www.autodrive.utoronto.ca/)
 
