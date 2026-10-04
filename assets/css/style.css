@@ -1,0 +1,7 @@
+/* motherfuckingwebsite.com style: browser defaults only.
+   The rules below exist only to keep content from breaking the page. */
+img { max-width: 100%; }
+table { display: block; overflow-x: auto; }
+.katex-display > .katex { overflow: auto hidden; }
+#back_to_top { display: none; }
+img[src$="profile-picture.jpg"] { width: 200px; }

@@ -1,0 +1,23 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta lang="en">
+
+    <title>
+        {{- block "title" . -}}
+        {{ .Title}}{{ if ne .Title .Site.Title }} {{ end }}
+        {{- end -}}
+    </title>
+
+    {{ $styles := resources.Get "css/style.css" | minify -}}
+    <style>
+        {{- $styles.Content | safeCSS -}}
+
+        </style>
+
+    {{ if .Params.katex}}{{ partial "katex.html" . }}{{ end }}
+
+    {{ template "_internal/google_analytics.html" . }}
+
+    {{ partial "head_custom" . }}
+</head>

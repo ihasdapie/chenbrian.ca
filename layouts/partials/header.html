@@ -1,0 +1,7 @@
+{{ block "header" . }}
+{{- with where .Site.Menus.main "Name" "!=" "" }}
+<header>
+    {{- range $i, $m := . }}{{ if $i }} | {{ end }}<a href="{{ if hasPrefix $m.URL "mailto:" }}{{ $m.URL }}{{ else }}{{ $m.URL | relLangURL }}{{ end }}">{{- $m.Name -}}</a>{{ end }}
+</header>
+{{- end }}
+{{ end }}
