@@ -12,29 +12,28 @@ update-resume:
 
 deploy:
   #!/usr/bin/env bash
+  set -euo pipefail
   # just update-resume
   # just update-notes
   msg="rebuilding site $(date)"
 
-  git add --a
-  git commit -m  "$msg"
-  git push
-
-
-  set -e
-
   printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 
-  hugo build --cleanDestinationDir
+  # public/ is the ihasdapie.github.io submodule; make sure it's checked out on master
+  # (shallow: the full Pages history is too large to clone reliably). public/ is regenerated
+  # from scratch each build, so just reset to whatever is live.
+  [ -e public/.git ] || git submodule update --init --depth 1 public
+  git -C public fetch -q --depth 1 origin master
+  git -C public checkout -q -B master origin/master
 
-  cd public
+  # wipe old output but keep public/.git (hugo's --cleanDestinationDir deletes it)
+  find public -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+  hugo build
 
-  git add .
+  git -C public add -A
+  git -C public diff --cached --quiet || git -C public commit -m "$msg"
+  git -C public push
 
-  if [ -n "$*" ]; then
-    msg="$*"
-  fi
-  git commit -m "$msg"
-
-  git pull -X ours
+  git add -A
+  git diff --cached --quiet || git commit -m "$msg"
   git push
