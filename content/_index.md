@@ -21,6 +21,7 @@ Right now I'm trying to teach autopilot to FSD good @ [Tesla AI](https://www.tes
 - [Memristor](https://en.wikipedia.org/wiki/Memristor) ML Acceleration @ [ISML](https://www.eecg.utoronto.ca/~roman/)
 - Autonomous vehicles @ [aUToronto](https://www.autodrive.utoronto.ca/)
 - Being the first engineer at a startup @ [kortex](https://www.kortex.co/) (now [eden.so](https://eden.so/))
+- [discoverparks.ca](https://www.discoverparks.ca/)
 - badminton :)
 
 
